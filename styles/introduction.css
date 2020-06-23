@@ -1,0 +1,32 @@
+@import url(reset.css);
+@import url(common.css);
+
+.IntroductionNav{
+  font-size: calc( 1em + (2 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
+  background-color: transparent;
+}
+.IntroductionLink{  
+  text-decoration: none;
+  display: block;
+  padding: 1em;   
+  color: rgba(204,0,0,0.9);
+  display: flex;
+  border-bottom: 1px dotted #cccccc;
+
+}
+.IntroductionCite{
+  width: 28em;
+  min-width: min-content;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.chapter, .author{
+  font-size: 0.8em;
+}
+.chapter{
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 0.3em;
+}
