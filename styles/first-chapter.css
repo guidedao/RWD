@@ -107,6 +107,7 @@ b {
 }
 .sub-title {
   font-family: "Roman-old";
+  padding-top: 6vw;
 }
 .before-img {
   padding-bottom: 5vw;
@@ -170,6 +171,25 @@ b {
   background-position: center;
   background-size: cover;
 }
+.references {
+  height: 30vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 33vw;
+
+}
+.references li {
+  line-height: 40px;
+}
+.links li {
+  color: rgba(204,0,0,0.9);
+  transition: 0.25s;
+}
+.links li:hover {
+  color: white;
+  background-color: rgba(204,0,0,0.9);
+}
 .next-chapter {
   height: 90px;
   background-color: white;
@@ -202,6 +222,10 @@ b {
   font-family: "Roman";
   font-weight: lighter;
   text-transform: lowercase;
+  letter-spacing: 3px;
+}
+.inner-li li {
+  line-height: 16px;
 }
 .footer {
   height: 260px;
@@ -216,6 +240,19 @@ b {
   margin: 40px 0;
 }
 
+@media screen and (min-width: 600px) {
+  .img {
+    max-width: 97vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .img3{
+    float: right;
+  }
+  .after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
+    padding-left: 2vw;
+  }
+}
 	/*background-color: rgba(0,0,0,0.75);
 	background-color: rgba(255,255,255,0.30);
 	background-color: rgba(95,121,149,0.2);
