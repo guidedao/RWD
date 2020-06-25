@@ -1,0 +1,212 @@
+/* Файл для общих стилей, которые 
+нужны на более чем одной странице  */
+@import url(normalize.css);
+
+@charset "UTF-8";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* стили 1 стр*/
+html {
+  width: 100vw;
+  height: 200vh;
+  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+  font-size: calc( 16px + (32 - 16) * ( (100vw - 320px) / (1904 - 320) ));
+}
+* {
+  box-sizing: border-box;
+  min-width: min-content;
+  min-height: min-content;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url(../Fonts/bold-line-figures.ttf);
+}
+@font-face {
+  font-family: "Italic-old";
+  src: url(../Fonts/italic-old-style-figures.ttf);
+}
+@font-face {
+  font-family: "Roman";
+  src: url(../Fonts/roman-line-figures.ttf);
+}
+@font-face {
+  font-family: "Roman-old";
+  src: url(../Fonts/roman-old-style-figures.ttf);
+}
+@font-face {
+  font-family: "Semi-bold";
+  src: url(../Fonts/semi-bold-old-style-figures.ttf);
+}
+
+.header {
+	min-height: 2vw;
+	background-color: rgba(95,121,149,1);
+  text-transform: uppercase;
+	letter-spacing: 4px;
+	line-height: 1;
+	display: flex;
+	padding: auto;
+  padding-left: 16px;
+  color: white;
+  font-family: "Roman-old";
+}
+.chapter-name {
+  margin-top: 3vw;
+}
+.chapter-one {
+  font-family: "Roman";
+  font-weight: lighter;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+.Foundations {
+  font-family: "Roman";
+  font-weight: normal;
+  font-size: 60px;
+}
+.main, .footer {
+  max-width: 88vw;
+  padding: 0 6vw 0 6vw;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+h1 {
+  min-height: 32px;
+}
+.strip {
+  background-color: rgba(95,121,149,0.5);
+  min-height: 3vw;
+}
+.part-one, .part-two, .part-three, .part-four, .part-five {
+  line-height: 31px;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+  font-family: "Roman-old";
+  line-height: 25px;
+}
+b {
+  font-size: 25px;
+}
+.text {
+  margin-top: 30px;
+}
+.history {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.img1 {
+  display: flex;
+  margin: auto;
+  background-image: url(../img/sundial.jpg);
+  height: 65vw; 
+  width: 65vh;
+  background-position: center;
+  background-size: cover;
+}
+.img2 {
+  display: flex;
+  margin: auto;
+  background-image: url(../img/enquire-within-upon-everything.jpg);
+  height: 70vw; 
+  width: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+.img3 {
+  display: flex;
+  margin: auto;
+  background-image: url(../img/vague-but-exciting.jpg);
+  height: 50vw; 
+  width: 70vh;
+  background-position: center;
+  background-size: cover; 
+}
+.img4 {
+  display: flex;
+  margin: auto;
+  background-image: url(../img/submarine-cable-map.jpg);
+  height: 50vw; 
+  width: 70vh;
+  background-position: center;
+  background-size: cover;
+}
+.img5 {
+  display: flex;
+  margin: auto;
+  background-image: url(../img/line-mode-browser.jpg);
+  height: 50vw; 
+  width: 70vh;
+  background-position: center;
+  background-size: cover;
+}
+.img6 {
+  display: flex;
+  margin: auto;
+  background-image: url(../img/sir-tim-berners-lee.jpg);
+  height: 50vw; 
+  width: 70vh;
+  background-position: center;
+  background-size: cover;
+}
+.next-chapter {
+  height: 90px;
+  background-color: white;
+  border-top: 1px solid rgba(204,0,0,0.9);
+  border-bottom: 1px solid rgba(204,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.chapters li {
+  height: 66px;
+  padding: 0 2vw 0 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dotted rgba(0,0,0,0.2);
+}
+.line {
+  font-family: "Italic-old";
+  font-weight: bold;
+  color: rgba(204,0,0,0.9);
+  transition: 0.25s;
+}
+.line:hover {
+  color: white;
+  background-color: rgba(204,0,0,0.9);
+}
+.chapter-no {
+  font-family: "Roman";
+  font-weight: lighter;
+  text-transform: lowercase;
+}
+.footer {
+  height: 260px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+}
+.footer p {
+  margin: 40px 0;
+}
+
+	/*background-color: rgba(0,0,0,0.75);
+	background-color: rgba(255,255,255,0.30);
+	background-color: rgba(95,121,149,0.2);
+	/* background-color: rgba(204,0,0,0.9);
+
