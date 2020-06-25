@@ -72,8 +72,8 @@ html {
   font-size: 60px;
 }
 .main, .footer {
-  max-width: 88vw;
-  padding: 0 6vw 0 6vw;
+  max-width: 90vw;
+  padding: 0 5vw 0 5vw;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -104,6 +104,17 @@ b {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
+}
+.sub-title {
+  font-family: "Roman-old";
+}
+.before-img {
+  padding-bottom: 5vw;
+}
+.after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
+  padding-top: 3vw;
+  font-size: 15px;
+
 }
 .img1 {
   display: flex;
