@@ -251,6 +251,7 @@ b {
   }
   .after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
     padding-left: 2vw;
+    width: 24vw;
   }
 }
 	/*background-color: rgba(0,0,0,0.75);
