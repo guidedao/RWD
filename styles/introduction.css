@@ -1,32 +1,36 @@
-@import url(reset.css);
 @import url(common.css);
 
-.IntroductionNav{
-  font-size: calc( 1em + (2 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
+.introduction-nav{
   background-color: transparent;
 }
-.IntroductionLink{  
+.introduction-link{  
   text-decoration: none;
   display: block;
   padding: 1em;   
   color: rgba(204,0,0,0.9);
   display: flex;
   border-bottom: 1px dotted #cccccc;
-
+  transition-duration: 0.25s;
 }
-.IntroductionCite{
+.introduction-p{
   width: 28em;
   min-width: min-content;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+  font-style: italic;
 }
 .chapter, .author{
   font-size: 0.8em;
+  font-style: normal;
 }
 .chapter{
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 0.3em;
+}
+.introduction-link:hover{
+  background-color: rgba(204,0,0,0.9);
+  color: white;
 }
