@@ -21,7 +21,6 @@ html {
   box-sizing: border-box;
   min-width: min-content;
 }
-
 @font-face {
   font-family: "Bold";
   src: url(../Fonts/bold-line-figures.ttf);
@@ -88,7 +87,6 @@ html {
 .part-one, .part-two, .part-three, .part-four, .part-five, .part-six {
   line-height: 1.7;
   margin: 0 2em;
-
   font-size: calc( 1em + (1.5 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 ul {
