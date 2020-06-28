@@ -53,7 +53,7 @@ html {
 .page-name {
   text-transform: uppercase;
   font-family: "Roman-old";
-  letter-spacing: 4px;
+  letter-spacing: 0.2em;
   color: white;
   font-size: calc( 1em + (1.5 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
 }
@@ -61,18 +61,21 @@ html {
   max-width: 28em;
   margin-left: auto;
   margin-right: auto;
+  min-height: 2em;
 }
 .chapter-one {
   font-family: "Roman";
   font-weight: lighter;
   text-transform: lowercase;
-  letter-spacing: 19px;
-  font-size: calc( 40px + (80 - 40) * ( (100vw - 320px) / (1904 - 320) ));
-}
+  letter-spacing: 0.3em;
+  font-size: 0.5em;
+  font-size: calc( 35px + (70 - 35) * ( (100vw - 320px) / (1904 - 320) ));
+} /* сделать шрифт более резиновым (в сторону уменьшения)*/
 .foundations {
   font-family: "Roman";
+  letter-spacing: 0.025em;
   font-weight: normal;
-  font-size: calc( 100px + (200 - 100) * ( (100vw - 320px) / (1904 - 320) ));
+  font-size: calc( 75px + (150 - 75) * ( (100vw - 320px) / (1904 - 320) ));
 }
 .main {
   display: block;
@@ -85,27 +88,25 @@ html {
   background-color: rgba(95,121,149,0.5);
   min-height: 3vw;
   max-width: 28em;
-  margin-left: auto;
-  margin-right: auto;
 }
 .sub-title {
   font-family: "Roman-old";
   font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
   font-weight: normal;
   margin-top: 6rem;
-  margin-left: auto
 }
-.part-one, .part-two, .part-three, .part-four, .part-five, .part-six {
+.part-one, .part-two, .part-three, .part-four, .part-five {
   line-height: 1.7;
-  margin-left: auto;
-  margin-right: auto;
 }
 ul {
   padding: 0;
   list-style-type: none;
   font-family: "Roman-old";
-  margin-left: auto;
-  margin-right: auto;
+}
+.history {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 .big-letter {
   font-size: calc(20px + (50 - 20) * ( (100vw - 320px) / (1904 - 320) ));
@@ -113,22 +114,15 @@ ul {
 .italic {
   font-family: "Roman-old";
   font-style: italic;
-  font-weight: lighter;
+  font-weight: normal;
 }
 .text {
-  margin-top: 30px;
-  max-width: 28em;
-  margin-left: auto;
-  margin-right: auto;
-}
-.history {
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 3px;
+  margin: 2em 0;
 }
 .before-img {
   padding-bottom: 5vw;
 }
+/* поправить начиная отсюда т до*/
 .after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
   padding-top: 3vw;
   font-size: 15px;
@@ -187,27 +181,32 @@ ul {
   background-position: center;
   background-size: cover;
 }
+/* cюда*/
 .references {
-  height: 30vw;
+  max-width: 26em;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
-  margin: auto;
   flex-direction: row;
-  width: calc( 20em + (60 - 20) * ( (100vw - 20em) / ( 100 - 20) ));
+  align-items: baseline;
+  line-height: 1em;
 }
-.references li {
-  line-height: calc( 1.5em + (1.7 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
-  margin: 1em;
-}
-.links li {
+.links {
+  text-align: left;
+  cursor: pointer;
   color: rgba(204,0,0,0.9);
-  transition: 0.25s;
+  transition: color 0.25s, background-color 0.25s;
 }
-.links li:hover {
+.names {
+  cursor: pointer;
+  text-align: right;
+}
+.links:hover {
   color: white;
   background-color: rgba(204,0,0,0.9);
 }
-.next-chapter {
+.next-chapter { /* add infinite borders*/
   height: 90px;
   background-color: white;
   border-top: 1px solid rgba(204,0,0,0.9);
@@ -224,7 +223,15 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px dotted rgba(0,0,0,0.2);
+}
+.dotted-line {
+ /*max-width: none;
+  display: block;
+  margin-left: none;
+  margin-right: none;
+  margin: none;
+  padding: none;*/
+  border-top: 1px dotted rgba(0,0,0,0.2);
 }
 .line {
   font-family: "Italic-old";
