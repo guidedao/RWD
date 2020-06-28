@@ -203,13 +203,16 @@ small {
 .next-chapter { /* add infinite borders*/
   height: 90px;
   background-color: white;
-  border-top: 1px solid rgba(204,0,0,0.9);
-  border-bottom: 1px solid rgba(204,0,0,0.9);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
   margin-top: 10vw;
+}
+.next-chapter:not(:last-child) {
+  border-top: 1px solid rgba(204,0,0,0.9);
+  border-bottom: 1px solid rgba(204,0,0,0.9);
+  /*try to extend border-line by using margin or use smth else*/
 }
 .chapters li {
   height: 66px;
@@ -217,8 +220,10 @@ small {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px dotted rgba(0,0,0,0.2);
 }
-.dotted-line {
+.chapters li:not(:last-child) {
+  /*try to extend border-line by using margin or use smth else*/
  /*max-width: none;
   display: block;
   margin-left: none;
@@ -226,6 +231,8 @@ small {
   margin: none;
   padding: none;*/
   border-top: 1px dotted rgba(0,0,0,0.2);
+  /*margin-left: -100vw;
+  margin-right: -100vw;*/
 }
 .line {
   font-family: "Italic-old";
