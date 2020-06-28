@@ -127,59 +127,55 @@ ul {
   padding-top: 3vw;
   font-size: 15px;
 }
+.after-img1, .after-img2, .after-img3, .after-img4, .after-img5 {
+  display: flex;
+  justify-content: center;
+}
 .img1 {
   display: flex;
   margin: auto;
-  background-image: url(../img/sundial.jpg);
-  height: 65vw; 
-  width: 65vh;
+  max-width: 475px;
   background-position: center;
   background-size: cover;
 }
 .img2 {
   display: flex;
   margin: auto;
-  background-image: url(../img/enquire-within-upon-everything.jpg);
-  height: 70vw; 
-  width: 50vh;
+  max-width: 430px;
   background-position: center;
   background-size: cover;
 }
 .img3 {
   display: flex;
   margin: auto;
-  background-image: url(../img/vague-but-exciting.jpg);
-  height: 50vw; 
-  width: 70vh;
+  max-width: 475px;
   background-position: center;
   background-size: cover; 
 }
 .img4 {
   display: flex;
   margin: auto;
-  background-image: url(../img/submarine-cable-map.jpg);
-  height: 50vw; 
-  width: 70vh;
+  max-width: 480px;
   background-position: center;
   background-size: cover;
 }
 .img5 {
   display: flex;
   margin: auto;
-  background-image: url(../img/line-mode-browser.jpg);
-  height: 50vw; 
-  width: 70vh;
+  max-width: 474px;
   background-position: center;
   background-size: cover;
 }
 .img6 {
   display: flex;
   margin: auto;
-  background-image: url(../img/sir-tim-berners-lee.jpg);
-  height: 50vw; 
-  width: 70vh;
+  max-width: 484px;
   background-position: center;
   background-size: cover;
+}
+small {
+  font-size: inherit;
+  display: block
 }
 /* cюда*/
 .references {
@@ -249,9 +245,6 @@ ul {
   text-transform: lowercase;
   letter-spacing: 3px;
 }
-.inner-li li {
-  line-height: 16px;
-}
 .footer {
   height: 260px;
   background-color: black;
@@ -283,14 +276,13 @@ ul {
   }
   .after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
     flex-basis: 50%;
-    max-width: 17em;
+    margin: 1em;
+    text-align: left;
+    font: caption;
+    align-self: flex-start;
+    padding: 0;
   }
-  .inner-li li {
-    max-width: 14em;
-    flex-basis: 50%;
-    text-align: right;
-  }
-  .after-img3 {
+  .after-img6, .after-img3 {
     text-align: right;
   }
 }
