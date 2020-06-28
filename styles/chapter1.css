@@ -14,8 +14,8 @@ html {
   width: 100vw;
   height: 100vh;
   /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
-  font-size: calc( 16px + (32 - 16) * ( (100vw - 320px) / (1904 - 320) ));
-  /*font-size: calc( 1em + (2 - 1) * ( (100vw - 20em) / ( 100 - 20) ));*/
+  font-size: calc( 1em + (2 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
+}
 }
 * {
   box-sizing: border-box;
@@ -49,9 +49,9 @@ html {
   max-width: 28em;
   margin-left: auto;
   margin-right: auto;
-  text-transform: uppercase;
 }
 .page-name {
+  text-transform: uppercase;
   font-family: "Roman-old";
   letter-spacing: 4px;
   color: white;
@@ -75,10 +75,11 @@ html {
   font-size: calc( 100px + (200 - 100) * ( (100vw - 320px) / (1904 - 320) ));
 }
 .main {
-  display: flex;
+  display: block;
   max-width: 28em;
   margin-left: auto;
   margin-right: auto;
+  padding: 1em;
 }
 .stripe {
   background-color: rgba(95,121,149,0.5);
@@ -89,21 +90,20 @@ html {
 }
 .sub-title {
   font-family: "Roman-old";
-  padding-top: 6vw;
   font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
+  font-weight: normal;
+  margin-top: 6rem;
+  margin-left: auto
 }
 .part-one, .part-two, .part-three, .part-four, .part-five, .part-six {
   line-height: 1.7;
-  max-width: 28em;
   margin-left: auto;
   margin-right: auto;
-  font-size: calc( 1em + (1.5 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 ul {
   padding: 0;
   list-style-type: none;
   font-family: "Roman-old";
-  max-width: 28em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -248,19 +248,19 @@ ul {
 .footer {
   height: 260px;
   background-color: black;
-  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: column;
+  padding: 1em;
 }
 .footer-container {
   max-width: 28em;
-  margin: 0 2em;
+  margin: 2em 0;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.7;
-}
-.footer p {
-  margin: 40px 0;
+  color: white;
 }
 .red {
   color: rgba(255,51,51,0.9);
