@@ -45,39 +45,47 @@ html {
 	background-color: rgba(95,121,149,1);
 }
 .design {
-  max-width: 70vw;
-  font-family: "Roman-old";
   display: flex;
-  justify-content: center;
+  max-width: 28em;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
+}
+.page-name {
+  font-family: "Roman-old";
   letter-spacing: 4px;
   color: white;
+  font-size: calc( 1em + (1.5 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 .chapter-name {
-  margin: 3vw 2em 0 2em;
+  max-width: 28em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .chapter-one {
   font-family: "Roman";
   font-weight: lighter;
   text-transform: lowercase;
   letter-spacing: 19px;
-  font-size: calc( 50px + (70 - 50) * ( (100vw - 320px) / (1904 - 320) ));
+  font-size: calc( 40px + (80 - 40) * ( (100vw - 320px) / (1904 - 320) ));
 }
 .foundations {
   font-family: "Roman";
   font-weight: normal;
-  font-size: calc( 120px + (130 - 120) * ( (100vw - 320px) / (1904 - 320) ));
+  font-size: calc( 100px + (200 - 100) * ( (100vw - 320px) / (1904 - 320) ));
 }
 .main {
   display: flex;
-  flex-direction: column;
-  margin: auto;
   max-width: 28em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .stripe {
   background-color: rgba(95,121,149,0.5);
   min-height: 3vw;
-  margin: 0 2em;
+  max-width: 28em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .sub-title {
   font-family: "Roman-old";
@@ -86,16 +94,21 @@ html {
 }
 .part-one, .part-two, .part-three, .part-four, .part-five, .part-six {
   line-height: 1.7;
-  margin: 0 2em;
+  max-width: 28em;
+  margin-left: auto;
+  margin-right: auto;
   font-size: calc( 1em + (1.5 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 ul {
   padding: 0;
   list-style-type: none;
   font-family: "Roman-old";
+  max-width: 28em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .big-letter {
-  font-size: calc( 30px + (30 - 25) * ( (100vw - 320px) / (1904 - 320) ));
+  font-size: calc(20px + (50 - 20) * ( (100vw - 320px) / (1904 - 320) ));
 }
 .italic {
   font-family: "Roman-old";
@@ -104,6 +117,9 @@ ul {
 }
 .text {
   margin-top: 30px;
+  max-width: 28em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .history {
   text-transform: uppercase;
