@@ -122,7 +122,6 @@ ul {
 .before-img {
   padding-bottom: 5vw;
 }
-/* поправить начиная отсюда т до*/
 .after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
   padding-top: 3vw;
   font-size: 15px;
@@ -177,7 +176,6 @@ small {
   font-size: inherit;
   display: block
 }
-/* cюда*/
 .references {
   max-width: 26em;
   display: flex;
