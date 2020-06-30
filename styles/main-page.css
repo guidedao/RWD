@@ -6,6 +6,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .header {
@@ -13,7 +14,6 @@ body {
     padding: 1em;
     background-color: rgba(95, 121, 149, 1);
     color: #fff;
-    font-family: "Times New Roman", Times, serif;
 }
 
 .header__link {
@@ -33,7 +33,6 @@ body {
     font-size: calc(2.25em + (11.25 - 2.25) * ((100vw - 20em) / (100 - 20)));
     font-weight: normal;
     line-height: 1.125;
-
     margin: 0;
 }
 
@@ -42,8 +41,68 @@ body {
     font-size: calc(1.5em + (4.5 - 1.5) * ((100vw - 20em) / (100 - 20)));
     font-weight: normal;
     line-height: 1.125;
-
     margin: 6rem 0 0;
+}
+
+.red-link {
+    text-decoration: none;
+    color: rgba(204, 0, 0, 0.9);
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+}
+
+.red-link:hover {
+    background-color: rgba(204, 0, 0, 0.9);
+    color: white;
+}
+
+.red-link > span {
+    font-variant: all-small-caps;
+}
+
+.main {
+    padding: 1em;
+    line-height: 1.8;
+}
+
+.main ::selection {
+    background-color: rgba(95,121,149,1);
+    color: white;
+}
+
+.main__wrap {
+    display: block;
+    margin: 0 auto;
+    max-width: 28em;
+}
+
+.formats-title {
+    font-weight: normal;
+    font-size: 1.5em;
+    font-size: calc(1.5em + (2 - 1.5) * ((100vw - 20em) / (100 - 20)));
+    margin: 2.5em 0 0;
+}
+
+.formats-paragraph {
+    margin: 1em 0;
+}
+
+.formats-paragraph:first-line {
+    text-align: justify;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+}
+
+.audio-title {
+    font-weight: normal;
+    font-size: 1.5em;
+    font-size: calc(1.5em + (2 - 1.5) * ((100vw - 20em) / (100 - 20)));
+    margin: 2.5em 0 0;
+}
+
+.audio-paragraph {
+    margin: 1em 0;
 }
 
 @media (min-width: 100em) {
@@ -52,5 +111,19 @@ body {
     }
     .header__author {
         font-size: 2.25em;
+    }
+
+    .formats-title,
+    .audio-title {
+        font-size: 2em;
+    }
+
+    .formats-paragraph,
+    .audio-paragraph {
+        font-size: 1em;
+    }
+
+    .formats-paragraph:first-line {
+        font-size: 2em;
     }
 }
