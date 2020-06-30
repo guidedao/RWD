@@ -1,9 +1,9 @@
 @import url(common.css);
 
-.introduction-nav{
+.content-nav{
   background-color: transparent;
 }
-.introduction-link{  
+.content-link{  
   text-decoration: none;
   display: block;
   padding: 1em;   
@@ -11,7 +11,7 @@
   display: flex;
   border-bottom: 1px dotted #cccccc;
 }
-.introduction-p,.introduction-p-left{
+.content-p,.content-p-left{
   width: 28em;
   min-width: min-content;
   display: flex;
@@ -21,7 +21,7 @@
   font-style: italic;
   align-items: center;
 }
-.introduction-p{
+.content-p{
   text-align: right;
 }
 .chapter, .author{
@@ -34,7 +34,7 @@
   letter-spacing: 0.3em;
   white-space: nowrap;
 }
-.introduction-link:hover{
+.content-link:hover{
   background-color: rgba(204,0,0,0.9);
   color: white;
   transition-duration: 0.25s;
