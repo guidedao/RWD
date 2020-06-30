@@ -17,6 +17,7 @@ html {
   font-size: calc( 1em + (2 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 }
+    /* добавить ссылки в хтмл */
 * {
   box-sizing: border-box;
   min-width: min-content;
@@ -49,6 +50,13 @@ html {
   max-width: 28em;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+ a {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
 }
 .page-name {
   text-transform: uppercase;
@@ -83,6 +91,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
+  padding-bottom: 0;
 }
 .stripe {
   background-color: rgba(95,121,149,0.5);
@@ -122,6 +131,10 @@ ul {
 .before-img {
   padding-bottom: 5vw;
 }
+.img {
+  margin: 0;
+  padding: 0;
+}
 .after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
   padding-top: 3vw;
   font-size: 15px;
@@ -133,42 +146,42 @@ ul {
 .img1 {
   display: flex;
   margin: auto;
-  max-width: 475px;
+  width: 320px;
   background-position: center;
   background-size: cover;
 }
 .img2 {
   display: flex;
   margin: auto;
-  max-width: 430px;
+  width: 300px;
   background-position: center;
   background-size: cover;
 }
 .img3 {
   display: flex;
   margin: auto;
-  max-width: 475px;
+  width: 320px;
   background-position: center;
   background-size: cover; 
 }
 .img4 {
   display: flex;
   margin: auto;
-  max-width: 480px;
+  width: 320px;
   background-position: center;
   background-size: cover;
 }
 .img5 {
   display: flex;
   margin: auto;
-  max-width: 474px;
+  width: 320px;
   background-position: center;
   background-size: cover;
 }
 .img6 {
   display: flex;
   margin: auto;
-  max-width: 484px;
+  width: 320px;
   background-position: center;
   background-size: cover;
 }
@@ -187,6 +200,9 @@ blockquote:after {
   line-height: 0.1em;
   margin-left: 0.15em;
   vertical-align: -0.15em;
+}
+.after-img6 {
+  line-height: 1em;
 }
 small {
   font-size: inherit;
@@ -224,11 +240,11 @@ small {
   justify-content: center;
   flex-flow: column;
   margin-top: 10vw;
-}
-.next-chapter:not(:last-child) {
   border-top: 1px solid rgba(204,0,0,0.9);
   border-bottom: 1px solid rgba(204,0,0,0.9);
-  /*try to extend border-line by using margin or use smth else*/
+}
+.chapters {
+  margin-bottom: 0;
 }
 .chapters li {
   height: 66px;
@@ -236,9 +252,8 @@ small {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px dotted rgba(0,0,0,0.2);
 }
-.chapters li:not(:last-child) {
+/*.chapters li:not(:last-child) {
   /*try to extend border-line by using margin or use smth else*/
  /*max-width: none;
   display: block;
@@ -246,19 +261,26 @@ small {
   margin-right: none;
   margin: none;
   padding: none;*/
-  border-top: 1px dotted rgba(0,0,0,0.2);
+  border-bottom: 1px dotted rgba(0,0,0,0.2);
   /*margin-left: -100vw;
   margin-right: -100vw;*/
+}*/
+.index {
+  border-bottom: none;
 }
 .line {
   font-family: "Italic-old";
   font-weight: bold;
+  border-bottom: 1px dotted rgba(0,0,0,0.2);
   color: rgba(204,0,0,0.9);
   transition: 0.25s;
 }
 .line:hover {
   color: white;
   background-color: rgba(204,0,0,0.9);
+}
+.next-chapter {
+  border-bottom: 1px solid rgba(204,0,0,0.9);
 }
 .chapter-no {
   font-family: "Roman";
@@ -285,8 +307,13 @@ small {
 }
 .red {
   color: rgba(255,51,51,0.9);
+  transition: 0.25s;
 }
-@media screen and (min-width: 600px) {
+.red:hover {
+  color: white;
+  background-color: rgba(204,0,0,0.9);
+}
+@media screen and (min-width: 320px) {
   .img {
     margin: 2em -1em;
     display: flex;
@@ -305,5 +332,11 @@ small {
   }
   .after-img6, .after-img3 {
     text-align: right;
+  }
+  .img1, .img3, .img4, .img5, .img6 {
+    max-width: 480px;
+  }
+  .img2 {
+    max-width: 430px;
   }
 }
