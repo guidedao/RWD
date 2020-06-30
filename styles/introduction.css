@@ -10,7 +10,6 @@
   color: rgba(204,0,0,0.9);
   display: flex;
   border-bottom: 1px dotted #cccccc;
-  transition-duration: 0.25s;
 }
 .introduction-p,.introduction-p-left{
   width: 28em;
@@ -38,4 +37,5 @@
 .introduction-link:hover{
   background-color: rgba(204,0,0,0.9);
   color: white;
+  transition-duration: 0.25s;
 }
