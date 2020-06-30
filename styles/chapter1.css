@@ -172,6 +172,22 @@ ul {
   background-position: center;
   background-size: cover;
 }
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.15em;
+  vertical-align: -0.15em;
+}
+blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.15em;
+  vertical-align: -0.15em;
+}
 small {
   font-size: inherit;
   display: block
