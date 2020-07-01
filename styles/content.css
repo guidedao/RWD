@@ -1,0 +1,41 @@
+@import url(common.css);
+
+.content-nav{
+  background-color: transparent;
+}
+.content-link{  
+  text-decoration: none;
+  display: block;
+  padding: 1em;   
+  color: rgba(204,0,0,0.9);
+  display: flex;
+  border-bottom: 1px dotted #cccccc;
+}
+.content-p,.content-p-left{
+  width: 28em;
+  min-width: min-content;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  font-style: italic;
+  align-items: center;
+}
+.content-p{
+  text-align: right;
+}
+.chapter, .author{
+  font-size: 0.8em;
+  font-style: normal;
+}
+.chapter{
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 0.3em;
+  white-space: nowrap;
+}
+.content-link:hover{
+  background-color: rgba(204,0,0,0.9);
+  color: white;
+  transition-duration: 0.25s;
+}
