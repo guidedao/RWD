@@ -1,3 +1,5 @@
+@import url(fonts.css);
+
 /* Файл для общих стилей, которые 
 нужны на более чем одной странице  */
 
@@ -49,12 +51,11 @@ table {
 /*создание общих стилей, которые 
 нужны на более чем одной странице*/
 
-@charset "UTF-8";
-
 html{
   font-size: calc( 1em + (2 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 body {
+	font-family:  "MinionPro_medium", sans-serif;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
