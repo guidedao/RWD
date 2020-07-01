@@ -132,12 +132,12 @@ ul {
   padding-bottom: 5vw;
 }
 .img {
-  margin: 0;
-  padding: 0;
+  margin: 2em -1em;
 }
 .after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
   padding-top: 3vw;
   font-size: 15px;
+  margin: 1em;
 }
 .after-img1, .after-img2, .after-img3, .after-img4, .after-img5 {
   display: flex;
@@ -146,42 +146,42 @@ ul {
 .img1 {
   display: flex;
   margin: auto;
-  width: 320px;
+  max-width: 320px;
   background-position: center;
   background-size: cover;
 }
 .img2 {
   display: flex;
   margin: auto;
-  width: 300px;
+  max-width: 300px;
   background-position: center;
   background-size: cover;
 }
 .img3 {
   display: flex;
   margin: auto;
-  width: 320px;
+  max-width: 320px;
   background-position: center;
   background-size: cover; 
 }
 .img4 {
   display: flex;
   margin: auto;
-  width: 320px;
+  max-width: 320px;
   background-position: center;
   background-size: cover;
 }
 .img5 {
   display: flex;
   margin: auto;
-  width: 320px;
+  max-width: 320px;
   background-position: center;
   background-size: cover;
 }
 .img6 {
   display: flex;
   margin: auto;
-  width: 320px;
+  max-width: 320px;
   background-position: center;
   background-size: cover;
 }
@@ -314,10 +314,29 @@ small {
   background-color: rgba(204,0,0,0.9);
 }
 @media screen and (min-width: 320px) {
-  .img {
-    margin: 2em -1em;
+  body {
+    line-height: 1.6;
+  }
+  .img1, .img3, .img4, .img5, .img6 {
+    max-width: 320px;
+  }
+  .img2 {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .img1, .img3, .img4, .img5, .img6 {
+    max-width: 400px;
+  }
+  .img2 {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 600px) {
+  figure {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
   }
   .img.three, .img.six {
   flex-direction: row-reverse;
@@ -327,16 +346,30 @@ small {
     margin: 1em;
     text-align: left;
     font: caption;
-    align-self: flex-start;
     padding: 0;
   }
   .after-img6, .after-img3 {
     text-align: right;
   }
   .img1, .img3, .img4, .img5, .img6 {
-    max-width: 480px;
+    max-width: 400px;
   }
   .img2 {
-    max-width: 430px;
+    max-width: 300px;
+  }
+@media screen and (min-width: 800px) {
+  .img1, .img3, .img4, .img5, .img6 {
+    max-width: 450px;
+  }
+  .img2 {
+    max-width: 410px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .img1, .img3, .img4, .img5, .img6 {
+    max-width: 485px;
+  }
+  .img2 {
+    max-width: 440px;
   }
 }
