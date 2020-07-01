@@ -1,27 +1,7 @@
-/* Файл для общих стилей, которые 
-нужны на более чем одной странице  */
-@import url(normalize.css);
-
 @charset "UTF-8";
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
-/* стили 1 главы*/
-html {
-  width: 100vw;
-  height: 100vh;
-  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
-  font-size: calc( 1em + (2 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
-}
-}
-    /* добавить ссылки в хтмл */
-* {
-  box-sizing: border-box;
-  min-width: min-content;
-}
+@import url(normalize.css);
+
 @font-face {
   font-family: "Bold";
   src: url(../Fonts/bold-line-figures.ttf);
@@ -42,6 +22,23 @@ html {
   font-family: "Semi-bold";
   src: url(../Fonts/semi-bold-old-style-figures.ttf);
 }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+html {
+  width: 100vw;
+  height: 100vh;
+  /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+  font-size: calc( 1em + (2 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
+}
+}
+* {
+  box-sizing: border-box;
+  min-width: min-content;
+}
 .header {
 	background-color: rgba(95,121,149,1);
 }
@@ -53,17 +50,17 @@ html {
   padding-left: 1em;
   padding-right: 1em;
 }
- a {
-  text-decoration: none;
-  color: inherit;
-  background-color: inherit;
-}
 .page-name {
   text-transform: uppercase;
   font-family: "Roman-old";
   letter-spacing: 0.2em;
   color: white;
   font-size: calc( 1em + (1.5 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
 }
 .chapter-name {
   max-width: 28em;
@@ -72,18 +69,19 @@ html {
   min-height: 2em;
 }
 .chapter-one {
+  display: block;
   font-family: "Roman";
-  font-weight: lighter;
+  font-weight: normal;
   text-transform: lowercase;
+  font-variant: small-caps;
   letter-spacing: 0.3em;
-  font-size: 0.5em;
-  font-size: calc( 35px + (70 - 35) * ( (100vw - 320px) / (1904 - 320) ));
-} /* сделать шрифт более резиновым (в сторону уменьшения)*/
+  font-size: calc( 1em + (7 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
+} /* как будут шрифты, настроить точный размер*/
 .foundations {
   font-family: "Roman";
   letter-spacing: 0.025em;
   font-weight: normal;
-  font-size: calc( 75px + (150 - 75) * ( (100vw - 320px) / (1904 - 320) ));
+  font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 .main {
   display: block;
@@ -112,14 +110,6 @@ ul {
   list-style-type: none;
   font-family: "Roman-old";
 }
-.history {
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 3px;
-}
-.big-letter {
-  font-size: calc(20px + (50 - 20) * ( (100vw - 320px) / (1904 - 320) ));
-}
 .italic {
   font-family: "Roman-old";
   font-style: italic;
@@ -128,62 +118,31 @@ ul {
 .text {
   margin: 2em 0;
 }
+.history {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.big-letter {
+  font-size: calc(20px + (50 - 20) * ( (100vw - 320px) / (1904 - 320) ));
+}
 .before-img {
   padding-bottom: 5vw;
-}
-.img {
-  margin: 2em -1em;
 }
 .after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
   padding-top: 3vw;
   font-size: 15px;
   margin: 1em;
 }
-.after-img1, .after-img2, .after-img3, .after-img4, .after-img5 {
-  display: flex;
-  justify-content: center;
+.after-img6 {
+  line-height: 1em;
 }
-.img1 {
-  display: flex;
-  margin: auto;
-  max-width: 320px;
-  background-position: center;
-  background-size: cover;
+.img-container {
+  margin: 2em -1em;
 }
-.img2 {
-  display: flex;
-  margin: auto;
-  max-width: 300px;
-  background-position: center;
-  background-size: cover;
-}
-.img3 {
-  display: flex;
-  margin: auto;
-  max-width: 320px;
-  background-position: center;
-  background-size: cover; 
-}
-.img4 {
-  display: flex;
-  margin: auto;
-  max-width: 320px;
-  background-position: center;
-  background-size: cover;
-}
-.img5 {
-  display: flex;
-  margin: auto;
-  max-width: 320px;
-  background-position: center;
-  background-size: cover;
-}
-.img6 {
-  display: flex;
-  margin: auto;
-  max-width: 320px;
-  background-position: center;
-  background-size: cover;
+img {
+  max-width: 100%;
+  object-fit: cover;
 }
 blockquote:before {
   color: #ccc;
@@ -200,9 +159,6 @@ blockquote:after {
   line-height: 0.1em;
   margin-left: 0.15em;
   vertical-align: -0.15em;
-}
-.after-img6 {
-  line-height: 1em;
 }
 small {
   font-size: inherit;
@@ -317,28 +273,17 @@ small {
   body {
     line-height: 1.6;
   }
-  .img1, .img3, .img4, .img5, .img6 {
-    max-width: 320px;
-  }
-  .img2 {
-    max-width: 300px;
+  .img-container {
+  margin: 2em 0;
   }
 }
-@media screen and (min-width: 400px) {
-  .img1, .img3, .img4, .img5, .img6 {
-    max-width: 400px;
-  }
-  .img2 {
-    max-width: 300px;
-  }
-}
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 610px) {
   figure {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
   }
-  .img.three, .img.six {
+  .img-container.three, .img-container.six {
   flex-direction: row-reverse;
   }
   .after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
@@ -351,25 +296,7 @@ small {
   .after-img6, .after-img3 {
     text-align: right;
   }
-  .img1, .img3, .img4, .img5, .img6 {
-    max-width: 400px;
-  }
-  .img2 {
-    max-width: 300px;
-  }
-@media screen and (min-width: 800px) {
-  .img1, .img3, .img4, .img5, .img6 {
-    max-width: 450px;
-  }
-  .img2 {
-    max-width: 410px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .img1, .img3, .img4, .img5, .img6 {
-    max-width: 485px;
-  }
-  .img2 {
-    max-width: 440px;
+  .img-container {
+  margin: 2em -1em;
   }
 }
