@@ -66,7 +66,7 @@ body {
 }
 
 .main ::selection {
-    background-color: rgba(95,121,149,1);
+    background-color: rgba(95, 121, 149, 1);
     color: white;
 }
 
@@ -103,6 +103,67 @@ body {
 
 .audio-paragraph {
     margin: 1em 0;
+}
+
+.aside__wrap {
+    display: block;
+    margin: 0 auto;
+    max-width: 28em;
+}
+
+.aside__title {
+    font-weight: normal;
+    font-size: 1.5em;
+    font-size: calc(1.5em + (2 - 1.5) * ((100vw - 20em) / (100 - 20)));
+}
+
+.aside__cite {
+    position: relative;
+}
+
+.aside__cite::before {
+    content: "‘‘";
+    position: absolute;
+    top: -0.6em;
+    left: -0.6em;
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.aside__cite::after {
+    content: "’’";
+    position: absolute;
+    top: 0.25em;
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.25);
+}
+.aside__block {
+    display: flex;
+    margin: 2.5em -1em;
+}
+
+.aside__blockquote {
+    margin: 0 1.5em;
+}
+
+.aside__author {
+    margin: 0.2em 1em 1em;
+    flex-basis: 50%;
+    padding: 0;
+}
+
+.aside__author-name {
+    font-size: 0.8em;
+    line-height: 1;
+}
+
+.aside__author:nth-child(2n) {
+    text-align: right;
+    margin-right: 2em;
+}
+
+.order-two {
+    order: 2;
 }
 
 @media (min-width: 100em) {
