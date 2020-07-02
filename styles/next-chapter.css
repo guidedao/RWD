@@ -1,0 +1,33 @@
+@import url(common.css);
+
+
+.next-chapter {
+    display: flex;
+    background-color: transparent;
+    border-top: 1px solid rgba(204,0,0,0.9);
+    border-bottom: 1px solid rgba(204,0,0,0.9);
+    text-align: center;
+    line-height: 1.6;
+    font-family: inherit;
+    color: rgba(204,0,0,0.9);
+    transition: 0.25s;
+  }
+  .next-chapter:hover {
+    color: white;
+    background-color: rgba(204,0,0,0.9);
+  }
+  .chapter-no {
+    display: block;
+    font-weight: lighter;
+    font-size: 0.8em;
+    letter-spacing: 0.08em;
+    text-transform: lowercase;
+    margin: auto;
+  }
+  .line {
+    max-width: 28em;
+    letter-spacing: 0.05em;
+    padding: 1em;
+    margin: auto;
+  }
+  
