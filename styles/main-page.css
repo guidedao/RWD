@@ -141,6 +141,10 @@ body {
     display: flex;
     margin: 2.5em -1em;
 }
+.aside__block:nth-child(2n) .aside__author {
+    text-align: right;
+    margin-right: 2em;
+}
 
 .aside__blockquote {
     margin: 0 1.5em;
@@ -155,11 +159,6 @@ body {
 .aside__author-name {
     font-size: 0.8em;
     line-height: 1;
-}
-
-.aside__author:nth-child(2n) {
-    text-align: right;
-    margin-right: 2em;
 }
 
 .order-two {
