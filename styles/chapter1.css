@@ -105,6 +105,10 @@ html {
   box-sizing: border-box;
   min-width: min-content;
 }
+.italic {
+  font-style: italic;
+  font-weight: normal;
+}
 .header {
 	background-color: rgba(95,121,149,1);
 }
@@ -119,7 +123,6 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: white;
-  font-size: calc( 0.8em + (1.5 - 0.8) * ( (100vw - 20em) / ( 100 - 20) ));
   font-family: "MinionPro_bold", sans-serif;
 }
 a {
@@ -143,7 +146,6 @@ a {
 }
 .chapter-one {
   display: block;
-  font-weight: lighter;
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 0.3em;
@@ -171,31 +173,16 @@ ul {
   padding: 0;
   list-style-type: none;
 }
-.italic {
-  font-style: italic;
-  font-weight: normal;
-}
 .text {
   margin: 2em 0;
 }
 .history {
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 0.14em;
 }
 .big-letter {
   font-size: calc(20px + (50 - 20) * ( (100vw - 320px) / (1904 - 320) ));
-}
-.before-img {
-  padding-bottom: 5vw;
-}
-.after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
-  padding-top: 3vw;
-  font-size: 15px;
-  margin: 1em;
-  align-self: center;
-  line-height: 1em;
-  font: caption, sans-serif;
 }
 .img-container {
   display: flex;
@@ -205,6 +192,13 @@ ul {
 img {
   max-width: 100%;
   object-fit: cover;
+}
+.after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
+  font-size: 15px;
+  margin: 1em;
+  align-self: center;
+  line-height: 1em;
+  font: caption, sans-serif;
 }
 blockquote p:first-child::before, blockquote p:last-child::after {
   font-style: normal;
@@ -242,8 +236,8 @@ small {
   margin: 1em;
 }
 .links {
-  text-align: left;
   flex-basis: 50%;
+  text-align: left;
   color: rgba(204,0,0,0.9);
   transition: color 0.25s, background-color 0.25s;
 }
@@ -252,17 +246,15 @@ small {
   background-color: rgba(204,0,0,0.9);
 }
 .names {
-  cursor: pointer;
   text-align: right;
   flex-basis: 50%;
 }
 .footer {
-  height: 260px;
   background-color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: column;
+  flex-direction: column;
   padding: 1em;
   font-family: "MinionPro_semibold", sans-serif;
 }
@@ -308,9 +300,9 @@ small {
   }
   .after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
     flex-basis: 50%;
-    margin: 1em;
     text-align: left;
     align-self: flex-start;
+    margin: 1em;
     padding: 0;
   }
   .after-img6 {
