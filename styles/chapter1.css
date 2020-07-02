@@ -194,9 +194,8 @@ ul {
   font-size: 15px;
   margin: 1em;
   align-self: center;
-}
-.after-img6 {
   line-height: 1em;
+  font: caption, sans-serif;
 }
 .img-container {
   display: flex;
@@ -207,21 +206,22 @@ img {
   max-width: 100%;
   object-fit: cover;
 }
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
+blockquote p:first-child::before, blockquote p:last-child::after {
+  font-style: normal;
   font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.15em;
+  line-height: 1;
+  color: rgba(0,0,0,0.25);
   vertical-align: -0.15em;
 }
-blockquote:after {
-  color: #ccc;
-  content: close-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-left: 0.15em;
-  vertical-align: -0.15em;
+blockquote p:first-child::before {
+  content: '«';
+  top: -0.125em;
+  left: -0.5em;
+  margin-right: 0.05em;
+}
+blockquote p:last-child::after {
+  content: '»';
+  margin-left: 0.05em;
 }
 small {
   font-size: inherit;
@@ -291,7 +291,7 @@ small {
     line-height: 1.6;
   }
   .img-container {
-  margin: 2em 0;
+    margin: 2em 0;
   }
 }
 @media screen and (min-width: 610px) {
@@ -311,10 +311,9 @@ small {
     margin: 1em;
     text-align: left;
     align-self: flex-start;
-    font: caption;
     padding: 0;
   }
-  .after-img6, .after-img3 {
+  .after-img6 {
     text-align: right;
   }
 }
