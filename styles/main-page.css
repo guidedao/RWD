@@ -126,20 +126,22 @@ body {
     position: absolute;
     top: -0.6em;
     left: -0.6em;
-    font-size: 5em;
+    font-size: 4em;
     color: rgba(0, 0, 0, 0.25);
 }
 
 .aside__cite::after {
     content: "’’";
     position: absolute;
-    top: 0.25em;
-    font-size: 5em;
+    bottom: -0.9em;
+    font-size: 4em;
     color: rgba(0, 0, 0, 0.25);
 }
+
 .aside__block {
     display: flex;
     margin: 2.5em -1em;
+    align-items: flex-start;
 }
 
 .aside__blockquote {
@@ -150,16 +152,13 @@ body {
     margin: 0.2em 1em 1em;
     flex-basis: 50%;
     padding: 0;
+    padding-top: 10px;
 }
 
 .aside__author-name {
-    font-size: 0.8em;
     line-height: 1;
-}
-
-.aside__author:nth-child(2n) {
-    text-align: right;
-    margin-right: 2em;
+    padding: 0;
+    font: caption;
 }
 
 .order-two {
