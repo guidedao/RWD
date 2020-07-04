@@ -143,6 +143,10 @@ body {
     margin: 2.5em -1em;
     align-items: flex-start;
 }
+.aside__block:nth-child(2n) .aside__author {
+    text-align: right;
+    margin-right: 2em;
+}
 
 .aside__blockquote {
     margin: 0 1.5em;
