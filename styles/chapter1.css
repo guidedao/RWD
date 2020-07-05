@@ -10,6 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  line-height: 1.6;
 }
 html {
   width: 100vw;
@@ -116,7 +117,8 @@ img {
   margin: 1em;
   align-self: center;
   line-height: 1em;
-  font: caption, sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
 }
 blockquote p:first-child::before, blockquote p:last-child::after {
   font-style: normal;
