@@ -2,92 +2,9 @@
 
 @import url(normalize.css);
 
-@font-face {
-  font-family: "MinionPro_bold";
-  font-display: swap;
-  src: url("../fonts/MinionPro-Bold.eot");
-  src: url("../fonts/MinionPro-Bold.woff") format("woff"), url("../fonts/MinionPro-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "MinionPro_bold_cn";
-  font-display: swap;
-  src: url("../fonts/MinionPro-BoldCn.eot");
-  src: url("../fonts/MinionPro-BoldCn.woff") format("woff"), url("../fonts/MinionPro-BoldCn.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "MinionPro_bold_cn_it";
-  font-display: swap;
-  src: url("../fonts/MinionPro-BoldCnIt.eot");
-  src: url("../fonts/MinionPro-BoldCnIt.woff") format("woff"),
-      url("../fonts/MinionPro-BoldCnIt.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "MinionPro_bold_it";
-  font-display: swap;
-  src: url("../fonts/MinionPro-BoldIt.eot");
-  src: url("../fonts/MinionPro-BoldIt.woff") format("woff"), url("../fonts/MinionPro-BoldIt.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "MinionPro_it";
-  font-display: swap;
-  src: url("../fonts/MinionPro-It.eot");
-  src: url("../fonts/MinionPro-It.woff") format("woff"), url("../fonts/MinionPro-It.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "MinionPro_medium";
-  font-display: swap;
-  src: url("../fonts/MinionPro-Medium.eot");
-  src: url("../fonts/MinionPro-Medium.woff") format("woff"), url("../fonts/MinionPro-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "MinionPro_medium_it";
-  font-display: swap;
-  src: url("../fonts/MinionPro-MediumIt.eot");
-  src: url("../fonts/MinionPro-MediumIt.woff") format("woff"),
-      url("../fonts/MinionPro-MediumIt.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "MinionPro_regular";
-  font-display: swap;
-  src: url("../fonts/MinionPro-MediumIt.eot");
-  src: url("../fonts/MinionPro-MediumIt.woff") format("woff"),
-      url("../fonts/MinionPro-MediumIt.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "MinionPro_semibold";
-  font-display: swap;
-  src: url("../fonts/MinionPro-Semibold.eot");
-  src: url("../fonts/MinionPro-Semibold.woff") format("woff"),
-      url("../fonts/MinionPro-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "MinionPro_semibold_it";
-  font-display: swap;
-  src: url("../fonts/MinionPro-SemiboldIt.eot");
-  src: url("../fonts/MinionPro-SemiboldIt.woff") format("woff"),
-      url("../fonts/MinionPro-SemiboldIt.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
+@import url(fonts.css);
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -123,7 +40,8 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: white;
-  font-family: "MinionPro_bold", sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
 }
 a {
   text-decoration: none;
