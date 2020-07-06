@@ -4,11 +4,14 @@
 
 @import url(common.css);
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
 html {
   width: 100vw;
   height: 100vh;
   /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
   font-size: calc( 1em + (2 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
+}
 }
 * {
   box-sizing: border-box;
@@ -36,9 +39,8 @@ body {
   letter-spacing: 0.2em;
   line-height: 1;
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 3px;
-  font-weight: 500;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
 }
 a {
   text-decoration: none;
@@ -112,6 +114,7 @@ ul {
 img {
   max-width: 100%;
   object-fit: cover;
+  border: none;
 }
 .after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
   font-size: 15px;
@@ -163,7 +166,6 @@ small {
 }
 .names {
   text-align: right;
-  white-space: nowrap;
 }
 .footer {
   background-color: black;
