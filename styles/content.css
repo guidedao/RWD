@@ -29,7 +29,7 @@
   font-style: normal;
 }
 .chapter{
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-variant: small-caps;
   letter-spacing: 0.3em;
   white-space: nowrap;
