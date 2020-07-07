@@ -2,29 +2,6 @@
 
 @import url(normalize.css);
 
-/* шрифрты уже были, подключил готовые */
-
-@font-face {
-  font-family: "Bold";
-  src: url(../Fonts/bold-line-figures.ttf);
-}
-@font-face {
-  font-family: "Italic-old";
-  src: url(../Fonts/italic-old-style-figures.ttf);
-}
-@font-face {
-  font-family: "Roman";
-  src: url(../Fonts/roman-line-figures.ttf);
-}
-@font-face {
-  font-family: "Roman-old";
-  src: url(../Fonts/roman-old-style-figures.ttf);
-}
-@font-face {
-  font-family: "Semi-bold";
-  src: url(../Fonts/semi-bold-old-style-figures.ttf);
-}
-
 * {
   box-sizing: border-box;
 }
