@@ -2,32 +2,8 @@
 
 @import url(normalize.css);
 
-@font-face {
-  font-family: "Bold";
-  src: url(../Fonts/bold-line-figures.ttf);
-}
-@font-face {
-  font-family: "Italic-old";
-  src: url(../Fonts/italic-old-style-figures.ttf);
-}
-@font-face {
-  font-family: "Roman";
-  src: url(../Fonts/roman-line-figures.ttf);
-}
-@font-face {
-  font-family: "Roman-old";
-  src: url(../Fonts/roman-old-style-figures.ttf);
-}
-@font-face {
-  font-family: "Semi-bold";
-  src: url(../Fonts/semi-bold-old-style-figures.ttf);
-}
+@import url(common.css);
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
 html {
   width: 100vw;
   height: 100vh;
@@ -39,6 +15,13 @@ html {
   box-sizing: border-box;
   min-width: min-content;
 }
+body {
+  line-height: 1.65;
+}
+.italic {
+  font-style: italic;
+  font-weight: normal;
+}
 .header {
 	background-color: rgba(95,121,149,1);
 }
@@ -47,41 +30,21 @@ html {
   max-width: 28em;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 1em;
 }
 .page-name {
   text-transform: uppercase;
-  font-family: "Roman-old";
   letter-spacing: 0.2em;
+  line-height: 1;
   color: white;
-  font-size: calc( 1em + (1.5 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 500;
 }
 a {
   text-decoration: none;
   color: inherit;
   background-color: inherit;
-}
-.chapter-name {
-  max-width: 28em;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 2em;
-}
-.chapter-one {
-  display: block;
-  font-family: "Roman";
-  font-weight: normal;
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 0.3em;
-  font-size: calc( 1em + (7 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
-} /* как будут шрифты, настроить точный размер*/
-.foundations {
-  font-family: "Roman";
-  letter-spacing: 0.025em;
-  font-weight: normal;
-  font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 .main {
   display: block;
@@ -89,7 +52,27 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
-  padding-bottom: 0;
+  font-family: "MinionPro_medium", sans-serif;
+  line-height: 1.65;
+}
+.chapter-name {
+  max-width: 28em;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 2em;
+  line-height: 1;
+}
+.chapter-one {
+  display: block;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 0.3em;
+  font-size: calc( 1em + (7 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
+  margin-bottom: 1em;
+}
+.foundations {
+  letter-spacing: 0.025em;
+  font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 .stripe {
   background-color: rgba(95,121,149,0.5);
@@ -97,23 +80,17 @@ a {
   max-width: 28em;
 }
 .sub-title {
-  font-family: "Roman-old";
   font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
   font-weight: normal;
   margin-top: 6rem;
+  line-height: 1.125;
 }
 .part-one, .part-two, .part-three, .part-four, .part-five {
-  line-height: 1.7;
+  line-height: 1.65;
 }
 ul {
   padding: 0;
   list-style-type: none;
-  font-family: "Roman-old";
-}
-.italic {
-  font-family: "Roman-old";
-  font-style: italic;
-  font-weight: normal;
 }
 .text {
   margin: 2em 0;
@@ -121,145 +98,94 @@ ul {
 .history {
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 0.14em;
+  line-height: 1.65;
+  font-size: calc( 0.7em + (1.7 - 0.7) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 .big-letter {
   font-size: calc(20px + (50 - 20) * ( (100vw - 320px) / (1904 - 320) ));
 }
-.before-img {
-  padding-bottom: 5vw;
-}
-.after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
-  padding-top: 3vw;
-  font-size: 15px;
-  margin: 1em;
-}
-.after-img6 {
-  line-height: 1em;
-}
 .img-container {
+  display: flex;
   margin: 2em -1em;
+  flex-direction: column;
 }
 img {
   max-width: 100%;
   object-fit: cover;
+  border: none;
 }
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
+.after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
+  font-size: 15px;
+  margin: 1em;
+  align-self: center;
+  line-height: 1;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+blockquote p:first-child::before, blockquote p:last-child::after {
+  font-style: normal;
   font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.15em;
+  line-height: 1;
+  color: rgba(0,0,0,0.25);
   vertical-align: -0.15em;
 }
-blockquote:after {
-  color: #ccc;
-  content: close-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-left: 0.15em;
-  vertical-align: -0.15em;
+blockquote p:first-child::before {
+  content: '«';
+  top: -0.125em;
+  left: -0.5em;
+  margin-right: 0.05em;
+}
+blockquote p:last-child::after {
+  content: '»';
+  margin-left: 0.05em;
 }
 small {
   font-size: inherit;
   display: block
 }
+.part-six {
+  margin: 2em 0;
+}
 .references {
-  max-width: 26em;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: space-between;
-  flex-direction: row;
   align-items: baseline;
-  line-height: 1em;
+  margin: 1em;
+  line-height: 1.65;
 }
 .links {
   text-align: left;
-  cursor: pointer;
   color: rgba(204,0,0,0.9);
   transition: color 0.25s, background-color 0.25s;
-}
-.names {
-  cursor: pointer;
-  text-align: right;
 }
 .links:hover {
   color: white;
   background-color: rgba(204,0,0,0.9);
 }
-.next-chapter { /* add infinite borders*/
-  height: 90px;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  margin-top: 10vw;
-  border-top: 1px solid rgba(204,0,0,0.9);
-  border-bottom: 1px solid rgba(204,0,0,0.9);
-}
-.chapters {
-  margin-bottom: 0;
-}
-.chapters li {
-  height: 66px;
-  padding: 0 2vw 0 2vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-/*.chapters li:not(:last-child) {
-  /*try to extend border-line by using margin or use smth else*/
- /*max-width: none;
-  display: block;
-  margin-left: none;
-  margin-right: none;
-  margin: none;
-  padding: none;*/
-  border-bottom: 1px dotted rgba(0,0,0,0.2);
-  /*margin-left: -100vw;
-  margin-right: -100vw;*/
-}*/
-.index {
-  border-bottom: none;
-}
-.line {
-  font-family: "Italic-old";
-  font-weight: bold;
-  border-bottom: 1px dotted rgba(0,0,0,0.2);
-  color: rgba(204,0,0,0.9);
-  transition: 0.25s;
-}
-.line:hover {
-  color: white;
-  background-color: rgba(204,0,0,0.9);
-}
-.next-chapter {
-  border-bottom: 1px solid rgba(204,0,0,0.9);
-}
-.chapter-no {
-  font-family: "Roman";
-  font-weight: lighter;
-  text-transform: lowercase;
-  letter-spacing: 3px;
+.names {
+  text-align: right;
+  white-space: nowrap;
 }
 .footer {
-  height: 260px;
   background-color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: column;
+  flex-direction: column;
   padding: 1em;
+  font-family: "MinionPro_semibold", sans-serif;
 }
 .footer-container {
   max-width: 28em;
-  margin: 2em 0;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.7;
+  line-height: 1.65;
+  font-weight: normal;
   color: white;
+}
+.footer p {
+  margin: 2em 0;
 }
 .red {
   color: rgba(255,51,51,0.9);
@@ -269,34 +195,32 @@ small {
   color: white;
   background-color: rgba(204,0,0,0.9);
 }
+
 @media screen and (min-width: 320px) {
-  body {
-    line-height: 1.6;
-  }
   .img-container {
-  margin: 2em 0;
+    margin: 2em 0;
   }
 }
 @media screen and (min-width: 610px) {
   figure {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
   }
+  .img-container {
+    margin: 2em -1em;
+    flex-direction: row;
+    }
   .img-container.three, .img-container.six {
   flex-direction: row-reverse;
   }
   .after-img1, .after-img2, .after-img3, .after-img4, .after-img5, .after-img6 {
     flex-basis: 50%;
-    margin: 1em;
     text-align: left;
-    font: caption;
+    align-self: flex-start;
+    margin: 1em;
     padding: 0;
   }
-  .after-img6, .after-img3 {
+  .after-img6 {
     text-align: right;
-  }
-  .img-container {
-  margin: 2em -1em;
   }
 }

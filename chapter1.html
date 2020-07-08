@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/chapter1.css">
-    <title>chapter1</title>
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/next-chapter.css">
+    <title>Глава 1</title>
 </head>
 <body>
     <header class="header">
         <div class="design">
-            <h2 class="page-name"><a href="">Гибкий веб-дизайн</a></h2>
+            <h2 class="page-name"><a href="/">Гибкий веб-дизайн</a></h2>
         </div>
     </header>
     <main class="main">
@@ -34,7 +36,7 @@
                        Тень на солнечных часах в Северном полушарии движется движется по часовой стрелке.
                     </figcaption>
                 </figure>  
-                <li class  ="text">Такие отсылки к прошлому встречаются и сегодня, несмотря на отсутствие в этом всякой практичности. До сих пор нам встречается интерфейс, в котором иконка в виде компакт-диска или виниловой пластинки обозначает музыку. Там же могут использовать изображение трехдюймовой дискеты в качестве обозначения хранения данных. Дискета была создана именно такого размера, чтобы влезать в нагрудный карман рубашки. То есть символы в программах также рассказывают нам историю моды и дизайна одежды. </li>
+                <li class="text">Такие отсылки к прошлому встречаются и сегодня, несмотря на отсутствие в этом всякой практичности. До сих пор нам встречается интерфейс, в котором иконка в виде компакт-диска или виниловой пластинки обозначает музыку. Там же могут использовать изображение трехдюймовой дискеты в качестве обозначения хранения данных. Дискета была создана именно такого размера, чтобы влезать в нагрудный карман рубашки. То есть символы в программах также рассказывают нам историю моды и дизайна одежды. </li>
         	</ul>
         	<ul class="part-two">
             <h2 class="sub-title">Давайте делиться знаниями</h2>
@@ -101,7 +103,9 @@
                 </figure>  
                 <li class="text">Как только в мире появилось два браузера, функциональная и обратная совместимость стали важными факторами. Как поведет себя Line Mode Browser, когда натолкнется на незнакомый элемент, такой, как NEXTID?</li>
                 <li class="text">Ответ можно найти в немногочисленной документации, которую Тим Бернерс-Ли составил для своей первоначальной подборки под названием <b class="italic">«HTML-тэги»</b>. Под заголовком Next ID он написал:</li>
-                <blockquote class="italic text">Программа браузера может проигнорировать этот тэг</blockquote>
+                <blockquote class="italic text">
+                    <p>Программа браузера может проигнорировать этот тэг</p>
+                </blockquote>
                 <li class="text before-img">Это, казалось бы, безобидное решение будет иметь далеко идущие последствия в будущем World Wide Web.</li>
                 <figure class="img-container six">
                     <picture class="img6">
@@ -112,46 +116,101 @@
                     </figcaption>
                 </figure>
         	</ul>
-            <div class="part-six">
-                <h2 class="sub-title">Ссылки:</h2>
-            	<div class="references">
-                    <a href=""><p class="links">«Информационный менеджмент: предложение»</p></a>
+            <h2 class="sub-title">Ссылки:</h2>
+            <ul class="part-six">
+                <li class="references">
+                    <a href=""><p class="links">«<span class="italic">Информационный менеджмент:</span> предложение»</p></a>
                     <p class="names">Тим Бернерс-Ли</p>
-                </div>
-                <div class="references">
+                </li>
+                <li class="references">
                     <a href=""><p class="links">«Как мы можем мыслить»</p></a>
                     <p class="names">Венивар Буш</p>
-                </div>
-                <div class="references">
+                </li>
+                <li class="references">
                     <a href=""><p class="links">Карты телекоммуникационных систем</p></a>
                     <p class="names">TeleGeography</p>
-                </div>
-                <div class="references">
+                </li>
+                <li class="references">
                     <a href=""><p class="links">HTML тэги</p></a>
-                </div>
-            </div>
-        	<nav class="menu">
-                <div class="menu-container">
-                    <a href=""><div class="line next-chapter"><span class="chapter-no">chapter 2:</span>Materials</div></a>
-                    <ul class="chapters">
-                        <a href=""><li class="line intro">Introduction</li></a>
-                        <a href=""><li class="line para1"><span class="chapter-no">chapter 1</span>Foundations</li></a>
-                        <a href=""><li class="line para2"><span class="chapter-no">chapter 2</span>Materials</li></a>
-                        <a href=""><li class="line para3"><span class="chapter-no">chapter 3</span>Visions</li></a>
-                        <a href=""><li class="line para4"><span class="chapter-no">chapter 4</span>Languages</li></a>
-                        <a href=""><li class="line para5"><span class="chapter-no">chapter 5</span>Layers</li></a>
-                        <a href=""><li class="line para6"><span class="chapter-no">chapter 6</span>Steps</li></a>
-                        <a href=""><li class="line para7"><span class="chapter-no">chapter 7</span>Challenges</li></a>
-                        <a href=""><li class="line author-info">About the author</li>
-                        <li class="line index">Index</li></a>
-                    </ul>
-                </div>
-            </nav>
+                </li>
+            </ul>
         </div>  
     </main>
+    <a class="next-chapter" href="">
+        <div class="line"><span class="chapter-no">Глава 2:</span>Материалы</div>
+    </a>
+    <nav class="content-nav">
+        <ol>
+            <li>
+                <a class="content-link" href="introduction/">
+                    <p class="content-p-left">Предисловие</p>
+                </a>
+            </li>
+            <li>
+                <a class="content-link" href="chapter1">
+                    <p class="content-p">
+                        <span class="chapter">Глава 1</span>Основы
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a class="content-link" href="#">
+                    <p class="content-p">
+                        <span class="chapter">Глава 2</span>Материалы
+                    </p>
+                </a></li>
+            <li>
+                <a class="content-link" href="#">
+                    <p class="content-p">
+                        <span class="chapter">Глава 3</span>Визуальное представление
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a class="content-link" href="#">
+                    <p class="content-p">
+                        <span class="chapter">Глава 4</span>Языки
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a class="content-link" href="#">
+                    <p class="content-p">
+                        <span class="chapter">Глава 5</span>Слои
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a class="content-link" href="#">
+                    <p class="content-p">
+                        <span class="chapter">Глава 6</span>Шаги
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a class="content-link" href="#">
+                    <p class="content-p">
+                        <span class="chapter">Глава 7</span>Испытания
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a class="content-link" href="#">
+                    <p class="content-p">
+                        <span class="author">Об Авторе</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a class="content-link" href="#">
+                    <p class="content-p-left">Алфавитный указатель</p>
+                </a>
+            </li>
+        </ol>
+    </nav>
     <footer class="footer">
         <div class="footer-container">
-            <p class="producer"><b class="italic">Resilient Web Design</b>was written and produced by <a href=""><span class="red">Jeremy Keith</span></a>, and typeset in <a href=""><span class="red">ET Book</span></a>.
+            <p class="producer"><b class="italic">Гибкий веб-дизайн</b> was written and produced by <a href=""><span class="red">Jeremy Keith</span></a>, and typeset in <a href=""><span class="red">ET Book</span></a>.
             </p>
             <p class="license">Licensed under a <a href=""><span class="red">Creative Commons Attribution‐ShareAlike 4.0 International License.</span></a></p>
         </div>

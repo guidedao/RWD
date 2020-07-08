@@ -28,6 +28,7 @@ body {
 }
 
 .header__title {
+    font-family: "MinionPro_bold";
     font-size: 2.5em;
     font-size: calc(2.25em + (11.25 - 2.25) * ((100vw - 20em) / (100 - 20)));
     font-weight: normal;
@@ -65,7 +66,7 @@ body {
 }
 
 .main ::selection {
-    background-color: rgba(95,121,149,1);
+    background-color: rgba(95, 121, 149, 1);
     color: white;
 }
 
@@ -76,14 +77,16 @@ body {
 }
 
 .formats-title {
+    font-family: "MinionPro_medium";
     font-weight: normal;
-    font-size: 1.5em;
-    font-size: calc(1.5em + (2 - 1.5) * ((100vw - 20em) / (100 - 20)));
+    font-size: 1.8em;
+    font-size: calc(1.8em + (2 - 1.8) * ((100vw - 20em) / (100 - 20)));
     margin: 2.5em 0 0;
 }
 
 .formats-paragraph {
     margin: 1em 0;
+    font-family: "MinionPro_medium";
 }
 
 .formats-paragraph:first-line {
@@ -94,6 +97,7 @@ body {
 }
 
 .audio-title {
+    font-family: "MinionPro_medium";
     font-weight: normal;
     font-size: 1.5em;
     font-size: calc(1.5em + (2 - 1.5) * ((100vw - 20em) / (100 - 20)));
@@ -101,7 +105,75 @@ body {
 }
 
 .audio-paragraph {
+    font-family: "MinionPro_medium";
     margin: 1em 0;
+}
+
+.aside__wrap {
+    display: block;
+    margin: 0 auto;
+    max-width: 28em;
+}
+
+.aside__title {
+    font-weight: normal;
+    font-family: "MinionPro_medium";
+    font-size: 1.5em;
+    font-size: calc(1.5em + (2 - 1.5) * ((100vw - 20em) / (100 - 20)));
+}
+
+.aside__cite {
+    position: relative;
+    font-family: "MinionPro_regular";
+}
+
+.aside__cite::before {
+    content: "‘‘";
+    position: absolute;
+    top: -0.5em;
+    left: -0.45em;
+    font-size: 4em;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.aside__cite::after {
+    content: "’’";
+    position: absolute;
+    bottom: -1em;
+    font-size: 4em;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.aside__block {
+    display: flex;
+    margin: 2.5em -1em;
+    align-items: flex-start;
+}
+.aside__block:nth-child(2n) .aside__author {
+    text-align: right;
+    margin-right: 2em;
+}
+
+.aside__blockquote {
+    margin: 0 1.5em;
+    font-style: italic;
+}
+
+.aside__author {
+    margin: 0.2em 1em 1em;
+    flex-basis: 50%;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.aside__author-name {
+    line-height: 1;
+    padding: 0;
+    font: caption;
+}
+
+.order-two {
+    order: 2;
 }
 
 @media (min-width: 100em) {
@@ -124,5 +196,24 @@ body {
 
     .formats-paragraph:first-line {
         font-size: 2em;
+    }
+}
+
+@media (max-width: 30em) {
+    .aside__block {
+        flex-direction: column;
+    }
+
+    .order-two {
+        order: 0;
+    }
+
+    .aside__author {
+        margin: 0.2em auto;
+    }
+
+    .aside__block:nth-child(2n) .aside__author {
+        text-align: right;
+        margin: auto;
     }
 }
