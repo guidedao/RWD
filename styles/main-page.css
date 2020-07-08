@@ -149,6 +149,7 @@ body {
 
 .aside__blockquote {
     margin: 0 1.5em;
+    font-style: italic;
 }
 
 .aside__author {
