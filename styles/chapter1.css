@@ -4,8 +4,6 @@
 
 @import url(common.css);
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
-
 html {
   width: 100vw;
   height: 100vh;
@@ -39,8 +37,9 @@ body {
   letter-spacing: 0.2em;
   line-height: 1;
   color: white;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 500;
 }
 a {
   text-decoration: none;
@@ -166,6 +165,7 @@ small {
 }
 .names {
   text-align: right;
+  white-space: nowrap;
 }
 .footer {
   background-color: black;
