@@ -1,3 +1,5 @@
+@import url(footer.css);
+
 html {
     font-size: 1em;
     font-size: calc(1em + (2 - 1) * ((100vw - 20em) / (100 - 20)));
