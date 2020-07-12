@@ -30,7 +30,7 @@ body {
 }
 
 .header__title {
-    font-family: "MinionPro_bold";
+    font-family: "MinionPro_medium";
     font-size: 2.5em;
     font-size: calc(2.25em + (11.25 - 2.25) * ((100vw - 20em) / (100 - 20)));
     font-weight: normal;
