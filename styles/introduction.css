@@ -1,0 +1,93 @@
+@import url(footer.css);
+
+.header-main {
+    background-color: rgb(95, 121, 149);
+    padding: 1em;
+
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+}
+
+.header-main__wrap {
+    display: block;
+    margin: 0 auto;
+    max-width: 28em;
+}
+
+.header-main__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+}
+
+.introduction__title {
+    font-family: "MinionPro_medium";
+    font-size: 2.2em;
+    font-size: calc(2.2em + (11.25 - 2.2) * ((100vw - 20em) / (100 - 20)));
+    letter-spacing: 0.025em;
+}
+
+.introduction__title::after {
+    content: "";
+    width: 100%;
+    height: 0.25em;
+    background: rgba(95, 121, 149, 0.5);
+    display: block;
+    margin-top: 100px;
+
+}
+
+.introduction__wrap {
+    display: block;
+    margin: 0 auto;
+    max-width: 28em;
+    padding: 1em;
+}
+
+.introduction__block p {
+    margin: 40px 0;
+}
+
+.introduction__main-text::first-line {
+    text-align: justify;
+    font-variant: small-caps;
+    font-size: 1.4em;
+    line-height: 1.25;
+    letter-spacing: 0.1em;
+}
+
+.introduction__italic {
+    font-family: "MinionPro_medium_it";
+}
+
+.introduction__cite {
+    position: relative;
+}
+
+.introduction__quote {
+    margin: 1.3em;
+}
+
+.introduction__cite::before {
+    content: "‘‘";
+    position: absolute;
+    top: -0.35em;
+    left: -0.45em;
+    font-size: 4em;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.introduction__cite::after {
+    content: "’’";
+    position: absolute;
+    font-size: 4em;
+    color: rgba(0, 0, 0, 0.25);
+    bottom: -1.05em;
+}
+
+@media (max-width: 40em) {
+    .introduction__title::after {
+        margin-top: 50px;
+    }
+}

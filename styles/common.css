@@ -65,3 +65,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+@media (min-width: 70em) {
+	body {
+		line-height: 1.75;
+	}
+}
