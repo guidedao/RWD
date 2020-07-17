@@ -1,7 +1,10 @@
 @import url(chapter1.css);
 
-.ARPANET {
+.small-caps {
 text-decoration: none;
 font-family: inherit;
 font-variant: all-small-caps;
+}
+.dotted {
+    list-style-type: disc;
 }
