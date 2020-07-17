@@ -7,6 +7,7 @@ font-variant: all-small-caps;
 }
 .dotted {
     list-style-type: disc;
+    margin-left: 1em;;
 }
 .part-six, .part-seven, .part-eight, .part-nine {
     line-height: 1.65;
