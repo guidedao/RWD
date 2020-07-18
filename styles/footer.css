@@ -9,7 +9,7 @@ a {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding: 1em;
+    padding: 1.1em;
     font-family: "MinionPro_semibold", sans-serif;
   }
   .footer-container {
@@ -30,4 +30,10 @@ a {
   .red:hover {
     color: white;
     background-color: rgba(204,0,0,0.9);
+  }
+  .footer .italic {
+    font-style: italic;
+  }
+  .license {
+    font-size: smaller;
   }
