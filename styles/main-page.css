@@ -82,7 +82,7 @@ body {
     font-family: "MinionPro_medium";
     font-weight: normal;
     font-size: 1.8em;
-    font-size: calc(1.8em + (2 - 1.8) * ((100vw - 20em) / (100 - 20)));
+    font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
     margin: 2.5em 0 0;
 }
 
@@ -96,14 +96,15 @@ body {
     font-size: 1.5em;
     font-variant: small-caps;
     letter-spacing: 0.1em;
+    line-height: 1.2em;
 }
 
 .audio-title {
     font-family: "MinionPro_medium";
     font-weight: normal;
     font-size: 1.5em;
-    font-size: calc(1.5em + (2 - 1.5) * ((100vw - 20em) / (100 - 20)));
-    margin: 2.5em 0 0;
+    font-size: calc( 1.25em + (3.75 - 1.25) * ( (100vw - 20em) / ( 100 - 20) ));
+    margin: 2em 0 0;
 }
 
 .audio-paragraph {
@@ -121,12 +122,14 @@ body {
     font-weight: normal;
     font-family: "MinionPro_medium";
     font-size: 1.5em;
-    font-size: calc(1.5em + (2 - 1.5) * ((100vw - 20em) / (100 - 20)));
+    font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
+    margin: 2em 0 0;
 }
 
 .aside__cite {
     position: relative;
     font-family: "MinionPro_regular";
+    line-height: 1.65;
 }
 
 .aside__cite::before {
@@ -203,7 +206,7 @@ body {
     }
 }
 
-@media (max-width: 30em) {
+@media (max-width: 40em) {
     .aside__block {
         flex-direction: column;
     }
