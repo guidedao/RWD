@@ -20,12 +20,16 @@
   justify-content: space-between;
   font-style: italic;
   align-items: center;
+  line-height: 1.6em;
 }
 .content-p{
   text-align: right;
 }
-.chapter, .author{
+.chapter {
   font-size: 0.8em;
+  font-style: normal;
+}
+.author {
   font-style: normal;
 }
 .chapter{
@@ -33,9 +37,13 @@
   font-variant: small-caps;
   letter-spacing: 0.3em;
   white-space: nowrap;
+  line-height: 1.6em;
 }
 .content-link:hover{
   background-color: rgba(204,0,0,0.9);
   color: white;
   transition-duration: 0.25s;
+}
+li:last-child .content-link {
+  border-bottom: none;
 }
