@@ -163,6 +163,7 @@ small {
 }
 .names {
   text-align: right;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 320px) {
