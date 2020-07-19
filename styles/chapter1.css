@@ -135,8 +135,8 @@ blockquote p:first-child::before {
 }
 blockquote p:last-child::after {
   content: '’’';
-  vertical-align: -0.5em;
-  margin-left: 0.1em;
+  vertical-align: -0.55em;
+  margin-left: 0.12em;
 }
 small {
   font-size: inherit;
