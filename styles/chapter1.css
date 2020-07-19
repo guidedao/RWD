@@ -128,17 +128,15 @@ blockquote p:first-child::before, blockquote p:last-child::after {
   font-size: 4em;
   line-height: 0.6;
   color: rgba(0,0,0,0.25);
-  vertical-align: -0.15em;
 }
 blockquote p:first-child::before {
-  content: '«';
-  top: -0.125em;
-  left: -0.5em;
-  margin-right: 0.05em;
+  content: '‘‘';
+  vertical-align: -0.30em;
 }
 blockquote p:last-child::after {
-  content: '»';
-  margin-left: 0.05em;
+  content: '’’';
+  vertical-align: -0.5em;
+  margin-left: 0.1em;
 }
 small {
   font-size: inherit;
