@@ -1,274 +1,142 @@
-@charset "UTF-8";
-
-@import url(normalize.css);
-
-* {
+/*html {
+    width: 100vw;
+    height: 100vh;
+}*/
+*{
   box-sizing: border-box;
+  min-width: min-content;
 }
-
-/*font-size: calc(
-    [minimum size] + ([maximum size] - [minimum size]) *
-      (
-        (100vw - [minimum viewport width]) /
-          ([maximum viewport width] - [minimum viewport width])
-      )
-  );
-  Сразу скажу, что я это подсмотрел в css файле от первой главы, но поизучав формулу в принципе ее понял.
-  */
-
-html {
-  font-size: calc(1em + (2 - 1) * ((100vw - 20em) / (100 - 20)));
-}
-
 body {
   line-height: 1.75;
-  font-family: "Roman-old";
 }
-
-a {
-  text-decoration: none;
-  transition: color 0.25s, background-color 0.25s;
-  color: rgba(204, 0, 0, 0.9);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* шапка */
-
-header {
-  background-color: #5f7995;
-  color: white;
+.header{
+  min-width: 28em;
+  background-color: rgba(95,121,149,1);
+  display: flex;
   padding: 1em;
-  font-family: "Bold";
+  margin-left: auto;
+  margin-right: auto;
 }
-
-header > a {
-  text-decoration: none;
+.header_name{
+  display: block;
+  max-width: 28em;
+  height: 0.8em;
+  font-family: 'Montserrat', sans-serif;/*Этого шрифта нет в fonts*/
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  line-height: 0.25;
-  max-width: 28em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-header a:link,
-header a:visited,
-header a:hover,
-header a:focus {
-  color: inherit;
-  background-color: inherit;
-}
-
-/* заголовки h1, h2 */
-
-h1 {
-  font-size: calc(2.5em + (6 - 1) * ((100vw - 20em) / (100 - 20)));
-  font-weight: normal;
   line-height: 1;
-  margin: 0;
+  color: white;
 }
-
-h2 {
-  font-size: calc(1.2em + (3 - 1) * ((100vw - 20em) / (100 - 20)));
-  font-weight: normal;
-  margin: 6rem 0 0;
-}
-
-/* main */
-
-main {
-  display: block;
-  max-width: 28em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
-}
-
-main h1 {
-  border-bottom: 0.25em solid rgba(95, 121, 149, 0.5);
-  letter-spacing: 0.025em;
-}
-
-main h1 > span {
-  display: block;
-  text-transform: lowercase;
-  letter-spacing: 0.3em;
-  font-variant: small-caps;
-  font-size: 0.5em;
-  padding-bottom: 1em;
-}
-
-p {
-  margin: 2em 0;
-}
-
-figcaption {
-  font-size: 0.7em;
-}
-
-.first-line-bold {
-  font-size: 1.75em;
-  letter-spacing: 0.1em;
-  font-variant: small-caps;
-  font-family: "Semi-bold";
-}
-
-i,
-em,
-cite,
-blockquote {
-  font-style: italic;
-}
-
-abbr,
-.code-small-caps {
-  font-variant: all-small-caps;
+a {
   text-decoration: none;
-  font-family: inherit;
 }
-
-/* оформление цитат, получилось как получилось )) */
-
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  line-height: 0.5;
-  font-size: 2em;
-}
-
-blockquote:after {
-  color: #ccc;
-  content: close-quote;
-  line-height: 0.5;
-  font-size: 2em;
-}
-
-blockquote p {
-  display: inline;
-}
-
-ul,
-ol {
-  margin: 2em 0;
-  padding: 0;
-}
-
-li {
-  margin: 1em;
-  padding: 0;
-}
-
-/* раздел references / aside, здесь хорошо сработал flex-container */
-
-aside li {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  text-align: right;
-}
-
-aside li a {
-  text-align: left;
-}
-
-/* раздел навигации */
-
-nav {
-  display: block;
-  text-align: center;
-}
-
-.nav-border {
-  border-top: 1px solid rgba(204, 0, 0, 0.9);
-  border-bottom: 1px solid rgba(204, 0, 0, 0.9);
-}
-
-cite {
-  font-size: 0.9em;
-}
-
-.nav-border cite {
-  font-style: normal;
-}
-
-.nav-border cite span {
-  display: block;
-}
-
-nav li cite {
+.main {
+  /*display: block;*/
   max-width: 28em;
-  display: flex;
-  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  font-style: italic;
-  align-items: baseline;
-  font-size: 0.9em;
+  padding: 1em;
+  /*font-family: "MinionPro_medium", sans-serif;
+  line-height: 1.65; Прописывается в медиазапросе*/
 }
-
-nav li:not(:last-child) {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+.chapter-name {
+  letter-spacing: 0.025em;
+  min-height: 2em;
+  border-bottom: 0.25em solid rgba(95,121,149,0.5);
+  /*font-size: 2.25em;*/
+  font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20) ));
 }
-
-nav cite span {
+.chapter-three {
+  display: block;
+  font-size: 0.5em;
+  text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 0.3em;
-  font-size: 0.7em;
-  font-style: normal;
+  margin-bottom: 1em;
+  /*font-size: calc( 1em + (7 - 1) * ( (100vw - 20em) / ( 100 - 20) ));*/
 }
-
-.italic {
-  font-style: italic;
-  font-variant: normal;
-  font-size: 0.9em;
-  letter-spacing: normal;
+.text{ 
+  font-size: calc( 1.5 + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
+  /*letter-spacing: 0.1em;*/
+  line-height: 1.75;
+  /*text-align: justify;*/
+  margin: 2em 0;
 }
-
-.non-italic {
-  font-style: normal;
-  font-variant: normal;
-  font-size: 0.9em;
-  letter-spacing: normal;
+main > p:first-of-type::first-line {
+  font-variant: small-caps;
+  font-size: 1.5em;
+  /*font-size: calc( 1.5 + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));*/
+  line-height: 1.25;
+  letter-spacing: 0.1em;
+  text-align: justify;
 }
-
-nav li,
-nav ol {
-  display: block;
-  margin: 0;
+/*@media all and (min-width: 100em) {
+  main > p:first-of-type::first-line {
+      font-size: 2.25em; /* 72px @ root em of 2.5 (72/40) 
+  }
 }
-
-nav a {
-  display: block;
-  padding: 1em;
-}
-
-/* подвал сайта */
-
-footer {
-  display: block;
-  background-color: black;
-  color: white;
-  padding: 1em;
-}
-
-footer p {
+main > p:first-of-type cite {
+  white-space: pre;
+}*/
+.img-container {
   max-width: 28em;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2em -1em;
+  /*align-items:flex-start;*/
+  /*margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;*/
+}
+.img {
+  display: block;
+  border: none;
+  width: 100%;
+}
+.img-caption {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  /*font-size: 0.8125em;*/
+  font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320) ));
+  margin: 1em;
+}
+.sub-title {
+  /*font-size: 1.5em;*/
+  font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
+  line-height: 1.125;
+  margin-top: 6rem;
 }
 
-footer a {
-  color: rgba(255, 51, 51, 0.9);
+@media all and (min-width: 30em) {
+  body {
+      line-height: 1.55;
+  }
 }
-
-a:hover,
-a:focus {
-  background-color: rgba(204, 0, 0, 0.9);
-  border-color: rgba(204, 0, 0, 0.9);
-  color: white;
+@media all and (min-width: 40em) {
+  body {
+      line-height: 1.6;
+  }
+  .img {
+    border: none;
+    width: 49%;
+  }
+}
+@media all and (min-width: 50em) {
+  body {
+      line-height: 1.65;
+  }
+}
+@media all and (min-width: 60em) {
+  body {
+      line-height: 1.7;
+  }
+}
+@media all and (min-width: 70em) {
+  body {
+      line-height: 1.75;
+  }
 }
