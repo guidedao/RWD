@@ -102,7 +102,7 @@ ul {
   line-height: 1.65;
   font-size: calc( 0.7em + (1.7 - 0.7) * ( (100vw - 20em) / ( 100 - 20) ));
 }
-.first:first-letter {
+.start:first-letter {
   font-size: calc(20px + (50 - 20) * ( (100vw - 320px) / (1904 - 320) ));
   font-weight: normal;  
 }
@@ -132,7 +132,7 @@ blockquote p:first-child::before, blockquote p:last-child::after {
 }
 blockquote p:first-child::before {
   content: '‘‘';
-  vertical-align: -0.30em;
+  vertical-align: top;
 }
 blockquote p:last-child::after {
   content: '’’';

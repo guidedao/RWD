@@ -24,5 +24,6 @@ font-variant: all-small-caps;
 }
 .big-letter {
     font-size: calc(20px + (60 - 20) * ( (100vw - 320px) / (1904 - 320) ));
+    font-weight: normal;
 }
   /*add small-caps and italics, check styles and ul dotts to be in-order*/
