@@ -102,8 +102,9 @@ ul {
   line-height: 1.65;
   font-size: calc( 0.7em + (1.7 - 0.7) * ( (100vw - 20em) / ( 100 - 20) ));
 }
-.big-letter {
+.start:first-letter {
   font-size: calc(20px + (50 - 20) * ( (100vw - 320px) / (1904 - 320) ));
+  font-weight: normal;  
 }
 .img-container {
   display: flex;
@@ -128,17 +129,15 @@ blockquote p:first-child::before, blockquote p:last-child::after {
   font-size: 4em;
   line-height: 0.6;
   color: rgba(0,0,0,0.25);
-  vertical-align: -0.15em;
 }
 blockquote p:first-child::before {
-  content: '«';
-  top: -0.125em;
-  left: -0.5em;
-  margin-right: 0.05em;
+  content: '‘‘';
+  vertical-align: top;
 }
 blockquote p:last-child::after {
-  content: '»';
-  margin-left: 0.05em;
+  content: '’’';
+  vertical-align: -0.55em;
+  margin-left: 0.12em;
 }
 small {
   font-size: inherit;
@@ -165,6 +164,7 @@ small {
 }
 .names {
   text-align: right;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 320px) {
