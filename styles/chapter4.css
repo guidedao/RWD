@@ -19,7 +19,8 @@ font-variant: all-small-caps;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.2em;
-    line-height: 1.65;
+    line-height: 1.6em;
+    word-spacing: 1.3em;
     font-size: calc( 0.8em + (1.9 - 0.8) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 .big-letter {
