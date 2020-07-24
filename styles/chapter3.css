@@ -6,19 +6,18 @@ body {
   background-color: rgba(95,121,149,1);
   display: flex;
   padding: 1em;
-  margin-left: auto;
-  margin-right: auto;
 }
 .header_name{
   display: block;
-  max-width: 28em;
-  height: 0.8em;
+  min-width: 28em;
   font-family: 'Montserrat', sans-serif;/*Этого шрифта нет в fonts*/
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   line-height: 1;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 a {
   text-decoration: none;
