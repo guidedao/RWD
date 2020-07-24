@@ -46,19 +46,19 @@ body {
     margin: 6rem 0 0;
 }
 
-.red-link {
+.common-link {
     text-decoration: none;
     color: rgba(204, 0, 0, 0.9);
     transition-duration: 0.3s;
     transition-property: color, background-color;
 }
 
-.red-link:hover {
+.common-link:hover {
     background-color: rgba(204, 0, 0, 0.9);
     color: white;
 }
 
-.red-link > span {
+.common-link > span {
     font-variant: all-small-caps;
 }
 
