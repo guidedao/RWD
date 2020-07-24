@@ -1,11 +1,3 @@
-/*html {
-    width: 100vw;
-    height: 100vh;
-}*/
-*{
-  box-sizing: border-box;
-  min-width: min-content;
-}
 body {
   line-height: 1.75;
 }
@@ -82,8 +74,8 @@ main > p:first-of-type cite {
 .img-container {
   max-width: 28em;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  /*flex-wrap: wrap;
+  justify-content: center;*/
   align-items: flex-start;
   margin: 2em -1em;
   /*align-items:flex-start;*/
@@ -93,7 +85,7 @@ main > p:first-of-type cite {
   margin-inline-end: 40px;*/
 }
 .img {
-  display: block;
+  /*display: block;*/
   border: none;
   width: 100%;
 }
