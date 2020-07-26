@@ -19,10 +19,11 @@
   .chapter-no {
     display: block;
     font-weight: lighter;
-    font-size: 0.8em;
-    letter-spacing: 0.08em;
-    text-transform: lowercase;
+    font-size: 0.6em;
+    text-transform: uppercase;
     margin: auto;
+    font-style: normal;
+    letter-spacing: 0.3em;
   }
   .line {
     max-width: 28em;

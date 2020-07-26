@@ -18,10 +18,12 @@ font-variant: all-small-caps;
 .first.text::first-line {
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 0.2em;
-    line-height: 1.6em;
     word-spacing: 1.3em;
-    font-size: calc( 0.8em + (1.9 - 0.8) * ( (100vw - 20em) / ( 100 - 20) ));
+    font-variant: small-caps;
+    font-size: 1.2em;
+    line-height: 1.25;
+    letter-spacing: 0.1em;
+    text-align: justify;
 }
 .big-letter {
     font-size: calc(20px + (60 - 20) * ( (100vw - 320px) / (1904 - 320) ));
