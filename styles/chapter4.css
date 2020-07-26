@@ -1,0 +1,32 @@
+@import url(chapter1.css);
+
+.small-caps {
+text-decoration: none;
+font-family: inherit;
+font-variant: all-small-caps;
+}
+.dotted {
+    list-style-type: disc;
+}
+.dotted .text {
+    margin: 1em;
+    padding: 0;
+}
+.part-six, .part-seven, .part-eight, .part-nine {
+    line-height: 1.65;
+}
+.first.text::first-line {
+    text-transform: uppercase;
+    font-weight: bold;
+    word-spacing: 1.3em;
+    font-variant: small-caps;
+    font-size: 1.2em;
+    line-height: 1.25;
+    letter-spacing: 0.1em;
+    text-align: justify;
+}
+.big-letter {
+    font-size: calc(20px + (60 - 20) * ( (100vw - 320px) / (1904 - 320) ));
+    font-weight: normal;
+}
+  /*add small-caps and italics, check styles and ul dotts to be in-order*/
