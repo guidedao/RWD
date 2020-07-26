@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 @import url(normalize.css);
-
 @import url(common.css);
+@import url(content.css);
+@import url(footer.css);
 
 html {
   width: 100vw;
@@ -22,25 +23,9 @@ body {
   font-style: italic;
   font-weight: normal;
 }
-.header {
-	background-color: rgba(95,121,149,1);
-}
-.design {
-  display: flex;
-  max-width: 28em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
-}
-.page-name {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  line-height: 1;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
+
+
+
 a {
   text-decoration: none;
   color: inherit;
@@ -61,13 +46,15 @@ a {
   margin-right: auto;
   min-height: 2em;
   line-height: 1;
+  font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 .chapter-one {
   display: block;
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-variant: small-caps;
   letter-spacing: 0.3em;
-  font-size: calc( 1em + (7 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
+  font-size: 0.4em;
+  line-height: 1.5em;
   margin-bottom: 1em;
 }
 .foundations {
@@ -78,6 +65,7 @@ a {
   background-color: rgba(95,121,149,0.5);
   min-height: 3vw;
   max-width: 28em;
+  margin-top: -20px;
 }
 .sub-title {
   font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
@@ -102,8 +90,9 @@ ul {
   line-height: 1.65;
   font-size: calc( 0.7em + (1.7 - 0.7) * ( (100vw - 20em) / ( 100 - 20) ));
 }
-.big-letter {
+.start:first-letter {
   font-size: calc(20px + (50 - 20) * ( (100vw - 320px) / (1904 - 320) ));
+  font-weight: normal;  
 }
 .img-container {
   display: flex;
@@ -126,25 +115,23 @@ img {
 blockquote p:first-child::before, blockquote p:last-child::after {
   font-style: normal;
   font-size: 4em;
-  line-height: 1;
+  line-height: 0.6;
   color: rgba(0,0,0,0.25);
-  vertical-align: -0.15em;
 }
 blockquote p:first-child::before {
-  content: '«';
-  top: -0.125em;
-  left: -0.5em;
-  margin-right: 0.05em;
+  content: '‘‘';
+  vertical-align: top;
 }
 blockquote p:last-child::after {
-  content: '»';
-  margin-left: 0.05em;
+  content: '’’';
+  vertical-align: -0.55em;
+  margin-left: 0.12em;
 }
 small {
   font-size: inherit;
   display: block
 }
-.part-six {
+.last-part {
   margin: 2em 0;
 }
 .references {
@@ -166,34 +153,6 @@ small {
 .names {
   text-align: right;
   white-space: nowrap;
-}
-.footer {
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  padding: 1em;
-  font-family: "MinionPro_semibold", sans-serif;
-}
-.footer-container {
-  max-width: 28em;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.65;
-  font-weight: normal;
-  color: white;
-}
-.footer p {
-  margin: 2em 0;
-}
-.red {
-  color: rgba(255,51,51,0.9);
-  transition: 0.25s;
-}
-.red:hover {
-  color: white;
-  background-color: rgba(204,0,0,0.9);
 }
 
 @media screen and (min-width: 320px) {

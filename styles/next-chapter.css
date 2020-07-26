@@ -10,7 +10,7 @@
     line-height: 1.6;
     font-family: inherit;
     color: rgba(204,0,0,0.9);
-    transition: 0.25s;
+    transition: color 0.25s, background-color 0.25s;
   }
   .next-chapter:hover {
     color: white;
@@ -19,10 +19,11 @@
   .chapter-no {
     display: block;
     font-weight: lighter;
-    font-size: 0.8em;
-    letter-spacing: 0.08em;
-    text-transform: lowercase;
+    font-size: 0.6em;
+    text-transform: uppercase;
     margin: auto;
+    font-style: normal;
+    letter-spacing: 0.3em;
   }
   .line {
     max-width: 28em;
