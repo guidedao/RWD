@@ -1,4 +1,5 @@
 @import url(footer.css);
+@import url(common.css);
 
 .header-main {
     background-color: rgb(95, 121, 149);
@@ -24,8 +25,9 @@
 .introduction__title {
     font-family: "MinionPro_medium";
     font-size: 2.2em;
-    font-size: calc(2.2em + (11.25 - 2.2) * ((100vw - 20em) / (100 - 20)));
+    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20) ));
     letter-spacing: 0.025em;
+    line-height: 1em;
 }
 
 .introduction__title::after {
@@ -46,7 +48,7 @@
 }
 
 .introduction__block p {
-    margin: 40px 0;
+    margin: 2em 0;
 }
 
 .introduction__main-text::first-line {

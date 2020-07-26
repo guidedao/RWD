@@ -1,4 +1,5 @@
 @import url(chapter1.css);
+@import url(common.css);
 
 .small-caps {
 text-decoration: none;
