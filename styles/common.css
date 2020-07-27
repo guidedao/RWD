@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
+@import url(next-chapter.css);
+
 /* Файл для общих стилей, которые 
 нужны на более чем одной странице  */
 
@@ -66,6 +68,22 @@ body {
 }
 .header {
 	    background-color: rgba(95,121,149,1);
+}
+
+.links {
+  text-align: left;
+  color: rgba(204,0,0,0.9);
+  transition: color 0.25s, background-color 0.25s;
+}
+.links:hover {
+  color: white;
+  background-color: rgba(204,0,0,0.9);
+}
+
+
+.names {
+  text-align: right;
+  white-space: nowrap;
 }
 .design {
     display: flex;
@@ -175,4 +193,52 @@ body ::selection {
     line-height: 1.25;
     letter-spacing: 0.3em;
     text-align: justify;
+}
+
+.sub-title {
+  font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
+  font-weight: normal;
+  margin-top: 6rem;
+  line-height: 1.125;
+}
+
+.last-part {
+  margin: 2em 0;
+}
+.references {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 1em;
+  line-height: 1.65;
+}
+
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em -1em;
+}
+picture {
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+}
+main {
+    display: block;
+    max-width: 28em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+@media (min-width: 40em) {
+    figure {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    figcaption {
+        flex-basis: 50%;
+    }
 }

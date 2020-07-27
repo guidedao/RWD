@@ -1,24 +1,10 @@
+@import url(chapter1.css);
+@import url(common.css);
+
 body {
   line-height: 1.75;
 }
-.header{
-  min-width: 28em;
-  background-color: rgba(95,121,149,1);
-  display: flex;
-  padding: 1em;
-}
-.header_name{
-  display: block;
-  min-width: 28em;
-  font-family: 'Montserrat', sans-serif;/*Этого шрифта нет в fonts*/
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  line-height: 1;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 a {
   text-decoration: none;
 }
@@ -35,68 +21,52 @@ a {
   letter-spacing: 0.025em;
   min-height: 2em;
   border-bottom: 0.25em solid rgba(95,121,149,0.5);
-  /*font-size: 2.25em;*/
   font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 .chapter-three {
   display: block;
-  font-size: 0.5em;
-  text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 0.3em;
   margin-bottom: 1em;
-  /*font-size: calc( 1em + (7 - 1) * ( (100vw - 20em) / ( 100 - 20) ));*/
+  text-transform: uppercase;
+  font-variant: small-caps;
+  font-size: 0.4em;
+  line-height: 1.5em;
 }
 .text{ 
   font-size: calc( 1.5 + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
-  /*letter-spacing: 0.1em;*/
   line-height: 1.75;
-  /*text-align: justify;*/
   margin: 2em 0;
 }
 main > p:first-of-type::first-line {
   font-variant: small-caps;
   font-size: 1.5em;
-  /*font-size: calc( 1.5 + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));*/
   line-height: 1.25;
   letter-spacing: 0.1em;
   text-align: justify;
 }
-/*@media all and (min-width: 100em) {
-  main > p:first-of-type::first-line {
-      font-size: 2.25em; /* 72px @ root em of 2.5 (72/40) 
-  }
-}
-main > p:first-of-type cite {
-  white-space: pre;
-}*/
-.img-container {
-  max-width: 28em;
-  display: flex;
-  /*flex-wrap: wrap;
-  justify-content: center;*/
-  align-items: flex-start;
-  margin: 2em -1em;
-  /*align-items:flex-start;*/
-  /*margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;*/
+.reversed .img-caption {
+  text-align: right;
 }
 .img {
-  /*display: block;*/
-  border: none;
   width: 100%;
 }
 .img-caption {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
-  /*font-size: 0.8125em;*/
-  font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320) ));
+  font-size: calc( 6px + (26 - 6) * ( (100vw - 320px) / ( 1600 - 320) ));
   margin: 1em;
+  line-height: normal;
+    line-height: 1;
 }
+
+@media (min-width: 40em) {
+  .img-caption {
+    flex-basis: 50%;
+}
+}
+
 .sub-title {
-  /*font-size: 1.5em;*/
   font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
   line-height: 1.125;
   margin-top: 6rem;
@@ -110,10 +80,6 @@ main > p:first-of-type cite {
 @media all and (min-width: 40em) {
   body {
       line-height: 1.6;
-  }
-  .img {
-    border: none;
-    width: 49%;
   }
 }
 @media all and (min-width: 50em) {

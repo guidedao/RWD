@@ -94,11 +94,7 @@ ul {
   font-size: calc(20px + (50 - 20) * ( (100vw - 320px) / (1904 - 320) ));
   font-weight: normal;  
 }
-.img-container {
-  display: flex;
-  margin: 2em -1em;
-  flex-direction: column;
-}
+
 img {
   max-width: 100%;
   object-fit: cover;
@@ -155,20 +151,13 @@ small {
   white-space: nowrap;
 }
 
-@media screen and (min-width: 320px) {
-  .img-container {
-    margin: 2em 0;
-  }
-}
+
 @media screen and (min-width: 610px) {
   figure {
     display: flex;
     justify-content: space-around;
   }
-  .img-container {
-    margin: 2em -1em;
-    flex-direction: row;
-    }
+
   .img-container.three, .img-container.six {
   flex-direction: row-reverse;
   }
