@@ -1,0 +1,23 @@
+@import url(chapter1.css);
+@import url(common.css);
+
+.first.text::first-line {
+    text-transform: uppercase;
+    font-weight: bold;
+    word-spacing: 3em;
+    font-variant: small-caps;
+    font-size: 1.2em;
+    line-height: 1.25;
+    letter-spacing: 0.1em;
+    text-align: justify;
+}
+.strong {
+    font-weight: bold;
+}
+ol .text {
+    margin: 1em 0;
+    padding: 0;
+}
+.after-quote {
+    margin-top: 0;
+}
