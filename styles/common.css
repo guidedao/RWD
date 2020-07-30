@@ -25,8 +25,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -61,13 +59,15 @@ html{
 }
 body {
 	font-family:  "MinionPro_medium", sans-serif;
-  box-sizing: border-box;
+  box-sizing: content-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 .header {
-	    background-color: rgba(95,121,149,1);
+    background-color: rgba(95,121,149,1);
+    padding: 1em;
+    display: block;
 }
 
 .links {
@@ -90,7 +90,6 @@ body {
     max-width: 28em;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
 }
 .page-name {
     text-transform: uppercase;
@@ -99,6 +98,7 @@ body {
     color: white;
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
+    font-size: calc( 1em + (2 - 1) * ( (100vw - 20em) / ( 140) ));
 }
 
 @media (min-width: 70em) {
@@ -241,4 +241,12 @@ main {
     figcaption {
         flex-basis: 50%;
     }
+.main {
+  display: block;
+  max-width: 28em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  font-family: "MinionPro_medium", sans-serif;
+  line-height: 1.65;
 }
