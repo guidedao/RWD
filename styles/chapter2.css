@@ -1,21 +1,18 @@
 @charset "UTF-8";
 
 @import url(normalize.css);
-@import url(common.css);
 @import url(content.css);
 @import url(footer.css);
 
 html {
     width: 100vw;
     height: 100vh;
-    /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
     font-size: calc(1em + (2 - 1) * ((100vw - 20em) / (100 - 20)));
 }
-
+/* 
 * {
-    box-sizing: border-box;
     min-width: min-content;
-}
+} */
 
 body {
     line-height: 1.65;
@@ -33,15 +30,6 @@ xmp {
     color: rgba(0, 0, 0, 0.75);
     font-size: 0.8em;
 }
-
-
-.chapter-two__wrap {
-    display: block;
-    margin: 0 auto;
-    max-width: 28em;
-    padding: 1em;
-}
-
 .chapter-two__num {
     display: block;
     text-transform: uppercase;
@@ -59,6 +47,7 @@ xmp {
     font-size: calc(2.25em + (11.25 - 2.25) * ((100vw - 20em) / (100 - 20)));
     letter-spacing: 0.025em;
     line-height: 1em;
+    font-weight: 100;
 }
 
 .chapter-two__name::after {
@@ -142,3 +131,9 @@ xmp {
         flex-direction: row;
     }
 }
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  border: none;
+} 
