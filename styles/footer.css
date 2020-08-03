@@ -3,6 +3,7 @@ a {
     color: inherit;
     background-color: inherit;
 }
+
 .footer {
     background-color: black;
     display: flex;
@@ -11,29 +12,35 @@ a {
     flex-direction: column;
     padding: 1.1em;
     font-family: "MinionPro_semibold", sans-serif;
-  }
-  .footer-container {
+}
+
+.footer-container {
     max-width: 28em;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.65;
     font-weight: normal;
     color: white;
-  }
-  .footer p {
+}
+
+.footer p {
     margin: 2em 0;
-  }
-  .red {
-    color: rgba(255,51,51,0.9);
+}
+
+.red {
+    color: rgba(255, 51, 51, 0.9);
     transition: color 0.25s, background-color 0.25s;
-  }
-  .red:hover {
+}
+
+.red:hover {
     color: white;
-    background-color: rgba(204,0,0,0.9);
-  }
-  .footer .italic {
+    background-color: rgba(204, 0, 0, 0.9);
+}
+
+.footer .italic {
     font-style: italic;
-  }
-  .license {
+}
+
+.license {
     font-size: smaller;
-  }
+}

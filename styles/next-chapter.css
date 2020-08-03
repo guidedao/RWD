@@ -1,19 +1,21 @@
 .next-chapter {
     display: flex;
     background-color: transparent;
-    border-top: 1px solid rgba(204,0,0,0.9);
-    border-bottom: 1px solid rgba(204,0,0,0.9);
+    border-top: 1px solid rgba(204, 0, 0, 0.9);
+    border-bottom: 1px solid rgba(204, 0, 0, 0.9);
     text-align: center;
     line-height: 1.6;
     font-family: inherit;
-    color: rgba(204,0,0,0.9);
+    color: rgba(204, 0, 0, 0.9);
     transition: color 0.25s, background-color 0.25s;
-  }
-  .next-chapter:hover {
+}
+
+.next-chapter:hover {
     color: white;
-    background-color: rgba(204,0,0,0.9);
-  }
-  .chapter-no {
+    background-color: rgba(204, 0, 0, 0.9);
+}
+
+.chapter-no {
     display: block;
     font-weight: lighter;
     font-size: 0.6em;
@@ -21,11 +23,11 @@
     margin: auto;
     font-style: normal;
     letter-spacing: 0.3em;
-  }
-  .line {
+}
+
+.line {
     max-width: 28em;
     letter-spacing: 0.05em;
     padding: 1em;
     margin: auto;
-  }
-  
+}
