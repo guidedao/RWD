@@ -66,7 +66,7 @@ body {
 }
 .header {
     background-color: rgba(95,121,149,1);
-    padding: 1em;
+    padding: 0.9em;
     display: block;
 }
 
@@ -98,7 +98,7 @@ body {
     color: white;
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
-    font-size: calc( 1em + (2 - 1) * ( (100vw - 20em) / ( 140) ));
+    font-size: calc( 1em + (2 - 1) * ( (100vw - 40em) / ( 200) ));
 }
 
 @media (min-width: 70em) {
