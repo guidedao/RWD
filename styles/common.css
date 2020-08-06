@@ -145,7 +145,7 @@ table {
 нужны на более чем одной странице*/
 
 html {
-    font-size: calc( 1em + (2 - 1) * ( (100vw - 20em) / ( 100 - 20)));
+    font-size: calc(1em + (2 - 1) * ((100vw - 20em) / (100 - 20)));
 }
 
 body {
@@ -192,7 +192,7 @@ body {
     color: white;
     font-family: 'FuturaMediumC', sans-serif;
     font-weight: 800;
-    font-size: calc( 1em + (2 - 1) * ( (100vw - 40em) / ( 200)));
+    font-size: calc(1em + (2 - 1) * ((100vw - 40em) / (200)));
     height: 0.8em;
 }
 
@@ -207,12 +207,14 @@ body {
         background-color: black;
         color: rgba(255, 255, 255, 0.9);
     }
+
     a:link,
     .links,
     .red,
     a:visited {
         color: white;
     }
+
     a:hover,
     body .content-link:hover,
     body main .common-link:hover,
@@ -221,24 +223,30 @@ body {
         border-color: rgba(95, 121, 149, 0.3);
         color: white;
     }
+
     body .next-chapter:hover {
         background-color: rgba(95, 121, 149, 0.2);
         color: white;
     }
+
     pre {
         color: white;
     }
+
     blockquote p:first-child::before,
     blockquote p:last-child::after {
         color: rgba(255, 255, 255, 0.30);
     }
+
     nav a[rel="next"],
     body .next-chapter {
         border-color: rgba(255, 255, 255, 0.7);
     }
+
     nav li:not(:last-child) {
         border-bottom-color: rgba(255, 255, 255, 0.2);
     }
+
     footer a:link,
     footer a:visited {
         color: white;
@@ -297,7 +305,7 @@ body ::selection {
 }
 
 .sub-title {
-    font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20)));
+    font-size: calc(1.5em + (4.5 - 1.5) * ((100vw - 20em) / (100 - 20)));
     font-weight: normal;
     margin-top: 6rem;
     line-height: 1.125;
@@ -343,6 +351,7 @@ main {
         flex-direction: row;
         align-items: flex-start;
     }
+
     figcaption {
         flex-basis: 50%;
     }
@@ -404,5 +413,16 @@ blockquote p:last-child::after {
 
 blockquote {
     margin: 2em;
+    padding: 0;
+}
+
+/* Для нумерованного списка */
+.num-list {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+.num-list li {
+    margin: 1em 0;
     padding: 0;
 }
