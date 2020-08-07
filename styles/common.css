@@ -160,6 +160,13 @@ body {
     background-color: rgba(95, 121, 149, 1);
     padding: 1em;
     display: block;
+    position: relative;
+}
+
+.header .logo {
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 .links {
