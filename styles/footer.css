@@ -12,6 +12,13 @@ a {
     flex-direction: column;
     padding: 1.1em;
     font-family: "MinionPro_semibold", sans-serif;
+    position: relative;
+}
+
+.footer-logo {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
 }
 
 .footer-container {
