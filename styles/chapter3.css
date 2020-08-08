@@ -1,0 +1,102 @@
+@import url(chapter1.css);
+body {
+    line-height: 1.75;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    max-width: 28em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.chapter-name {
+    letter-spacing: 0.025em;
+    min-height: 2em;
+    border-bottom: 0.25em solid rgba(95, 121, 149, 0.5);
+    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20)));
+}
+
+.chapter-three {
+    display: block;
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-size: 0.4em;
+    line-height: 1.5em;
+}
+
+.text {
+    font-size: calc( 1.5 + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20)));
+    line-height: 1.75;
+    margin: 2em 0;
+}
+
+main>p:first-of-type::first-line {
+    font-variant: small-caps;
+    font-size: 1.5em;
+    line-height: 1.25;
+    letter-spacing: 0.1em;
+    text-align: justify;
+}
+
+.img {
+    width: 100%;
+}
+
+.img-caption {
+    font-family: 'FuturaDemiC', sans-serif;
+    font-weight: 400;
+    font-size: calc( 6px + (26 - 6) * ( (100vw - 320px) / ( 1600 - 320)));
+    margin: 1em;
+    line-height: normal;
+    line-height: 1;
+}
+
+@media (min-width: 40em) {
+    .img-caption {
+        flex-basis: 50%;
+    }
+}
+
+.sub-title {
+    font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20)));
+    line-height: 1.125;
+    margin-top: 6rem;
+}
+
+@media all and (min-width: 30em) {
+    body {
+        line-height: 1.55;
+    }
+}
+
+@media all and (min-width: 40em) {
+    body {
+        line-height: 1.6;
+    }
+}
+
+@media all and (min-width: 50em) {
+    body {
+        line-height: 1.65;
+    }
+}
+
+@media all and (min-width: 60em) {
+    body {
+        line-height: 1.7;
+    }
+}
+
+@media all and (min-width: 70em) {
+    body {
+        line-height: 1.75;
+    }
+}
