@@ -209,50 +209,6 @@ body {
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: black;
-        color: rgba(255, 255, 255, 0.9);
-    }
-    a:link,
-    .links,
-    .red,
-    a:visited {
-        color: white;
-    }
-    a:hover,
-    body .content-link:hover,
-    body main .common-link:hover,
-    a:focus {
-        background-color: rgba(95, 121, 149, 0.2);
-        border-color: rgba(95, 121, 149, 0.3);
-        color: white;
-    }
-    body .next-chapter:hover {
-        background-color: rgba(95, 121, 149, 0.2);
-        color: white;
-    }
-    pre {
-        color: white;
-    }
-    blockquote p:first-child::before,
-    blockquote p:last-child::after {
-        color: rgba(255, 255, 255, 0.30);
-    }
-    nav a[rel="next"],
-    body .next-chapter {
-        border-color: rgba(255, 255, 255, 0.7);
-    }
-    nav li:not(:last-child) {
-        border-bottom-color: rgba(255, 255, 255, 0.2);
-    }
-    footer a:link,
-    footer a:visited {
-        color: white;
-        text-decoration: underline;
-    }
-}
-
 @media (min-width: 30em) {
     body {
         line-height: 1.55;
@@ -467,4 +423,59 @@ pre {
     color: rgba(0, 0, 0, 0.75);
     white-space: pre-wrap;
     margin: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    a:link,
+    .links,
+    .red,
+    a:visited {
+        color: white;
+    }
+    a:hover,
+    body .content-link:hover,
+    body main .common-link:hover,
+    a:focus {
+        background-color: rgba(95, 121, 149, 0.2);
+        border-color: rgba(95, 121, 149, 0.3);
+        color: white;
+    }
+    body .next-chapter:hover {
+        background-color: rgba(95, 121, 149, 0.2);
+        color: white;
+    }
+    pre {
+        color: white;
+    }
+    blockquote p:first-child::before,
+    blockquote p:last-child::after {
+        color: rgba(255, 255, 255, 0.30);
+    }
+    nav a[rel="next"],
+    body .next-chapter {
+        border-color: rgba(255, 255, 255, 0.7);
+    }
+    nav li:not(:last-child) {
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+    footer a:link,
+    footer a:visited {
+        color: white;
+        text-decoration: underline;
+    }
+    .content-link.inactive .chapter,
+    .content-link.inactive .content-p,
+    .content-link.inactive .content-p-left {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .content-link.inactive:hover {
+        background-color: transparent;
+    }
+    pre {
+        color: white;
+    }
 }
