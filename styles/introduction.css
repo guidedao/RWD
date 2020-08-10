@@ -1,9 +1,7 @@
 @import url(footer.css);
-
 .header-main {
     background-color: rgb(95, 121, 149);
     padding: 1em;
-
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 5px;
 }
@@ -24,14 +22,13 @@
 .introduction__title {
     font-family: "MinionPro_medium";
     font-size: 2.2em;
-    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20) ));
+    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20)));
     letter-spacing: 0.025em;
     line-height: 1em;
     font-weight: 100;
     min-height: 2em;
-    border-bottom: 0.25em solid rgba(95,121,149,0.5);
+    border-bottom: 0.25em solid rgba(95, 121, 149, 0.5);
 }
-
 
 .introduction__wrap {
     display: block;
@@ -42,6 +39,7 @@
 
 .introduction__block p {
     margin: 2em 0;
+    line-height: 1.5;
 }
 
 .introduction__main-text::first-line {

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/content.css">
     <link rel="stylesheet" href="styles/next-chapter.css">
     <link rel="stylesheet" href="styles/common.css">
-
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Глава 4</title>
 </head>
 
@@ -22,10 +22,9 @@
     <main class="main">
         <div class="main-countainer">
             <div class="chapter-name">
-                <span class="chapter-one">Глава 4:</span>
-                <span class="foundations">Языки</span>
+                <span class="chapter-number">Глава 4:</span>
+                <span class="chapter-title">Языки</span>
             </div>
-            <div class="stripe"></div>
             <ul class="part-one">
                 <li class="first text"><b class="big-letter">J</b>on <b class="big-letter">P</b>ostel was one of the engineers working on the <abbr class="small-caps">ARPANET</abbr>, the precursor to the internet. He wanted to make sure that the packets—or “datagrams”—being
                     shuttled around the network were delivered in the most efficient way. He came to realise that a lax approach to errors was crucial to effective packet switching.</li>
@@ -39,12 +38,11 @@
                     </figcaption>
                 </figure>
                 <li class="text">Печатный станок Гутенберга не был бы изобретен, не будь уже проделана работа по созданию винтового пресса, использовавшегося в виноделии. Технологии не возникают сами по себе, а несут отголоски прошлого. </li>
-                <blockquote class="italic text">
+                <blockquote class="italic">
                     <p>Be conservative in what you send; be liberal in what you accept.</p>
                 </blockquote>
                 <li class="text">If that sounds familiar, it’s because that’s the way that web browsers deal with <abbr class="small-caps">HTML</abbr> and <abbr class="small-caps">CSS</abbr>. Even if there are errors in the <abbr class="small-caps">HTML</abbr> or
-                    <abbr
-                        class="small-caps">CSS</abbr>, the browser will still attempt to process the information, skipping over any pieces that it can’t parse.</li>
+                    <abbr class="small-caps">CSS</abbr>, the browser will still attempt to process the information, skipping over any pieces that it can’t parse.</li>
             </ul>
             <ul class="part-two">
                 <h2 class="sub-title">Declaration</h2>
@@ -62,13 +60,14 @@
                 <ul class="part-three">
                     <h2 class="sub-title">Scripting</h2>
                     <li class="text">The idea of executing a program from within a web page is as old as the web itself. Here’s an early email to the www‐talk mailing list:</li>
-                    <blockquote class="italic text">
+                    <blockquote class="italic">
                         <p>I would like to know, whether anybody has extended <abbr class="small-caps">WWW</abbr> such, that it is possible to start arbitrary programs by hitting a button in a <abbr class="small-caps">WWW</abbr> browser.</p>
                     </blockquote>
                     <li class="text">Tim Berners‐Lee, creator of the World Wide Web, responded:</li>
-                    <blockquote class="italic text">
+                    <blockquote class="italic">
                         <p>Very good question. The problem is that of programming language. You need something really powerful, but at the same time ubiquitous. Remember a facet of the web is universal readership. There is no universal interpreted programming
-                            language.</p>
+                            language.
+                        </p>
                     </blockquote>
                     <li class="text">That was in 1992. The universal interpreted programming language finally arrived in 1996. It was written in ten days by a programmer at Netscape named Brendan Eich.</li>
                     <li class="text">The language went through a few name changes. First it was called Mocha. Then it was officially launched as LiveScript. Then the marketing department swept in and renamed it JavaScript, hoping that the name would ride the wave of hype
@@ -81,9 +80,8 @@
                     <li class="text">Swapping out images when someone hovers their cursor over a link might not seem like a sensible use of a brand new programming language, but back in the nineties there was no other way of creating hover effects.</li>
                     <li class="text">Before JavaScript came along, a form would have to be submitted to a web server before you could check to make sure that all the required fields were filled in, or that the information that was entered corresponded to an expected format.</li>
                     <li class="text">Both of those use cases still exist, but now there’s no need to reach for JavaScript. You can create rollover effects using the :hover pseudo‐class in <abbr class="small-caps">CSS</abbr>. You can validate form fields using the
-                        <abbr
-                            class="small-caps">REQUIRED</abbr> and <abbr class="small-caps">TYPE</abbr> attributes in
-                            <abbr class="small-caps">HTML</abbr>.</li>
+                        <abbr class="small-caps">REQUIRED</abbr> and <abbr class="small-caps">TYPE</abbr> attributes in
+                        <abbr class="small-caps">HTML</abbr>.</li>
                     <li class="text">That’s a pattern that repeats again and again: a solution is created in an imperative language and if it’s popular enough, it migrates to a declarative language over time. When a feature is available in a declarative language, not
                         only is it easier to write, it’s also more robust.</li>
                     <li class="text">The loose error‐handling of <abbr class="small-caps">HTML</abbr> and <abbr class="small-caps">CSS</abbr> means that many authoring mistakes or browser support issues are handled gracefully; the browser simply ignores what it doesn’t
@@ -93,12 +91,13 @@
                 <ul class="part-five">
                     <h2 class="sub-title">Responsibility</h2>
                     <li class="text">JavaScript gave web designers the power to create websites that were slicker, smoother, and more reactive. The same technology also gave web designers the power to create websites that were sluggish, unwieldy, and more difficult to
-                        use.</li>
+                        use.
+                    </li>
                     <li class="text">One of the earliest abuses of JavaScript came (unsurprisingly) from the advertising industry, a business whose very raison d’être is often at odds with the goals of people trying to achieve a task as quickly as possible. JavaScript
                         allows you to create new browser windows, something that previously could only be done by the user. A young developer named Ethan Zuckerman realised that he could spawn a new window with an advertisement in it. That allowed advertisers
                         to put their message in front of website visitors. Not only that, but JavaScript could be used to spawn multiple windows, some of them visible, some of them hidden behind the current window. It was a fiendish solution.</li>
                     <li class="text before-img">Twenty years later, Zuckerman wrote:</li>
-                    <blockquote class="italic text">
+                    <blockquote class="italic">
                         <p>I wrote the code to launch the window and run an ad in it. I’m sorry.</p>
                     </blockquote>
                     <li class="text">Pop‐up (and pop‐under) windows became so intolerable that browsers had to provide people with a means to block them.</li>
@@ -120,7 +119,7 @@
                     <li class="text">In the 1964 supreme court case Jacobellis versus Ohio, Justice Potter Stewart provided this definition of obscenity:</li>
                     <li class="text">The same could be said for Web <abbr class="small-caps">2.0</abbr>, or for the term “web app.” We can all point to examples of web apps, but it’s trickier to provide a definition for the term. Web apps allow people to create, edit,
                         and delete content. But these tasks were common long before web apps arrived. People could fill in forms and submit them to a web server for processing. Ajax removed the necessity for that round trip to the server.</li>
-                    <blockquote class="italic text">
+                    <blockquote class="italic">
                         <p>I know it when I see it.</p>
                     </blockquote>
                     <li class="text">Perhaps the definition of a web app requires some circular reasoning:</li>
@@ -162,7 +161,7 @@
                         interfering network operators, and unpredictable ad‐blocking software can torpedo the assumption that JavaScript will always be available.</li>
                     <li class="text">The problem is not with people deliberately disabling JavaScript in their browsers. Although that’s a use case worth considering, it’s not the most common cause of JavaScript errors. Stuart Langridge put together a list of all the
                         potential points of failure under the title Everyone has JavaScript, right?</li>
-                    <blockquote class="italic text">
+                    <blockquote class="italic">
                         <p>The user requests your web app. Has the page loaded yet? Did the <abbr class="small-caps">HTTP</abbr> request for the JavaScript succeed? Did the <abbr class="small-caps">HTTP</abbr> request for the JavaScript complete? Does the
                             corporate firewall block JavaScript? Does their ISP or mobile operator interfere with downloaded JavaScript? Have they switched off JavaScript? Do they have add‐ons or plug‐ins installed which inject script or alter the DOM
                             in ways you didn’t anticipate? Is the Content Delivery Network up? Does their browser support the JavaScript you’ve written?</p>
@@ -228,13 +227,13 @@
         </div>
     </main>
     <a class="next-chapter" href="chapter5">
-        <div class="line"><span class="chapter-no">Глава 5:</span>Layers</div>
+        <div class="line"><span class="chapter-no">Глава 5:</span>Слои</div>
     </a>
     <nav class="content-nav">
         <ol>
             <li>
-                <a class="content-link" href="introduction/">
-                    <p class="content-p-left">Предисловие</p>
+                <a class="content-link" href="introduction">
+                    <p class="content-p-left">Введение</p>
                 </a>
             </li>
             <li>
@@ -245,68 +244,85 @@
                 </a>
             </li>
             <li>
-                <a class="content-link" href="#">
+                <a class="content-link" href="chapter2">
                     <p class="content-p">
                         <span class="chapter">Глава 2</span>Материалы
                     </p>
                 </a>
             </li>
             <li>
-                <a class="content-link" href="#">
+                <a class="content-link" href="chapter3">
                     <p class="content-p">
-                        <span class="chapter">Глава 3</span>Визуальное представление
+                        <span class="chapter">Глава 3</span>Видение
                     </p>
                 </a>
             </li>
             <li>
-                <a class="content-link" href="#">
+                <div class="content-link inactive">
                     <p class="content-p">
-                        <span class="chapter">Глава 4</span>Языки
+                        <span class="chapter">Глава 4 <span class="release-date">(Выйдет в августе)</span></span>Языки
                     </p>
-                </a>
+                </div>
             </li>
             <li>
-                <a class="content-link" href="#">
+                <div class="content-link inactive">
                     <p class="content-p">
-                        <span class="chapter">Глава 5</span>Слои
+                        <span class="chapter">Глава 5 (ВЫЙДЕТ В сентябре)</span>Слои
                     </p>
-                </a>
+                </div>
             </li>
             <li>
-                <a class="content-link" href="#">
+                <div class="content-link inactive">
                     <p class="content-p">
-                        <span class="chapter">Глава 6</span>Шаги
+                        <span class="chapter">Глава 6 (ВЫЙДЕТ В сентябре)</span>Этапы
                     </p>
-                </a>
+                </div>
             </li>
             <li>
-                <a class="content-link" href="#">
+                <div class="content-link inactive">
                     <p class="content-p">
-                        <span class="chapter">Глава 7</span>Испытания
+                        <span class="chapter">Глава 7 (ВЫЙДЕТ В октябре)</span>Сложности
                     </p>
-                </a>
+                </div>
             </li>
             <li>
-                <a class="content-link" href="#">
-                    <p class="content-p">
-                        <span class="author">Об Авторе</span>
+                <div class="content-link inactive">
+                    <p class="content-p-left author">Об авторе (Выйдет в октябре)
                     </p>
-                </a>
+                </div>
             </li>
             <li>
-                <a class="content-link" href="#">
-                    <p class="content-p-left">Алфавитный указатель</p>
-                </a>
+                <div class="content-link inactive">
+                    <p class="content-p-left">Указатель (Выйдет в ноябре)</p>
+                </div>
             </li>
         </ol>
     </nav>
     <footer class="footer">
         <div class="footer-container">
-            <p class="producer"><b class="italic">Гибкий веб-дизайн</b> написана и издана <a href="https://adactio.com" rel="me"><span class="red">Джереми Китом</span></a>. Набор текста <a href="https://edwardtufte.github.io/et-book/"><span class="red">ET Book</span></a>.
+            <p class="producer"><b class="italic">Гибкий веб-дизайн</b> написана и издана <a href="https://adactio.com" rel="me"><span class="red">Джереми Китом</span></a>.
             </p>
             <p class="license">Лицензировано с использованием <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><span class="red">Международной лицензии
-                        Creative Commons Attribution‐ShareAlike 4.0.</span></a></p>
+                        Creative Commons Attribution‐ShareAlike 4.0.</span></a>
+            </p>
+            <p class="license">Перевод книги на русский язык:<span class="red">
+                    Дмитрий Коновалов.
+                </span></a>
+                <p class="license">Русская версия сайта создана <a target="blank" href="https://moscoding.ru/"><span class="red">Moscow Coding School</span></a> при участии: <span class="red">
+                    Victor H, Arslan, Kristina A, Anastasia K, Liza Ch, Kirill, kirillt8, Ivan V.
+                </span></a>
+                </p>
         </div>
+        <a class="footer-logo" target="blank" href="https://moscoding.ru/">
+            <svg width="282" height="27" fill="none" style="top:20px" class="styles-module--logo--1x0tv">
+                <path
+                    d="M8.785 6.636h1.7v15h-1.52v-11.09l-2.417 7.09h-1.61l-2.417-7.09v11.181H1v-15h1.7l3.132 9.091 2.953-9.182zM23.103 17.546c0 3.272-2.237 4.363-4.295 4.363-2.059 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.237-4.363 4.296-4.363 2.058 0 4.295 1.09 4.295 4.363v2.91zm-1.61-2.91c0-1.818-1.254-2.727-2.685-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.431 0 2.684-.91 2.684-2.728v-3zM34.2 13.818c-.18-1.272-1.075-2-2.417-2-1.163 0-2.058.636-2.058 1.636 0 .91.626 1.364 1.521 1.546l2.058.546c1.611.363 2.774 1.272 2.774 3.272 0 2.182-1.61 3.091-3.848 3.091-2.237 0-4.205-1.09-4.384-3.727h1.61c.18 1.545 1.253 2.182 2.774 2.182 1.522 0 2.238-.637 2.238-1.546 0-.727-.358-1.364-1.522-1.636l-2.147-.546c-1.164-.272-2.685-1.09-2.685-3.09 0-2 1.7-3.182 3.669-3.182 2.237 0 3.848 1.09 4.027 3.545H34.2v-.09zM49.412 14.09H47.8c-.18-1.454-1.342-2.272-2.595-2.272-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.253 0 2.416-.727 2.595-2.273h1.61c-.268 2.818-2.326 3.818-4.205 3.818-2.058 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.238-4.363 4.296-4.363 1.879.09 3.937 1.09 4.206 3.909zM62.566 17.546c0 3.272-2.237 4.363-4.295 4.363-2.059 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.237-4.363 4.296-4.363 2.058 0 4.295 1.09 4.295 4.363v2.91zm-1.61-2.91c0-1.818-1.254-2.727-2.685-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.431 0 2.684-.91 2.684-2.728v-3zM74.02 18.636l1.163-8h1.522l-1.79 11.091h-1.432l-2.237-7.273-2.237 7.273h-1.432l-1.79-11.09h1.522l1.163 8 1.88-6.273h1.52l2.148 6.272zM103.819 11.09h-1.611c-.179-2-1.432-3-3.132-3-1.79 0-3.132 1.183-3.132 3.456v5.272c0 2.273 1.432 3.455 3.132 3.455 1.611 0 2.953-1 3.132-3h1.611c-.179 2.909-2.058 4.636-4.743 4.636-2.863 0-4.743-1.909-4.743-5.09v-5.273c0-3.182 1.969-5.091 4.743-5.091 2.685 0 4.564 1.727 4.743 4.636zM116.615 17.546c0 3.272-2.237 4.363-4.295 4.363s-4.295-1.09-4.295-4.363v-2.91c0-3.272 2.237-4.363 4.295-4.363s4.295 1.09 4.295 4.363v2.91zm-1.611-2.91c0-1.818-1.252-2.727-2.684-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.432 0 2.684-.91 2.684-2.728v-3zM121.268 17.546v-2.91c0-3.272 2.238-4.363 4.296-4.363.984 0 2.147.454 2.684 1.363v-5h1.611v15h-1.611v-1.09c-.537.909-1.7 1.363-2.684 1.363-2.058 0-4.296-1.09-4.296-4.363zm1.611 0c0 1.818 1.253 2.727 2.685 2.727 1.432 0 2.684-.91 2.684-2.727v-3c0-1.819-1.252-2.728-2.684-2.728-1.432 0-2.685.91-2.685 2.727v3zM135.228 10.636h4.385v9.546h3.848v1.545h-9.217v-1.545h3.848v-8h-2.774v-1.546h-.09zm2.237-4h2.327V9h-2.327V6.636zM156.257 14.636v7h-1.61v-7.09c0-1.819-1.253-2.728-2.685-2.728-1.432 0-2.685.91-2.685 2.727v7.091h-1.61v-11.09h1.61v1.09c.537-.909 1.701-1.363 2.685-1.363 2.058 0 4.295 1.09 4.295 4.363zM167.98 21.546V20.09c-.537.909-1.7 1.363-2.685 1.363-2.058 0-4.295-1.09-4.295-4.363v-2.455c0-3.272 2.237-4.363 4.295-4.363.985 0 2.148.454 2.685 1.363v-1.09h1.611v10.909c0 3.272-2.238 4.363-4.296 4.363-1.879 0-4.027-.909-4.206-3.818h1.611c.179 1.455 1.343 2.273 2.595 2.273 1.343 0 2.685-.91 2.685-2.727zm-5.369-4.364c0 1.818 1.253 2.727 2.684 2.727 1.432 0 2.685-.909 2.685-2.727v-2.546c0-1.818-1.253-2.727-2.685-2.727-1.431 0-2.684.91-2.684 2.727v2.546zM187.04 17.273h1.7c.269 1.909 1.522 3 3.132 3 1.701 0 2.864-.818 2.864-2.364 0-1.363-.716-2.182-2.416-2.636l-1.879-.546c-2.237-.636-3.132-2.454-3.132-4.273 0-2.545 1.968-4 4.385-4 2.595 0 4.116 1.455 4.474 4h-1.7c-.358-1.454-1.164-2.363-2.774-2.363-1.79 0-2.685 1.09-2.685 2.364 0 1.363.716 2.272 2.237 2.636l1.7.455c2.058.636 3.401 1.909 3.401 4.272 0 2.364-1.521 4-4.475 4-2.774.091-4.653-1.727-4.832-4.545zM209.233 14.09h-1.611c-.179-1.454-1.342-2.272-2.595-2.272-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.253 0 2.416-.727 2.595-2.273h1.611c-.269 2.818-2.327 3.818-4.206 3.818-2.058 0-4.295-1.09-4.295-4.363v-2.91c0-3.272 2.237-4.363 4.295-4.363 1.879.09 4.027 1.09 4.206 3.909zM222.655 14.636v7h-1.61v-7.09c0-1.819-1.253-2.728-2.685-2.728-1.432 0-2.684.91-2.684 2.727v7.091h-1.611v-15h1.611v5c.537-.909 1.7-1.363 2.684-1.363 2.058 0 4.295 1.09 4.295 4.363zM235.989 17.546c0 3.272-2.237 4.363-4.295 4.363-2.059 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.237-4.363 4.296-4.363 2.058 0 4.295 1.09 4.295 4.363v2.91zm-1.611-2.91c0-1.818-1.253-2.727-2.684-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.431 0 2.684-.91 2.684-2.728v-3zM249.322 17.546c0 3.272-2.237 4.363-4.295 4.363s-4.295-1.09-4.295-4.363v-2.91c0-3.272 2.237-4.363 4.295-4.363s4.295 1.09 4.295 4.363v2.91zm-1.611-2.91c0-1.818-1.252-2.727-2.684-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.432 0 2.684-.91 2.684-2.728v-3zM254.87 6.636h4.385v13.455h3.848v1.545h-9.217v-1.545h3.848V8.18h-2.774V6.637h-.09zM281 1h-13.512v25H281V1z"
+                    fill="#fff"></path>
+                <path
+                    d="M8.785 6.636h1.7v15h-1.52v-11.09l-2.417 7.09h-1.61l-2.417-7.09v11.181H1v-15h1.7l3.132 9.091 2.953-9.182zM23.103 17.546c0 3.272-2.237 4.363-4.295 4.363-2.059 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.237-4.363 4.296-4.363 2.058 0 4.295 1.09 4.295 4.363v2.91zm-1.61-2.91c0-1.818-1.254-2.727-2.685-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.431 0 2.684-.91 2.684-2.728v-3zM34.2 13.818c-.18-1.272-1.075-2-2.417-2-1.163 0-2.058.636-2.058 1.636 0 .91.626 1.364 1.521 1.546l2.058.546c1.611.363 2.774 1.272 2.774 3.272 0 2.182-1.61 3.091-3.848 3.091-2.237 0-4.205-1.09-4.384-3.727h1.61c.18 1.545 1.253 2.182 2.774 2.182 1.522 0 2.238-.637 2.238-1.546 0-.727-.358-1.364-1.522-1.636l-2.147-.546c-1.164-.272-2.685-1.09-2.685-3.09 0-2 1.7-3.182 3.669-3.182 2.237 0 3.848 1.09 4.027 3.545H34.2v-.09zM49.412 14.09H47.8c-.18-1.454-1.342-2.272-2.595-2.272-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.253 0 2.416-.727 2.595-2.273h1.61c-.268 2.818-2.326 3.818-4.205 3.818-2.058 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.238-4.363 4.296-4.363 1.879.09 3.937 1.09 4.206 3.909zM62.566 17.546c0 3.272-2.237 4.363-4.295 4.363-2.059 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.237-4.363 4.296-4.363 2.058 0 4.295 1.09 4.295 4.363v2.91zm-1.61-2.91c0-1.818-1.254-2.727-2.685-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.431 0 2.684-.91 2.684-2.728v-3zM74.02 18.636l1.163-8h1.522l-1.79 11.091h-1.432l-2.237-7.273-2.237 7.273h-1.432l-1.79-11.09h1.522l1.163 8 1.88-6.273h1.52l2.148 6.272zM103.819 11.09h-1.611c-.179-2-1.432-3-3.132-3-1.79 0-3.132 1.183-3.132 3.456v5.272c0 2.273 1.432 3.455 3.132 3.455 1.611 0 2.953-1 3.132-3h1.611c-.179 2.909-2.058 4.636-4.743 4.636-2.863 0-4.743-1.909-4.743-5.09v-5.273c0-3.182 1.969-5.091 4.743-5.091 2.685 0 4.564 1.727 4.743 4.636zM116.615 17.546c0 3.272-2.237 4.363-4.295 4.363s-4.295-1.09-4.295-4.363v-2.91c0-3.272 2.237-4.363 4.295-4.363s4.295 1.09 4.295 4.363v2.91zm-1.611-2.91c0-1.818-1.252-2.727-2.684-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.432 0 2.684-.91 2.684-2.728v-3zM121.268 17.546v-2.91c0-3.272 2.238-4.363 4.296-4.363.984 0 2.147.454 2.684 1.363v-5h1.611v15h-1.611v-1.09c-.537.909-1.7 1.363-2.684 1.363-2.058 0-4.296-1.09-4.296-4.363zm1.611 0c0 1.818 1.253 2.727 2.685 2.727 1.432 0 2.684-.91 2.684-2.727v-3c0-1.819-1.252-2.728-2.684-2.728-1.432 0-2.685.91-2.685 2.727v3zM135.228 10.636h4.385v9.546h3.848v1.545h-9.217v-1.545h3.848v-8h-2.774v-1.546h-.09zm2.237-4h2.327V9h-2.327V6.636zM156.257 14.636v7h-1.61v-7.09c0-1.819-1.253-2.728-2.685-2.728-1.432 0-2.685.91-2.685 2.727v7.091h-1.61v-11.09h1.61v1.09c.537-.909 1.701-1.363 2.685-1.363 2.058 0 4.295 1.09 4.295 4.363zM167.98 21.546V20.09c-.537.909-1.7 1.363-2.685 1.363-2.058 0-4.295-1.09-4.295-4.363v-2.455c0-3.272 2.237-4.363 4.295-4.363.985 0 2.148.454 2.685 1.363v-1.09h1.611v10.909c0 3.272-2.238 4.363-4.296 4.363-1.879 0-4.027-.909-4.206-3.818h1.611c.179 1.455 1.343 2.273 2.595 2.273 1.343 0 2.685-.91 2.685-2.727zm-5.369-4.364c0 1.818 1.253 2.727 2.684 2.727 1.432 0 2.685-.909 2.685-2.727v-2.546c0-1.818-1.253-2.727-2.685-2.727-1.431 0-2.684.91-2.684 2.727v2.546zM187.04 17.273h1.7c.269 1.909 1.522 3 3.132 3 1.701 0 2.864-.818 2.864-2.364 0-1.363-.716-2.182-2.416-2.636l-1.879-.546c-2.237-.636-3.132-2.454-3.132-4.273 0-2.545 1.968-4 4.385-4 2.595 0 4.116 1.455 4.474 4h-1.7c-.358-1.454-1.164-2.363-2.774-2.363-1.79 0-2.685 1.09-2.685 2.364 0 1.363.716 2.272 2.237 2.636l1.7.455c2.058.636 3.401 1.909 3.401 4.272 0 2.364-1.521 4-4.475 4-2.774.091-4.653-1.727-4.832-4.545zM209.233 14.09h-1.611c-.179-1.454-1.342-2.272-2.595-2.272-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.253 0 2.416-.727 2.595-2.273h1.611c-.269 2.818-2.327 3.818-4.206 3.818-2.058 0-4.295-1.09-4.295-4.363v-2.91c0-3.272 2.237-4.363 4.295-4.363 1.879.09 4.027 1.09 4.206 3.909zM222.655 14.636v7h-1.61v-7.09c0-1.819-1.253-2.728-2.685-2.728-1.432 0-2.684.91-2.684 2.727v7.091h-1.611v-15h1.611v5c.537-.909 1.7-1.363 2.684-1.363 2.058 0 4.295 1.09 4.295 4.363zM235.989 17.546c0 3.272-2.237 4.363-4.295 4.363-2.059 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.237-4.363 4.296-4.363 2.058 0 4.295 1.09 4.295 4.363v2.91zm-1.611-2.91c0-1.818-1.253-2.727-2.684-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.431 0 2.684-.91 2.684-2.728v-3zM249.322 17.546c0 3.272-2.237 4.363-4.295 4.363s-4.295-1.09-4.295-4.363v-2.91c0-3.272 2.237-4.363 4.295-4.363s4.295 1.09 4.295 4.363v2.91zm-1.611-2.91c0-1.818-1.252-2.727-2.684-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.432 0 2.684-.91 2.684-2.728v-3zM254.87 6.636h4.385v13.455h3.848v1.545h-9.217v-1.545h3.848V8.18h-2.774V6.637h-.09zM281 1h-13.512v25H281V1z"
+                    stroke="#fff" stroke-width="0.734" stroke-miterlimit="10"></path>
+            </svg>
+        </a>
     </footer>
     <script src="1st-project_script.js"></script>
 </body>
