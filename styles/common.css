@@ -182,7 +182,7 @@ body {
 
 .names {
     text-align: right;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .design {
@@ -383,7 +383,8 @@ main {
 }
 
 blockquote p:first-child,
-blockquote p:last-child {
+blockquote p:last-child,
+.aside__cite {
     position: relative;
 }
 
@@ -400,7 +401,7 @@ blockquote p:first-child::before {
     content: '‘‘';
     vertical-align: top;
     top: -0.125em;
-    left: -0.5em;
+    left: -0.45em;
 }
 
 blockquote p:last-child::after {
@@ -412,4 +413,58 @@ blockquote p:last-child::after {
 blockquote {
     margin: 2em;
     padding: 0;
+}
+
+.content-link.inactive {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(204, 0, 0, 0.4);
+}
+
+.content-link.inactive:hover {
+    background-color: none;
+    color: rgba(204, 0, 0, 0.4);
+}
+
+.content-link .content-p {
+    flex-wrap: wrap;
+}
+
+.chapter {
+    white-space: none;
+}
+
+blockquote {
+    margin: 2em;
+}
+
+.chapter-name {
+    letter-spacing: 0.025em;
+    min-height: 2em;
+    border-bottom: 0.25em solid rgba(95, 121, 149, 0.5);
+    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20)));
+}
+
+.chapter-number {
+    display: block;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+    font-size: 0.4em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
+.chapter-title {
+    letter-spacing: 0.025em;
+    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20)));
+}
+
+code {
+    font-family: monospace;
+}
+
+pre {
+    color: rgba(0, 0, 0, 0.75);
+    white-space: pre-wrap;
+    margin: 1em;
 }
