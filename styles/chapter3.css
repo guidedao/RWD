@@ -24,7 +24,14 @@ a {
     font-size: 0.4em;
     line-height: 1.5em;
 }
-
+.dotted>li {
+    list-style-type: disc;
+    margin: 1em;
+}
+.numbered>li {
+    list-style-type: decimal;
+    margin: 1em;
+}
 .text {
     font-size: calc( 1.5 + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20)));
     line-height: 1.75;
