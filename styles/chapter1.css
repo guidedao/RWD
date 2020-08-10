@@ -33,21 +33,6 @@ a {
     border-bottom: 0.25em solid rgba(95,121,149,0.5);
 }
 
-.chapter-one {
-    display: block;
-    text-transform: uppercase;
-    font-variant: small-caps;
-    letter-spacing: 0.3em;
-    font-size: 0.4em;
-    line-height: 1.5em;
-    margin-bottom: 1em;
-}
-
-.foundations {
-    letter-spacing: 0.025em;
-    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20)));
-}
-
 .sub-title {
     font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20)));
     font-weight: normal;

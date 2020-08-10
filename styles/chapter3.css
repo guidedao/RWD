@@ -14,13 +14,6 @@ a {
     padding: 1em;
 }
 
-.chapter-name {
-    letter-spacing: 0.025em;
-    min-height: 2em;
-    border-bottom: 0.25em solid rgba(95, 121, 149, 0.5);
-    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20)));
-}
-
 .chapter-three {
     display: block;
     font-variant: small-caps;
