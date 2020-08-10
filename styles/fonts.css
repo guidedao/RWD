@@ -20,8 +20,7 @@
     font-family: "MinionPro_bold_cn_it";
     font-display: swap;
     src: url("../fonts/MinionPro-BoldCnIt.eot");
-    src: url("../fonts/MinionPro-BoldCnIt.woff") format("woff"),
-        url("../fonts/MinionPro-BoldCnIt.ttf") format("truetype");
+    src: url("../fonts/MinionPro-BoldCnIt.woff") format("woff"), url("../fonts/MinionPro-BoldCnIt.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
@@ -57,8 +56,7 @@
     font-family: "MinionPro_medium_it";
     font-display: swap;
     src: url("../fonts/MinionPro-MediumIt.eot");
-    src: url("../fonts/MinionPro-MediumIt.woff") format("woff"),
-        url("../fonts/MinionPro-MediumIt.ttf") format("truetype");
+    src: url("../fonts/MinionPro-MediumIt.woff") format("woff"), url("../fonts/MinionPro-MediumIt.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
 }
@@ -67,8 +65,7 @@
     font-family: "MinionPro_regular";
     font-display: swap;
     src: url("../fonts/MinionPro-MediumIt.eot");
-    src: url("../fonts/MinionPro-MediumIt.woff") format("woff"),
-        url("../fonts/MinionPro-MediumIt.ttf") format("truetype");
+    src: url("../fonts/MinionPro-MediumIt.woff") format("woff"), url("../fonts/MinionPro-MediumIt.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -77,8 +74,7 @@
     font-family: "MinionPro_semibold";
     font-display: swap;
     src: url("../fonts/MinionPro-Semibold.eot");
-    src: url("../fonts/MinionPro-Semibold.woff") format("woff"),
-        url("../fonts/MinionPro-Semibold.ttf") format("truetype");
+    src: url("../fonts/MinionPro-Semibold.woff") format("woff"), url("../fonts/MinionPro-Semibold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
 }
@@ -87,8 +83,71 @@
     font-family: "MinionPro_semibold_it";
     font-display: swap;
     src: url("../fonts/MinionPro-SemiboldIt.eot");
-    src: url("../fonts/MinionPro-SemiboldIt.woff") format("woff"),
-        url("../fonts/MinionPro-SemiboldIt.ttf") format("truetype");
+    src: url("../fonts/MinionPro-SemiboldIt.woff") format("woff"), url("../fonts/MinionPro-SemiboldIt.ttf") format("truetype");
     font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaDemiC';
+    src: url('../fonts/futura/FuturaDemiC.eot');
+    src: local('Futura Demi Cyrillic'), local('FuturaDemiC'), url('../fonts/futura/FuturaDemiC.eot?#iefix') format('embedded-opentype'), url('../fonts/futura/FuturaDemiC.woff') format('woff'), url('../fonts/futura/FuturaDemiC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaMediumC';
+    src: url('../fonts/futura/FuturaMediumC.eot');
+    src: local('Futura Medium Cyrillic'), local('FuturaMediumC'), url('../fonts/futura/FuturaMediumC.eot?#iefix') format('embedded-opentype'), url('../fonts/futura/FuturaMediumC.woff') format('woff'), url('../fonts/futura/FuturaMediumC.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaLightC';
+    src: url('../fonts/futura/FuturaLightC-Italic.eot');
+    src: local('Futura Light Italic Cyrillic'), local('FuturaLightC-Italic'), url('../fonts/futura/FuturaLightC-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/futura/FuturaLightC-Italic.woff') format('woff'), url('../fonts/futura/FuturaLightC-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FuturaMediumC';
+    src: url('../fonts/futura/FuturaMediumC-Italic.eot');
+    src: local('Futura Medium Italic Cyrillic'), local('FuturaMediumC-Italic'), url('../fonts/futura/FuturaMediumC-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/futura/FuturaMediumC-Italic.woff') format('woff'), url('../fonts/futura/FuturaMediumC-Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FuturaLightC';
+    src: url('../fonts/futura/FuturaLightC.eot');
+    src: local('Futura Light Cyrillic'), local('FuturaLightC'), url('../fonts/futura/FuturaLightC.eot?#iefix') format('embedded-opentype'), url('../fonts/futura/FuturaLightC.woff') format('woff'), url('../fonts/futura/FuturaLightC.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaDemiC';
+    src: url('../fonts/futura/FuturaDemiC-Italic.eot');
+    src: local('Futura Demi Italic Cyrillic'), local('FuturaDemiC-Italic'), url('../fonts/futura/FuturaDemiC-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/futura/FuturaDemiC-Italic.woff') format('woff'), url('../fonts/futura/FuturaDemiC-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('../fonts/futura/FuturaBookC-Italic.eot');
+    src: local('Futura Book Italic Cyrillic'), local('FuturaBookC-Italic'), url('../fonts/futura/FuturaBookC-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/futura/FuturaBookC-Italic.woff') format('woff'), url('../fonts/futura/FuturaBookC-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('../fonts/futura/FuturaBookC.eot');
+    src: local('Futura Book Cyrillic'), local('FuturaBookC'), url('../fonts/futura/FuturaBookC.eot?#iefix') format('embedded-opentype'), url('../fonts/futura/FuturaBookC.woff') format('woff'), url('../fonts/futura/FuturaBookC.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
 }

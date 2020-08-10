@@ -1,49 +1,56 @@
-@import url(common.css);
+.content-nav {
+    background-color: transparent;
+}
 
-.content-nav{
-  background-color: transparent;
+.content-link {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: rgba(204, 0, 0, 0.9);
+    display: flex;
 }
-.content-link{  
-  text-decoration: none;
-  display: block;
-  padding: 1em;   
-  color: rgba(204,0,0,0.9);
-  display: flex;
+
+.content-p,
+.content-p-left {
+    width: 28em;
+    min-width: min-content;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    font-style: italic;
+    align-items: center;
+    line-height: 1.6em;
 }
-.content-p,.content-p-left{
-  width: 28em;
-  min-width: min-content;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-between;
-  font-style: italic;
-  align-items: center;
-  line-height: 1.6em;
+
+.content-p {
+    text-align: right;
 }
-.content-p{
-  text-align: right;
-}
+
 .author {
-  font-style: normal;
+    font-style: normal;
 }
-.chapter{
-  text-transform: uppercase;
-  font-variant: small-caps;
-  letter-spacing: 0.3em;
-  white-space: nowrap;
-  line-height: 1.6em;
-  font-size: 0.7em;
-  font-style: normal;
+
+.chapter {
+    text-transform: uppercase;
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+    white-space: nowrap;
+    line-height: 1.6em;
+    font-size: 0.7em;
+    font-style: normal;
 }
-.content-link:hover{
-  background-color: rgba(204,0,0,0.9);
-  color: white;
-  transition-duration: 0.25s;
+
+.content-link:hover {
+    background-color: rgba(204, 0, 0, 0.9);
+    color: white;
+    transition-duration: 0.25s;
 }
+
 .content-nav li {
-  border-bottom: 1px dotted rgba(0,0,0,0.2);
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
 }
+
 li:last-child .content-link {
-  border-bottom: none;
+    border-bottom: none;
 }
