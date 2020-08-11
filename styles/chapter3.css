@@ -25,6 +25,16 @@ a {
     line-height: 1.5em;
 }
 
+.dotted>li {
+    list-style-type: disc;
+    margin: 1em;
+}
+
+.numbered>li {
+    list-style-type: decimal;
+    margin: 1em;
+}
+
 .text {
     font-size: calc( 1.5 + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20)));
     line-height: 1.75;
@@ -44,9 +54,9 @@ main>p:first-of-type::first-line {
 }
 
 .img-caption {
-    font-family: 'FuturaDemiC', sans-serif;
+    font-family: 'FuturaMediumC', sans-serif;
     font-weight: 400;
-    font-size: calc( 6px + (26 - 6) * ( (100vw - 320px) / ( 1600 - 320)));
+    font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320)));
     margin: 1em;
     line-height: normal;
     line-height: 1;

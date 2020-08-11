@@ -301,10 +301,22 @@ main {
     padding: 1em;
 }
 
+.reversed .img-caption {
+    text-align: right;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
 @media (min-width: 40em) {
     figure {
         flex-direction: row;
         align-items: flex-start;
+    }
+    .reversed {
+        flex-direction: row-reverse;
     }
     figcaption {
         flex-basis: 50%;
@@ -323,14 +335,6 @@ main {
 
 .chapter-name {
     font-weight: 100;
-}
-
-.reversed {
-    flex-direction: row-reverse;
-}
-
-.reversed .img-caption {
-    text-align: right;
 }
 
 .italic {
@@ -478,4 +482,8 @@ pre {
     pre {
         color: white;
     }
+}
+
+figcaption {
+    font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320)));
 }
