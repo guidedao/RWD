@@ -82,11 +82,11 @@ xmp {
 }
 
 .picture-block__text {
-    font-size: 15px;
+    font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320)));
     margin: 1em;
     align-self: flex-start;
     line-height: 1;
-    font-family: 'FuturaDemiC', sans-serif;
+    font-family: 'FuturaMediumC', sans-serif;
     font-weight: 400;
 }
 
