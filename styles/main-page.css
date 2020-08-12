@@ -1,5 +1,4 @@
 @import url(footer.css);
-
 html {
     font-size: 1em;
     font-size: calc(1em + (2 - 1) * ((100vw - 20em) / (100 - 20)));
@@ -33,9 +32,15 @@ body {
     font-family: "MinionPro_medium";
     font-size: 2.5em;
     font-size: calc(2.25em + (11.25 - 2.25) * ((100vw - 20em) / (100 - 20)));
-    font-weight: normal;
+    font-weight: 700;
     line-height: 1.125;
     margin: 0;
+}
+
+@media (min-width: 30em) {
+    .header__title {
+        font-weight: 100;
+    }
 }
 
 .header__author {
@@ -58,7 +63,7 @@ body {
     color: white;
 }
 
-.common-link > span {
+.common-link>span {
     font-variant: all-small-caps;
 }
 
@@ -77,7 +82,7 @@ body {
     font-family: "MinionPro_medium";
     font-weight: normal;
     font-size: 1.8em;
-    font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
+    font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20)));
     margin: 2.5em 0 0;
 }
 
@@ -98,7 +103,7 @@ body {
     font-family: "MinionPro_medium";
     font-weight: normal;
     font-size: 1.5em;
-    font-size: calc( 1.25em + (3.75 - 1.25) * ( (100vw - 20em) / ( 100 - 20) ));
+    font-size: calc( 1.25em + (3.75 - 1.25) * ( (100vw - 20em) / ( 100 - 20)));
     margin: 2em 0 0;
 }
 
@@ -117,7 +122,7 @@ body {
     font-weight: normal;
     font-family: "MinionPro_medium";
     font-size: 1.5em;
-    font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
+    font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20)));
     margin: 2em 0 0;
 }
 
@@ -136,26 +141,19 @@ body {
     color: rgba(0, 0, 0, 0.25);
 }
 
-.aside__cite::after {
-    content: "’’";
-    position: absolute;
-    bottom: -1em;
-    font-size: 4em;
-    color: rgba(0, 0, 0, 0.25);
-}
-
 .aside__block {
     display: flex;
     margin: 2.5em -1em;
     align-items: flex-start;
 }
+
 .aside__block:nth-child(2n) .aside__author {
     text-align: right;
     margin-right: 2em;
 }
 
 .aside__blockquote {
-    margin: 0 1.5em;
+    margin: 0 1.2em;
     font-style: italic;
 }
 
@@ -170,13 +168,18 @@ body {
     line-height: 1;
     padding: 0;
     font: caption;
+    font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320)));
+}
+
+@media (min-width: 100em) {
+    .aside__author-name {
+        font-size: 0.8125em;
+    }
 }
 
 .order-two {
     order: 2;
 }
-
-
 
 @media (min-width: 100em) {
     .header__title {
@@ -185,17 +188,14 @@ body {
     .header__author {
         font-size: 2.25em;
     }
-
     .formats-title,
     .audio-title {
         font-size: 2em;
     }
-
     .formats-paragraph,
     .audio-paragraph {
         font-size: 1em;
     }
-
     .formats-paragraph:first-line {
         font-size: 2em;
     }
@@ -205,15 +205,12 @@ body {
     .aside__block {
         flex-direction: column;
     }
-
     .order-two {
         order: 0;
     }
-
     .aside__author {
         margin: 0.2em auto;
     }
-
     .aside__block:nth-child(2n) .aside__author {
         text-align: right;
         margin: auto;

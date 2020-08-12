@@ -160,6 +160,13 @@ body {
     background-color: rgba(95, 121, 149, 1);
     padding: 1em;
     display: block;
+    position: relative;
+}
+
+.header .logo {
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 .links {
@@ -175,7 +182,7 @@ body {
 
 .names {
     text-align: right;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .design {
@@ -202,19 +209,17 @@ body {
     }
 }
 
-@media (prefers-color-scheme: dark) {
+<<<<<<< HEAD @media (prefers-color-scheme: dark) {
     body {
         background-color: black;
         color: rgba(255, 255, 255, 0.9);
     }
-
     a:link,
     .links,
     .red,
     a:visited {
         color: white;
     }
-
     a:hover,
     body .content-link:hover,
     body main .common-link:hover,
@@ -223,30 +228,24 @@ body {
         border-color: rgba(95, 121, 149, 0.3);
         color: white;
     }
-
     body .next-chapter:hover {
         background-color: rgba(95, 121, 149, 0.2);
         color: white;
     }
-
     pre {
         color: white;
     }
-
     blockquote p:first-child::before,
     blockquote p:last-child::after {
         color: rgba(255, 255, 255, 0.30);
     }
-
     nav a[rel="next"],
     body .next-chapter {
         border-color: rgba(255, 255, 255, 0.7);
     }
-
     nav li:not(:last-child) {
         border-bottom-color: rgba(255, 255, 255, 0.2);
     }
-
     footer a:link,
     footer a:visited {
         color: white;
@@ -254,7 +253,7 @@ body {
     }
 }
 
-@media (min-width: 30em) {
+=======>>>>>>>origin/master @media (min-width: 30em) {
     body {
         line-height: 1.55;
     }
@@ -346,13 +345,24 @@ main {
     padding: 1em;
 }
 
+.reversed .img-caption {
+    text-align: right;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
 @media (min-width: 40em) {
     figure {
         flex-direction: row;
         align-items: flex-start;
     }
-
-    figcaption {
+    <<<<<<< HEAD=======.reversed {
+        flex-direction: row-reverse;
+    }
+    >>>>>>>origin/master figcaption {
         flex-basis: 50%;
     }
 }
@@ -371,21 +381,14 @@ main {
     font-weight: 100;
 }
 
-.reversed {
-    flex-direction: row-reverse;
-}
-
-.reversed .img-caption {
-    text-align: right;
-}
-
 .italic {
     font-style: italic;
     font-weight: normal;
 }
 
 blockquote p:first-child,
-blockquote p:last-child {
+blockquote p:last-child,
+.aside__cite {
     position: relative;
 }
 
@@ -402,7 +405,7 @@ blockquote p:first-child::before {
     content: '‘‘';
     vertical-align: top;
     top: -0.125em;
-    left: -0.5em;
+    left: -0.45em;
 }
 
 blockquote p:last-child::after {
@@ -416,7 +419,9 @@ blockquote {
     padding: 0;
 }
 
+
 /* Для нумерованного списка */
+
 .num-list {
     list-style: decimal;
     list-style-position: inside;
@@ -425,4 +430,121 @@ blockquote {
 .num-list li {
     margin: 1em 0;
     padding: 0;
+}
+
+.content-link.inactive {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(204, 0, 0, 0.4);
+}
+
+.content-link.inactive:hover {
+    background-color: none;
+    color: rgba(204, 0, 0, 0.4);
+}
+
+.content-link .content-p {
+    flex-wrap: wrap;
+}
+
+.chapter {
+    white-space: none;
+}
+
+blockquote {
+    margin: 2em;
+}
+
+.chapter-name {
+    letter-spacing: 0.025em;
+    min-height: 2em;
+    border-bottom: 0.25em solid rgba(95, 121, 149, 0.5);
+    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20)));
+}
+
+.chapter-number {
+    display: block;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+    font-size: 0.4em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
+.chapter-title {
+    letter-spacing: 0.025em;
+    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20)));
+}
+
+code {
+    font-family: monospace;
+}
+
+pre {
+    color: rgba(0, 0, 0, 0.75);
+    white-space: pre-wrap;
+    margin: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    a:link,
+    .links,
+    .red,
+    a:visited {
+        color: white;
+    }
+    a:hover,
+    body .content-link:hover,
+    body main .common-link:hover,
+    a:focus {
+        background-color: rgba(95, 121, 149, 0.2);
+        border-color: rgba(95, 121, 149, 0.3);
+        color: white;
+    }
+    body .next-chapter:hover {
+        background-color: rgba(95, 121, 149, 0.2);
+        color: white;
+    }
+    pre {
+        color: white;
+    }
+    blockquote p:first-child::before,
+    blockquote p:last-child::after {
+        color: rgba(255, 255, 255, 0.30);
+    }
+    nav a[rel="next"],
+    body .next-chapter {
+        border-color: rgba(255, 255, 255, 0.7);
+    }
+    nav li:not(:last-child) {
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+    footer a:link,
+    footer a:visited {
+        color: white;
+        text-decoration: underline;
+    }
+    .content-link.inactive .chapter,
+    .content-link.inactive .content-p,
+    .content-link.inactive .content-p-left {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .content-link.inactive:hover {
+        background-color: transparent;
+    }
+    pre {
+        color: white;
+    }
+}
+
+figcaption {
+    font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320)));
+}
+
+.chapter-references__author {
+    text-align: right;
 }

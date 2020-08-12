@@ -23,37 +23,6 @@ a {
     background-color: inherit;
 }
 
-.chapter-name {
-    max-width: 28em;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 2em;
-    line-height: 1;
-    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20)));
-}
-
-.chapter-one {
-    display: block;
-    text-transform: uppercase;
-    font-variant: small-caps;
-    letter-spacing: 0.3em;
-    font-size: 0.4em;
-    line-height: 1.5em;
-    margin-bottom: 1em;
-}
-
-.foundations {
-    letter-spacing: 0.025em;
-    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20)));
-}
-
-.stripe {
-    background-color: rgba(95, 121, 149, 0.5);
-    min-height: 3vw;
-    max-width: 28em;
-    margin-top: -20px;
-}
-
 .sub-title {
     font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20)));
     font-weight: normal;
@@ -86,9 +55,13 @@ ul {
     font-size: calc( 0.7em + (1.7 - 0.7) * ( (100vw - 20em) / ( 100 - 20)));
 }
 
-.start:first-letter {
-    font-size: calc(20px + (50 - 20) * ( (100vw - 320px) / (1904 - 320)));
+.start:first-line {
     font-weight: normal;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    line-height: 1.25;
+    letter-spacing: 0.1em;
+    text-align: justify;
 }
 
 img {
@@ -169,4 +142,9 @@ small {
     .after-img6 {
         text-align: right;
     }
+}
+
+.text,
+p {
+    font-variant: small-caps;
 }

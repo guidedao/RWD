@@ -14,13 +14,6 @@ a {
     padding: 1em;
 }
 
-.chapter-name {
-    letter-spacing: 0.025em;
-    min-height: 2em;
-    border-bottom: 0.25em solid rgba(95, 121, 149, 0.5);
-    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20)));
-}
-
 .chapter-three {
     display: block;
     font-variant: small-caps;
@@ -30,6 +23,16 @@ a {
     font-variant: small-caps;
     font-size: 0.4em;
     line-height: 1.5em;
+}
+
+.dotted>li {
+    list-style-type: disc;
+    margin: 1em;
+}
+
+.numbered>li {
+    list-style-type: decimal;
+    margin: 1em;
 }
 
 .text {
@@ -51,9 +54,9 @@ main>p:first-of-type::first-line {
 }
 
 .img-caption {
-    font-family: 'FuturaDemiC', sans-serif;
+    font-family: 'FuturaMediumC', sans-serif;
     font-weight: 400;
-    font-size: calc( 6px + (26 - 6) * ( (100vw - 320px) / ( 1600 - 320)));
+    font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320)));
     margin: 1em;
     line-height: normal;
     line-height: 1;
