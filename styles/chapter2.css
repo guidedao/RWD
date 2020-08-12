@@ -122,3 +122,8 @@ img {
     object-fit: cover;
     border: none;
 }
+
+.text,
+p {
+    font-variant: small-caps;
+}

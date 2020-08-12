@@ -487,3 +487,7 @@ pre {
 figcaption {
     font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320)));
 }
+
+.chapter-references__author {
+    text-align: right;
+}
