@@ -24,48 +24,35 @@
     <main class="main">
 
         <div class="chapter-six__wrap chapter-six__block">
-            <span class="chapter-six__num">Глава 6:</span>
-            <h1 class="chapter-six__name">Этапы</h1>
-            <div class="stripe"></div>
+            <div class="chapter-name">
+                <span class="chapter-number">Глава 6:</span>
+                <span class="chapter-title">Этапы</span>
+            </div>
 
-            <p class="chapter-six__first">“Always design a thing by considering it in its next larger context”, said the
-                Finnish architect Eliel Saarinen. “A chair in a room, a room in a house, a house in an environment, an
-                environment in a city plan.”</p>
+            <p class="chapter-six__first">“Always design a thing by considering it in its next larger context”, said the Finnish architect Eliel Saarinen. “A chair in a room, a room in a house, a house in an environment, an environment in a city plan.”</p>
 
-            <p>At first glance, web design appears to be a kind of graphic design. Using graphic design tools like
-                Photoshop to design websites reinforces this view. But to get to the heart of a website’s purpose, we
-                should consider the interface in its larger context: what are people trying to accomplish?</p>
+            <p>At first glance, web design appears to be a kind of graphic design. Using graphic design tools like Photoshop to design websites reinforces this view. But to get to the heart of a website’s purpose, we should consider the interface in its
+                larger context: what are people trying to accomplish?</p>
 
-            <p>When designing for the web, it’s tempting to think in terms of interactions like swiping, tapping,
-                clicking, scrolling, dragging and dropping. But very few people wake up in the morning looking forward
-                to a day of scrolling and tapping. They’re more likely to think in terms of reading, writing, sharing,
-                buying and selling. Web designers need to see past the surface‐level actions to find the more meaningful
-                verbs beneath.</p>
+            <p>When designing for the web, it’s tempting to think in terms of interactions like swiping, tapping, clicking, scrolling, dragging and dropping. But very few people wake up in the morning looking forward to a day of scrolling and tapping. They’re
+                more likely to think in terms of reading, writing, sharing, buying and selling. Web designers need to see past the surface‐level actions to find the more meaningful verbs beneath.</p>
 
-            <p>In their book <span class="italic">Designing With Progressive Enhancement</span>, the Filament Group
-                describe a technique they call
-                “the x‐ray perspective”:</p>
+            <p>In their book <span class="italic">Designing With Progressive Enhancement</span>, the Filament Group describe a technique they call “the x‐ray perspective”:</p>
 
             <blockquote class="introduction__quote">
-                <p class="introduction__cite italic">Taking an x‐ray perspective means looking “through” the complex
-                    widgets and visual styles of a design, identifying the core content and functional pieces that make
-                    up the page, and finding a simple HTML equivalent for each that will work universally.
+                <p class="introduction__cite italic">Taking an x‐ray perspective means looking “through” the complex widgets and visual styles of a design, identifying the core content and functional pieces that make up the page, and finding a simple HTML equivalent for each that will work
+                    universally.
                 </p>
             </blockquote>
 
-            <p>If you’re not used to this approach to web design, it can take some getting used to. But after a while it
-                becomes a habit and then it’s hard not to examine interfaces in this way. It’s like trying not to notice
-                bad kerning, or trying not to see the arrow in the whitespace of the FedEx logo, or trying to not to
-                remember that all ducks are actually wearing dog masks.</p>
+            <p>If you’re not used to this approach to web design, it can take some getting used to. But after a while it becomes a habit and then it’s hard not to examine interfaces in this way. It’s like trying not to notice bad kerning, or trying not to
+                see the arrow in the whitespace of the FedEx logo, or trying to not to remember that all ducks are actually wearing dog masks.</p>
 
             <figure class="picture-block">
                 <picture class="picture-block__item">
-                    <img class="picture-block__img" src="img/chapter6/duck.jpg"
-                        alt="Подборка из множества дизайнерских решений для CSS Zen Garden">
+                    <img class="picture-block__img" src="img/chapter6/duck.jpg" alt="Подборка из множества дизайнерских решений для CSS Zen Garden">
                 </picture>
-                <figcaption class="picture-block__text">This duck’s bill looks like the face of a dog.
-                    Photograph by Asmaa Dee.
-                    Licensed under a Creative Commons Attribution‐NonCommercial‐NoDerivs 2.0 Generic license.
+                <figcaption class="picture-block__text">This duck’s bill looks like the face of a dog. Photograph by Asmaa Dee. Licensed under a Creative Commons Attribution‐NonCommercial‐NoDerivs 2.0 Generic license.
                 </figcaption>
             </figure>
 
@@ -76,55 +63,43 @@
                 <li>Enhance!</li>
             </ol>
 
-            <p>Identifying core functionality might sound like it’s pretty straightforward, and after a bit of practice,
-                it is. But it can be tricky at first to separate what’s truly necessary from what’s nice to have.</p>
+            <p>Identifying core functionality might sound like it’s pretty straightforward, and after a bit of practice, it is. But it can be tricky at first to separate what’s truly necessary from what’s nice to have.</p>
 
 
             <h2 class="chapter-six__title">Information</h2>
 
-            <p>Let’s say you’re a news provider. That right there is the core functionality—to provide news. There are
-                many, many other services you could also provide; interactive puzzles, realtime notifications, and more.
-                Valuable as those services are, they’re probably not as important as making sure that people have access
-                to news.</p>
+            <p>Let’s say you’re a news provider. That right there is the core functionality—to provide news. There are many, many other services you could also provide; interactive puzzles, realtime notifications, and more. Valuable as those services are,
+                they’re probably not as important as making sure that people have access to news.</p>
 
             <figure class="picture-block">
                 <picture class="picture-block__item">
-                    <img class="picture-block__img" src="img/chapter6/news.png"
-                        alt="Подборка из множества дизайнерских решений для CSS Zen Garden">
+                    <img class="picture-block__img" src="img/chapter6/news.png" alt="Подборка из множества дизайнерских решений для CSS Zen Garden">
                 </picture>
                 <figcaption class="picture-block__text">A selection of news outlets.
                 </figcaption>
             </figure>
 
-            <p>With that core functionality identified, it’s time to move on to step two: how can you make that core
-                functionality available using the simplest possible technology?</p>
+            <p>With that core functionality identified, it’s time to move on to step two: how can you make that core functionality available using the simplest possible technology?</p>
 
-            <p>Theoretically, a plain text file would be the simplest possible way of providing the news. But as we’re
-                talking specifically about the web, let’s caveat this step: how can you make the core functionality
-                available using the simplest possible web technology? That would be an HTML file served up at a URL.</p>
+            <p>Theoretically, a plain text file would be the simplest possible way of providing the news. But as we’re talking specifically about the web, let’s caveat this step: how can you make the core functionality available using the simplest possible
+                web technology? That would be an HTML file served up at a URL.</p>
 
-            <p>Even at this early stage it’s possible to overcomplicate things. The HTML could be unnecessarily bloated.
-                The URL could be unnecessarily verbose; hard to share or recall.</p>
+            <p>Even at this early stage it’s possible to overcomplicate things. The HTML could be unnecessarily bloated. The URL could be unnecessarily verbose; hard to share or recall.</p>
 
-            <p>Now that the news has been marked up with the appropriate HTML elements—articles, headings, paragraphs,
-                lists, and images—it’s time for step three: enhance!</p>
+            <p>Now that the news has been marked up with the appropriate HTML elements—articles, headings, paragraphs, lists, and images—it’s time for step three: enhance!</p>
 
-            <p>By default, the news will be presented using the browser’s own stylesheet. It’s legible, but not exactly
-                pleasurable. By applying your own CSS, you can sculpt the content into a more pleasing shape.
-                Whitespace, leading, colour and contrast are all at your disposal. You can even use custom fonts—an
-                enhancement that was impossible on the web for many years.</p>
+            <p>By default, the news will be presented using the browser’s own stylesheet. It’s legible, but not exactly pleasurable. By applying your own CSS, you can sculpt the content into a more pleasing shape. Whitespace, leading, colour and contrast
+                are all at your disposal. You can even use custom fonts—an enhancement that was impossible on the web for many years.</p>
 
-            <p>There’s no guarantee that every browser will be capable of executing every CSS declaration that you throw
-                at it. That’s okay. Those browsers will ignore what they don’t understand. Crucially, the news is still
-                available to everyone, regardless of the CSS capabilities of their browser.</p>
+            <p>There’s no guarantee that every browser will be capable of executing every CSS declaration that you throw at it. That’s okay. Those browsers will ignore what they don’t understand. Crucially, the news is still available to everyone, regardless
+                of the CSS capabilities of their browser.</p>
 
-            <p>For browsers on large‐screen devices, you can introduce layout. It might seem odd at first to think of
-                layout as an enhancement, but that’s the lesson of mobile‐first responsive design. Consider the content
-                first, then mark it up with a sensible source order, then apply layout declarations within media
-                queries.</p>
+            <p>For browsers on large‐screen devices, you can introduce layout. It might seem odd at first to think of layout as an enhancement, but that’s the lesson of mobile‐first responsive design. Consider the content first, then mark it up with a sensible
+                source order, then apply layout declarations within media queries.
+            </p>
 
-            <p>Thanks to ever‐evolving nature of CSS, there are multiple ways of applying layout. Like Andy Tanenbaum
-                said:</p>
+            <p>Thanks to ever‐evolving nature of CSS, there are multiple ways of applying layout. Like Andy Tanenbaum said:
+            </p>
 
             <blockquote>
                 <p class="italic">The nice thing about standards is that you have so many to choose from.
@@ -133,106 +108,75 @@
 
             <h2 class="chapter-six__title">Communication</h2>
 
-            <p>Applying the three‐step process to a news site is relatively straightforward. Catching up with the news
-                is a fairly passive act. To really test this process, we need to apply it to something more interactive.
+            <p>Applying the three‐step process to a news site is relatively straightforward. Catching up with the news is a fairly passive act. To really test this process, we need to apply it to something more interactive.
             </p>
 
-            <p>Suppose we were building a social network. The people using our tool need to be able to communicate with
-                one another regardless of where in the world they are. The core functionality is sending and receiving
-                messages.</p>
+            <p>Suppose we were building a social network. The people using our tool need to be able to communicate with one another regardless of where in the world they are. The core functionality is sending and receiving messages.
+            </p>
 
             <figure class="picture-block">
                 <picture class="picture-block__item">
-                    <img class="picture-block__img" src="img/chapter6/socialnetworks.png"
-                        alt="Подборка из множества дизайнерских решений для CSS Zen Garden">
+                    <img class="picture-block__img" src="img/chapter6/socialnetworks.png" alt="Подборка из множества дизайнерских решений для CSS Zen Garden">
                 </picture>
-                <figcaption class="picture-block__text">Just some of the social networking sites that have graced the
-                    web.
+                <figcaption class="picture-block__text">Just some of the social networking sites that have graced the web.
                 </figcaption>
             </figure>
 
-            <p>Displaying messages in a web browser isn’t difficult. There might be a lot of complexity on the server
-                involving databases, syncing, queueing, and load balancing, but the HTML needed to structure a
-                reverse‐chronological list isn’t very different from the HTML needed for a news site.</p>
+            <p>Displaying messages in a web browser isn’t difficult. There might be a lot of complexity on the server involving databases, syncing, queueing, and load balancing, but the HTML needed to structure a reverse‐chronological list isn’t very different
+                from the HTML needed for a news site.</p>
 
-            <p>Sending a message from the browser to the web server requires HTML that is interactive. That’s where
-                forms come in. In this case, a form with a text input and a submit button should be enough, at least for
-                the basic functionality.</p>
+            <p>Sending a message from the browser to the web server requires HTML that is interactive. That’s where forms come in. In this case, a form with a text input and a submit button should be enough, at least for the basic functionality.</p>
 
-            <p>People can now receive and respond to messages on our social network, no matter what kind of device or
-                browser they are using. Now the trick is to improve the experience without breaking that fundamental
-                activity.</p>
+            <p>People can now receive and respond to messages on our social network, no matter what kind of device or browser they are using. Now the trick is to improve the experience without breaking that fundamental activity.
+            </p>
 
-            <p>If we were to leave the site in this HTML‐only state, I don’t think we’d be celebrating our company’s IPO
-                anytime soon. To really distinguish our service from the competition, we need that third step in the
-                process: enhance!</p>
+            <p>If we were to leave the site in this HTML‐only state, I don’t think we’d be celebrating our company’s IPO anytime soon. To really distinguish our service from the competition, we need that third step in the process: enhance!</p>
 
-            <p>At the very least, we can apply the same logic we used for the news site and style our service. Using CSS
-                we can provide colour, texture, contrast, web fonts, and for larger screens, layout. But let’s not stop
-                with the presentation. Let’s improve the interaction too.</p>
+            <p>At the very least, we can apply the same logic we used for the news site and style our service. Using CSS we can provide colour, texture, contrast, web fonts, and for larger screens, layout. But let’s not stop with the presentation. Let’s
+                improve the interaction too.</p>
 
-            <p>Right now this social network has the same kind of page‐based interaction as a news site. Every time
-                someone sends a message to the server, the server sends back a whole new page to the browser. We can do
-                better than that. Time for some Ajax.</p>
+            <p>Right now this social network has the same kind of page‐based interaction as a news site. Every time someone sends a message to the server, the server sends back a whole new page to the browser. We can do better than that. Time for some Ajax.</p>
 
-            <p>We can intercept the form submission and send the data to the server using Ajax—I like using the word
-                Hijax to describe this kind of Ajax interception. If there’s a response from the server, we can also
-                update part of the current page instead of refreshing the whole page. This would also be a good time to
-                introduce some suitable animation.</p>
+            <p>We can intercept the form submission and send the data to the server using Ajax—I like using the word Hijax to describe this kind of Ajax interception. If there’s a response from the server, we can also update part of the current page instead
+                of refreshing the whole page. This would also be a good time to introduce some suitable animation.</p>
 
-            <p>We can go further. Browsers that support WebSockets can receive messages from the server. People using
-                those browsers could get updates as soon as they’ve been sent. It’s even possible to use peer‐to‐peer
-                connections between browsers to allow people to communicate directly.</p>
+            <p>We can go further. Browsers that support WebSockets can receive messages from the server. People using those browsers could get updates as soon as they’ve been sent. It’s even possible to use peer‐to‐peer connections between browsers to allow
+                people to communicate directly.</p>
 
-            <p>Not every browser supports this advanced functionality. That’s okay. The core functionality—sending and
-                receiving messages—is still available to everyone.</p>
+            <p>Not every browser supports this advanced functionality. That’s okay. The core functionality—sending and receiving messages—is still available to everyone.</p>
 
             <h2 class="chapter-six__title">Creation</h2>
 
-            <p>What if our social network were more specialised? Let’s make it a photo‐sharing service. That raises the
-                bar a bit. Instead of sending and receiving messages, the core functionality is now sending and
-                receiving images.</p>
+            <p>What if our social network were more specialised? Let’s make it a photo‐sharing service. That raises the bar a bit. Instead of sending and receiving messages, the core functionality is now sending and receiving images.</p>
 
             <figure class="picture-block">
                 <picture class="picture-block__item">
-                    <img class="picture-block__img" src="img/chapter6/photosharing.png"
-                        alt="Подборка из множества дизайнерских решений для CSS Zen Garden">
+                    <img class="picture-block__img" src="img/chapter6/photosharing.png" alt="Подборка из множества дизайнерских решений для CSS Zen Garden">
                 </picture>
                 <figcaption class="picture-block__text">Photo‐sharing websites.
                 </figcaption>
             </figure>
 
-            <p>The interface needs to show a reverse‐chronological list of images. HTML can handle that. Once again we
-                need a form to send data to the server, but this time it needs to be a file upload instead of a text
-                field.</p>
+            <p>The interface needs to show a reverse‐chronological list of images. HTML can handle that. Once again we need a form to send data to the server, but this time it needs to be a file upload instead of a text field.
+            </p>
 
             <p>With those changes, the core functionality is in place. Time to enhance.</p>
 
-            <p>As well as all the existing enhancements—CSS, web fonts, Ajax, WebSockets—we could make use of the File
-                API introduced in HTML5. This allows us to manipulate the image directly in the browser. We could apply
-                effects to the image before sending it to the server. Using CSS filters, we can offer a range of image
-                enhancements from sepia tones to vignettes. But if a browser doesn’t support the File API or CSS
-                filters, people can still upload their duck‐facing selfies.</p>
+            <p>As well as all the existing enhancements—CSS, web fonts, Ajax, WebSockets—we could make use of the File API introduced in HTML5. This allows us to manipulate the image directly in the browser. We could apply effects to the image before sending
+                it to the server. Using CSS filters, we can offer a range of image enhancements from sepia tones to vignettes. But if a browser doesn’t support the File API or CSS filters, people can still upload their duck‐facing selfies.</p>
 
             <h2 class="chapter-six__title">Collaboration</h2>
 
-            <p>There was a time when using software meant installing separate programs on your computer. Today it’s
-                possible to have a machine with nothing more than a web browser installed on it. Writing emails, looking
-                up contact details, making calendar appointments, bookkeeping and other financial tasks can all be done
-                without having to install bespoke applications. Instead, the act of visiting a URL can conjure up the
-                tool you need when you need it.</p>
+            <p>There was a time when using software meant installing separate programs on your computer. Today it’s possible to have a machine with nothing more than a web browser installed on it. Writing emails, looking up contact details, making calendar
+                appointments, bookkeeping and other financial tasks can all be done without having to install bespoke applications. Instead, the act of visiting a URL can conjure up the tool you need when you need it.</p>
 
-            <p>Delivering software over the web doesn’t just replace the desktop‐centric way of working. The presence of
-                an internet connection opens up possibilities for all kinds of collaboration. Take, for example, the
-                kinds of applications that were once called “word processors.” As long as those programs were tethered
-                to individual machines, trying to collaboratively edit a document was bound to be a tricky task
-                requiring plenty of coordination, sending files back and forth. Using the web, the act of sharing a
-                single URL could allow multiple people to work on the same document.</p>
+            <p>Delivering software over the web doesn’t just replace the desktop‐centric way of working. The presence of an internet connection opens up possibilities for all kinds of collaboration. Take, for example, the kinds of applications that were
+                once called “word processors.” As long as those programs were tethered to individual machines, trying to collaboratively edit a document was bound to be a tricky task requiring plenty of coordination, sending files back and forth. Using
+                the web, the act of sharing a single URL could allow multiple people to work on the same document.</p>
 
             <figure class="picture-block">
                 <picture class="picture-block__item">
-                    <img class="picture-block__img" src="img/chapter6/writing.png"
-                        alt="Подборка из множества дизайнерских решений для CSS Zen Garden">
+                    <img class="picture-block__img" src="img/chapter6/writing.png" alt="Подборка из множества дизайнерских решений для CSS Zen Garden">
                 </picture>
                 <figcaption class="picture-block__text">
                     Collaborative writing tools on the web.
@@ -246,65 +190,49 @@
                 </p>
             </blockquote>
 
-            <p>The tautological answer would be “processing words.” Not very helpful. What do people actually do with
-                this software? They write. They share. They edit.</p>
+            <p>The tautological answer would be “processing words.” Not very helpful. What do people actually do with this software? They write. They share. They edit.</p>
 
             <blockquote>
                 <p class="italic">Make that functionality available using the simplest possible technology.
                 </p>
             </blockquote>
 
-            <p>Looking at our three verbs—writing, sharing, and editing—we get one of them for free just by using URLs:
-                sharing. The other two—writing and editing—require the use of a form. A basic TEXTAREA element can act
-                as the receptacle for the words, sentences, and paragraphs that will make up everything from technical
-                reports to the great American novel. Submitting that content to a web server means it can be saved for
-                later.</p>
+            <p>Looking at our three verbs—writing, sharing, and editing—we get one of them for free just by using URLs: sharing. The other two—writing and editing—require the use of a form. A basic TEXTAREA element can act as the receptacle for the words,
+                sentences, and paragraphs that will make up everything from technical reports to the great American novel. Submitting that content to a web server means it can be saved for later.
+            </p>
 
-            <p>Technically, that’s a web‐based word processor, accessible to anyone with a web browser and an internet
-                connection. But the experience is clunky and dull. It would be a shame not to take advantage of some of
-                slicker options available in modern browsers.</p>
+            <p>Technically, that’s a web‐based word processor, accessible to anyone with a web browser and an internet connection. But the experience is clunky and dull. It would be a shame not to take advantage of some of slicker options available in modern
+                browsers.
+            </p>
 
             <blockquote>
                 <p class="italic">Enhance!
                 </p>
             </blockquote>
 
-            <p>Using JavaScript, the humble TEXTAREA can be replaced with a richer editing interface, detecting each
-                keystroke and applying styling on the fly. Web fonts can make the writing experience more beautiful.
-                Ajax will allow work to be saved to the server almost constantly, without the need for a form
-                submission. WebSockets provide the means for multiple people to work on the same document at the same
-                time.</p>
-
-            <p>Both Ajax and WebSockets require an internet connection to work. There’s no guarantee of a stable
-                internet connection, especially if you’re trying to work on a train or in a hotel. Modern browsers
-                provide features which, after the initial page load, can turn the network itself into an enhancement.
+            <p>Using JavaScript, the humble TEXTAREA can be replaced with a richer editing interface, detecting each keystroke and applying styling on the fly. Web fonts can make the writing experience more beautiful. Ajax will allow work to be saved to
+                the server almost constantly, without the need for a form submission. WebSockets provide the means for multiple people to work on the same document at the same time.
             </p>
 
-            <p>If a browser supports some form of local storage, then data can be stored in a client‐side database.
-                Flaky network connections or unexpected power outages won’t get in the way of saving that important
-                document. Using Service Workers, web developers can provide instructions on what to do when the browser
-                (or the server) is offline.</p>
+            <p>Both Ajax and WebSockets require an internet connection to work. There’s no guarantee of a stable internet connection, especially if you’re trying to work on a train or in a hotel. Modern browsers provide features which, after the initial
+                page load, can turn the network itself into an enhancement.
+            </p>
 
-            <p>These are modern browser features that we should be taking full advantage of …once we’ve made sure that
-                we’re providing a basic experience for everyone.</p>
+            <p>If a browser supports some form of local storage, then data can be stored in a client‐side database. Flaky network connections or unexpected power outages won’t get in the way of saving that important document. Using Service Workers, web developers
+                can provide instructions on what to do when the browser (or the server) is offline.</p>
+
+            <p>These are modern browser features that we should be taking full advantage of …once we’ve made sure that we’re providing a basic experience for everyone.</p>
 
             <h2 class="chapter-six__title">Scale</h2>
 
-            <p>Ward Cunningham, the creator of the wiki, coined the term “technical debt” to describe a common problem
-                in the world of software. Decisions made in haste at the beginning of a project lead to a cascade of
-                issues further down the line. I like to think of the three‐step layered approach as a kind of “technical
-                credit.” Taking the time to provide core functionality at the beginning gives you the freedom to go wild
-                with experimentation from then on.</p>
+            <p>Ward Cunningham, the creator of the wiki, coined the term “technical debt” to describe a common problem in the world of software. Decisions made in haste at the beginning of a project lead to a cascade of issues further down the line. I like
+                to think of the three‐step layered approach as a kind of “technical credit.” Taking the time to provide core functionality at the beginning gives you the freedom to go wild with experimentation from then on.</p>
 
-            <p>Some people have misunderstood progressive enhancement to mean foregoing the latest and greatest browser
-                technologies, but in fact the opposite is true. Taking a layered approach to building on the web gives
-                you permission to try cutting‐edge JavaScript APIs, regardless of how many or how few browsers currently
-                implement them.</p>
+            <p>Some people have misunderstood progressive enhancement to mean foregoing the latest and greatest browser technologies, but in fact the opposite is true. Taking a layered approach to building on the web gives you permission to try cutting‐edge
+                JavaScript APIs, regardless of how many or how few browsers currently implement them.</p>
 
-            <p>We’ve looked at some examples of applying the three‐step approach to a few products and services—news,
-                social networking, photo sharing, and word processing. You can apply this approach to many more
-                services: making and updating items in a to‐do list, managing calendar appointments, looking up
-                directions, making reservations at nearby restaurants. Each one can be built with the same process:</p>
+            <p>We’ve looked at some examples of applying the three‐step approach to a few products and services—news, social networking, photo sharing, and word processing. You can apply this approach to many more services: making and updating items in a
+                to‐do list, managing calendar appointments, looking up directions, making reservations at nearby restaurants. Each one can be built with the same process:</p>
 
             <ol class="num-list">
                 <li>Identify core functionality.</li>
@@ -312,42 +240,29 @@
                 <li>Enhance!</li>
             </ol>
 
-            <p>This approach works at different scales. It doesn’t just work at the highest level of the service; it can
-                also be applied at the level of individual URLs within.</p>
+            <p>This approach works at different scales. It doesn’t just work at the highest level of the service; it can also be applied at the level of individual URLs within.</p>
 
-            <p>Ask “what is the core functionality of this URL?”, make that functionality available using the simplest
-                possible technology, and then enhance from there. This can really clarify which content is most
-                important, something that’s important in a mobile‐first responsive workflow. Once you’ve established
-                that, make sure that content is sent from the server as HTML (the simplest possible technology). Then,
-                using conditional loading, you could decide to make Ajax requests for supporting content if the screen
-                real‐estate is available. For the URL of an individual news story, the story itself would be sent in the
-                initial response, but related stories or comments could be pushed from the server only as needed
-                (although you can still provide links to the related stories and comments for everyone).</p>
+            <p>Ask “what is the core functionality of this URL?”, make that functionality available using the simplest possible technology, and then enhance from there. This can really clarify which content is most important, something that’s important in
+                a mobile‐first responsive workflow. Once you’ve established that, make sure that content is sent from the server as HTML (the simplest possible technology). Then, using conditional loading, you could decide to make Ajax requests for supporting
+                content if the screen real‐estate is available. For the URL of an individual news story, the story itself would be sent in the initial response, but related stories or comments could be pushed from the server only as needed (although you
+                can still provide links to the related stories and comments for everyone).</p>
 
-            <p>We can go deeper. We can apply the three‐step process at the scale of individual components within a
-                page. “What is the core functionality of this component? How can I make that functionality available
-                using the simplest possible technology? Now how can I enhance it?”</p>
+            <p>We can go deeper. We can apply the three‐step process at the scale of individual components within a page. “What is the core functionality of this component? How can I make that functionality available using the simplest possible technology?
+                Now how can I enhance it?”</p>
 
-            <p>A component might be designed to be an all‐singing all‐dancing interactive map. With x‐ray goggles, the
-                core functionality reveals itself to be something much simpler: showing a location. Provide the address
-                of that location in text: the simplest possible technology. Now you can enhance.</p>
+            <p>A component might be designed to be an all‐singing all‐dancing interactive map. With x‐ray goggles, the core functionality reveals itself to be something much simpler: showing a location. Provide the address of that location in text: the simplest
+                possible technology. Now you can enhance.</p>
 
-            <p>It’s worth remembering that enhancements can be provided on a sliding scale. The first enhancement for a
-                text address might be to provide a static image. The next level up from that would be to swap out the
-                static image with an interactive Ajax‐powered slippy map. If a browser supports the geolocation API, you
-                could show the distance to the location. Layer on some animations and transitions to help convey the
-                directions better.</p>
+            <p>It’s worth remembering that enhancements can be provided on a sliding scale. The first enhancement for a text address might be to provide a static image. The next level up from that would be to swap out the static image with an interactive
+                Ajax‐powered slippy map. If a browser supports the geolocation API, you could show the distance to the location. Layer on some animations and transitions to help convey the directions better.</p>
 
-            <p>Site navigation is another discrete component that lends itself well to a sliding scale of enhancements.
-                The core functionality of navigation is to provide links to resources. The simplest—and still the
-                best—technology to enable that is the humble hyperlink. A list of links should do the trick. With that
-                in place, you are now free to enhance it into something really compelling. Off‐canvas navigation,
-                progressive disclosure, sliding, swiping, fading, expanding …the sky’s the limit.</p>
+            <p>Site navigation is another discrete component that lends itself well to a sliding scale of enhancements. The core functionality of navigation is to provide links to resources. The simplest—and still the best—technology to enable that is the
+                humble hyperlink. A list of links should do the trick. With that in place, you are now free to enhance it into something really compelling. Off‐canvas navigation, progressive disclosure, sliding, swiping, fading, expanding …the sky’s the
+                limit.
+            </p>
 
-            <p>Because enhancements can be layered on according to the capabilities of each browser, it quickly becomes
-                clear that this approach doesn’t simply reduce down to having two versions of everything (the basic
-                version and the enhanced version). Instead the service, the URLs, and the components you are designing
-                could be experienced in any number of ways. And that’s okay.</p>
+            <p>Because enhancements can be layered on according to the capabilities of each browser, it quickly becomes clear that this approach doesn’t simply reduce down to having two versions of everything (the basic version and the enhanced version).
+                Instead the service, the URLs, and the components you are designing could be experienced in any number of ways. And that’s okay.</p>
 
             <p>Websites do not need to look exactly the same in every browser.</p>
 
@@ -376,7 +291,7 @@
         <ol>
             <li>
                 <a class="content-link" href="introduction">
-                    <p class="content-p-left">Предисловие</p>
+                    <p class="content-p-left">Введение</p>
                 </a>
             </li>
             <li>
@@ -396,61 +311,81 @@
             <li>
                 <a class="content-link" href="chapter3">
                     <p class="content-p">
-                        <span class="chapter">Глава 3</span>Визуальное представление
+                        <span class="chapter">Глава 3</span>Видения
                     </p>
                 </a>
             </li>
             <li>
-                <a class="content-link" href="chapter4">
+                <div class="content-link inactive">
                     <p class="content-p">
-                        <span class="chapter">Глава 4</span>Языки
+                        <span class="chapter">Глава 4 <span class="release-date">(Выйдет в августе)</span></span>Языки
                     </p>
-                </a>
+                </div>
             </li>
             <li>
-                <a class="content-link" href="#">
+                <div class="content-link inactive">
                     <p class="content-p">
-                        <span class="chapter">Глава 5</span>Слои
+                        <span class="chapter">Глава 5 (ВЫЙДЕТ В сентябре)</span>Слои
                     </p>
-                </a>
+                </div>
             </li>
             <li>
-                <a class="content-link" href="#">
+                <div class="content-link inactive">
                     <p class="content-p">
-                        <span class="chapter">Глава 6</span>Шаги
+                        <span class="chapter">Глава 6 (ВЫЙДЕТ В сентябре)</span>Этапы
                     </p>
-                </a>
+                </div>
             </li>
             <li>
-                <a class="content-link" href="#">
+                <div class="content-link inactive">
                     <p class="content-p">
-                        <span class="chapter">Глава 7</span>Испытания
+                        <span class="chapter">Глава 7 (ВЫЙДЕТ В октябре)</span>Сложности
                     </p>
-                </a>
+                </div>
+            </li>
+            <!--    <li>
+                <div class="content-link inactive">
+                    <p class="content-p-left author">Об авторе (Выйдет в октябре)
+                    </p>
+                </div>
             </li>
             <li>
-                <a class="content-link" href="#">
-                    <p class="content-p">
-                        <span class="author">Об Авторе</span>
-                    </p>
-                </a>
-            </li>
-            <li>
-                <a class="content-link" href="#">
-                    <p class="content-p-left">Алфавитный указатель</p>
-                </a>
-            </li>
+                <div class="content-link inactive">
+                    <p class="content-p-left">Указатель (Выйдет в ноябре)</p>
+                </div>
+            </li> -->
         </ol>
     </nav>
     <footer class="footer">
         <div class="footer-container">
-            <p class="producer"><b class="italic">Гибкий веб-дизайн</b> написана и издана <a href="https://adactio.com"
-                    rel="me"><span class="red">Джереми Китом</span></a>. Набор текста <a
-                    href="https://edwardtufte.github.io/et-book/"><span class="red">ET Book</span></a>.
+            <p class="producer"><b class="italic">Гибкий веб-дизайн</b> написана и издана <a href="https://adactio.com" rel="me"><span class="red">Джереми Китом</span></a>.
             </p>
-            <p class="license">Лицензировано с использованием <a rel="license"
-                    href="https://creativecommons.org/licenses/by-sa/4.0/"><span class="red">Международной лицензии
-                        Creative Commons Attribution‐ShareAlike 4.0.</span></a></p>
+            <p class="license">Лицензировано с использованием <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><span class="red">Международной лицензии
+                        Creative Commons Attribution‐ShareAlike 4.0.</span></a>
+            </p>
+            <p class="license">Перевод книги на русский язык:<span class="red">
+                    Дмитрий Коновалов.
+                </span></a>
+                <p class="license">Русская версия сайта создана <a target="blank" href="https://moscoding.ru/"><span class="red">Moscow Coding School</span></a> при участии: <span class="red">
+                    Victor Hardziuk, Arslan Zhazykpaev, Kristina Asiryan, Анастасия Агаркова, Liza Chuiko.
+                </span></a>
+                </p>
+                <p class="italic">
+                    “I’m so happy that the students of Moscow Coding School have translated Resilient Web Design into Russian. Thank you to them for doing that …and thank *you* for reading it!” -
+                    <span class="red" style="font-style: normal;">
+                     Джереми Кит.
+                    </span>
+                </p>
         </div>
+        <a class="footer-logo" target="blank" href="https://moscoding.ru/">
+            <svg width="282" height="27" fill="none" style="top:20px" class="styles-module--logo--1x0tv">
+                <path
+                    d="M8.785 6.636h1.7v15h-1.52v-11.09l-2.417 7.09h-1.61l-2.417-7.09v11.181H1v-15h1.7l3.132 9.091 2.953-9.182zM23.103 17.546c0 3.272-2.237 4.363-4.295 4.363-2.059 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.237-4.363 4.296-4.363 2.058 0 4.295 1.09 4.295 4.363v2.91zm-1.61-2.91c0-1.818-1.254-2.727-2.685-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.431 0 2.684-.91 2.684-2.728v-3zM34.2 13.818c-.18-1.272-1.075-2-2.417-2-1.163 0-2.058.636-2.058 1.636 0 .91.626 1.364 1.521 1.546l2.058.546c1.611.363 2.774 1.272 2.774 3.272 0 2.182-1.61 3.091-3.848 3.091-2.237 0-4.205-1.09-4.384-3.727h1.61c.18 1.545 1.253 2.182 2.774 2.182 1.522 0 2.238-.637 2.238-1.546 0-.727-.358-1.364-1.522-1.636l-2.147-.546c-1.164-.272-2.685-1.09-2.685-3.09 0-2 1.7-3.182 3.669-3.182 2.237 0 3.848 1.09 4.027 3.545H34.2v-.09zM49.412 14.09H47.8c-.18-1.454-1.342-2.272-2.595-2.272-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.253 0 2.416-.727 2.595-2.273h1.61c-.268 2.818-2.326 3.818-4.205 3.818-2.058 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.238-4.363 4.296-4.363 1.879.09 3.937 1.09 4.206 3.909zM62.566 17.546c0 3.272-2.237 4.363-4.295 4.363-2.059 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.237-4.363 4.296-4.363 2.058 0 4.295 1.09 4.295 4.363v2.91zm-1.61-2.91c0-1.818-1.254-2.727-2.685-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.431 0 2.684-.91 2.684-2.728v-3zM74.02 18.636l1.163-8h1.522l-1.79 11.091h-1.432l-2.237-7.273-2.237 7.273h-1.432l-1.79-11.09h1.522l1.163 8 1.88-6.273h1.52l2.148 6.272zM103.819 11.09h-1.611c-.179-2-1.432-3-3.132-3-1.79 0-3.132 1.183-3.132 3.456v5.272c0 2.273 1.432 3.455 3.132 3.455 1.611 0 2.953-1 3.132-3h1.611c-.179 2.909-2.058 4.636-4.743 4.636-2.863 0-4.743-1.909-4.743-5.09v-5.273c0-3.182 1.969-5.091 4.743-5.091 2.685 0 4.564 1.727 4.743 4.636zM116.615 17.546c0 3.272-2.237 4.363-4.295 4.363s-4.295-1.09-4.295-4.363v-2.91c0-3.272 2.237-4.363 4.295-4.363s4.295 1.09 4.295 4.363v2.91zm-1.611-2.91c0-1.818-1.252-2.727-2.684-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.432 0 2.684-.91 2.684-2.728v-3zM121.268 17.546v-2.91c0-3.272 2.238-4.363 4.296-4.363.984 0 2.147.454 2.684 1.363v-5h1.611v15h-1.611v-1.09c-.537.909-1.7 1.363-2.684 1.363-2.058 0-4.296-1.09-4.296-4.363zm1.611 0c0 1.818 1.253 2.727 2.685 2.727 1.432 0 2.684-.91 2.684-2.727v-3c0-1.819-1.252-2.728-2.684-2.728-1.432 0-2.685.91-2.685 2.727v3zM135.228 10.636h4.385v9.546h3.848v1.545h-9.217v-1.545h3.848v-8h-2.774v-1.546h-.09zm2.237-4h2.327V9h-2.327V6.636zM156.257 14.636v7h-1.61v-7.09c0-1.819-1.253-2.728-2.685-2.728-1.432 0-2.685.91-2.685 2.727v7.091h-1.61v-11.09h1.61v1.09c.537-.909 1.701-1.363 2.685-1.363 2.058 0 4.295 1.09 4.295 4.363zM167.98 21.546V20.09c-.537.909-1.7 1.363-2.685 1.363-2.058 0-4.295-1.09-4.295-4.363v-2.455c0-3.272 2.237-4.363 4.295-4.363.985 0 2.148.454 2.685 1.363v-1.09h1.611v10.909c0 3.272-2.238 4.363-4.296 4.363-1.879 0-4.027-.909-4.206-3.818h1.611c.179 1.455 1.343 2.273 2.595 2.273 1.343 0 2.685-.91 2.685-2.727zm-5.369-4.364c0 1.818 1.253 2.727 2.684 2.727 1.432 0 2.685-.909 2.685-2.727v-2.546c0-1.818-1.253-2.727-2.685-2.727-1.431 0-2.684.91-2.684 2.727v2.546zM187.04 17.273h1.7c.269 1.909 1.522 3 3.132 3 1.701 0 2.864-.818 2.864-2.364 0-1.363-.716-2.182-2.416-2.636l-1.879-.546c-2.237-.636-3.132-2.454-3.132-4.273 0-2.545 1.968-4 4.385-4 2.595 0 4.116 1.455 4.474 4h-1.7c-.358-1.454-1.164-2.363-2.774-2.363-1.79 0-2.685 1.09-2.685 2.364 0 1.363.716 2.272 2.237 2.636l1.7.455c2.058.636 3.401 1.909 3.401 4.272 0 2.364-1.521 4-4.475 4-2.774.091-4.653-1.727-4.832-4.545zM209.233 14.09h-1.611c-.179-1.454-1.342-2.272-2.595-2.272-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.253 0 2.416-.727 2.595-2.273h1.611c-.269 2.818-2.327 3.818-4.206 3.818-2.058 0-4.295-1.09-4.295-4.363v-2.91c0-3.272 2.237-4.363 4.295-4.363 1.879.09 4.027 1.09 4.206 3.909zM222.655 14.636v7h-1.61v-7.09c0-1.819-1.253-2.728-2.685-2.728-1.432 0-2.684.91-2.684 2.727v7.091h-1.611v-15h1.611v5c.537-.909 1.7-1.363 2.684-1.363 2.058 0 4.295 1.09 4.295 4.363zM235.989 17.546c0 3.272-2.237 4.363-4.295 4.363-2.059 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.237-4.363 4.296-4.363 2.058 0 4.295 1.09 4.295 4.363v2.91zm-1.611-2.91c0-1.818-1.253-2.727-2.684-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.431 0 2.684-.91 2.684-2.728v-3zM249.322 17.546c0 3.272-2.237 4.363-4.295 4.363s-4.295-1.09-4.295-4.363v-2.91c0-3.272 2.237-4.363 4.295-4.363s4.295 1.09 4.295 4.363v2.91zm-1.611-2.91c0-1.818-1.252-2.727-2.684-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.432 0 2.684-.91 2.684-2.728v-3zM254.87 6.636h4.385v13.455h3.848v1.545h-9.217v-1.545h3.848V8.18h-2.774V6.637h-.09zM281 1h-13.512v25H281V1z"
+                    fill="#fff"></path>
+                <path
+                    d="M8.785 6.636h1.7v15h-1.52v-11.09l-2.417 7.09h-1.61l-2.417-7.09v11.181H1v-15h1.7l3.132 9.091 2.953-9.182zM23.103 17.546c0 3.272-2.237 4.363-4.295 4.363-2.059 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.237-4.363 4.296-4.363 2.058 0 4.295 1.09 4.295 4.363v2.91zm-1.61-2.91c0-1.818-1.254-2.727-2.685-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.431 0 2.684-.91 2.684-2.728v-3zM34.2 13.818c-.18-1.272-1.075-2-2.417-2-1.163 0-2.058.636-2.058 1.636 0 .91.626 1.364 1.521 1.546l2.058.546c1.611.363 2.774 1.272 2.774 3.272 0 2.182-1.61 3.091-3.848 3.091-2.237 0-4.205-1.09-4.384-3.727h1.61c.18 1.545 1.253 2.182 2.774 2.182 1.522 0 2.238-.637 2.238-1.546 0-.727-.358-1.364-1.522-1.636l-2.147-.546c-1.164-.272-2.685-1.09-2.685-3.09 0-2 1.7-3.182 3.669-3.182 2.237 0 3.848 1.09 4.027 3.545H34.2v-.09zM49.412 14.09H47.8c-.18-1.454-1.342-2.272-2.595-2.272-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.253 0 2.416-.727 2.595-2.273h1.61c-.268 2.818-2.326 3.818-4.205 3.818-2.058 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.238-4.363 4.296-4.363 1.879.09 3.937 1.09 4.206 3.909zM62.566 17.546c0 3.272-2.237 4.363-4.295 4.363-2.059 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.237-4.363 4.296-4.363 2.058 0 4.295 1.09 4.295 4.363v2.91zm-1.61-2.91c0-1.818-1.254-2.727-2.685-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.431 0 2.684-.91 2.684-2.728v-3zM74.02 18.636l1.163-8h1.522l-1.79 11.091h-1.432l-2.237-7.273-2.237 7.273h-1.432l-1.79-11.09h1.522l1.163 8 1.88-6.273h1.52l2.148 6.272zM103.819 11.09h-1.611c-.179-2-1.432-3-3.132-3-1.79 0-3.132 1.183-3.132 3.456v5.272c0 2.273 1.432 3.455 3.132 3.455 1.611 0 2.953-1 3.132-3h1.611c-.179 2.909-2.058 4.636-4.743 4.636-2.863 0-4.743-1.909-4.743-5.09v-5.273c0-3.182 1.969-5.091 4.743-5.091 2.685 0 4.564 1.727 4.743 4.636zM116.615 17.546c0 3.272-2.237 4.363-4.295 4.363s-4.295-1.09-4.295-4.363v-2.91c0-3.272 2.237-4.363 4.295-4.363s4.295 1.09 4.295 4.363v2.91zm-1.611-2.91c0-1.818-1.252-2.727-2.684-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.432 0 2.684-.91 2.684-2.728v-3zM121.268 17.546v-2.91c0-3.272 2.238-4.363 4.296-4.363.984 0 2.147.454 2.684 1.363v-5h1.611v15h-1.611v-1.09c-.537.909-1.7 1.363-2.684 1.363-2.058 0-4.296-1.09-4.296-4.363zm1.611 0c0 1.818 1.253 2.727 2.685 2.727 1.432 0 2.684-.91 2.684-2.727v-3c0-1.819-1.252-2.728-2.684-2.728-1.432 0-2.685.91-2.685 2.727v3zM135.228 10.636h4.385v9.546h3.848v1.545h-9.217v-1.545h3.848v-8h-2.774v-1.546h-.09zm2.237-4h2.327V9h-2.327V6.636zM156.257 14.636v7h-1.61v-7.09c0-1.819-1.253-2.728-2.685-2.728-1.432 0-2.685.91-2.685 2.727v7.091h-1.61v-11.09h1.61v1.09c.537-.909 1.701-1.363 2.685-1.363 2.058 0 4.295 1.09 4.295 4.363zM167.98 21.546V20.09c-.537.909-1.7 1.363-2.685 1.363-2.058 0-4.295-1.09-4.295-4.363v-2.455c0-3.272 2.237-4.363 4.295-4.363.985 0 2.148.454 2.685 1.363v-1.09h1.611v10.909c0 3.272-2.238 4.363-4.296 4.363-1.879 0-4.027-.909-4.206-3.818h1.611c.179 1.455 1.343 2.273 2.595 2.273 1.343 0 2.685-.91 2.685-2.727zm-5.369-4.364c0 1.818 1.253 2.727 2.684 2.727 1.432 0 2.685-.909 2.685-2.727v-2.546c0-1.818-1.253-2.727-2.685-2.727-1.431 0-2.684.91-2.684 2.727v2.546zM187.04 17.273h1.7c.269 1.909 1.522 3 3.132 3 1.701 0 2.864-.818 2.864-2.364 0-1.363-.716-2.182-2.416-2.636l-1.879-.546c-2.237-.636-3.132-2.454-3.132-4.273 0-2.545 1.968-4 4.385-4 2.595 0 4.116 1.455 4.474 4h-1.7c-.358-1.454-1.164-2.363-2.774-2.363-1.79 0-2.685 1.09-2.685 2.364 0 1.363.716 2.272 2.237 2.636l1.7.455c2.058.636 3.401 1.909 3.401 4.272 0 2.364-1.521 4-4.475 4-2.774.091-4.653-1.727-4.832-4.545zM209.233 14.09h-1.611c-.179-1.454-1.342-2.272-2.595-2.272-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.253 0 2.416-.727 2.595-2.273h1.611c-.269 2.818-2.327 3.818-4.206 3.818-2.058 0-4.295-1.09-4.295-4.363v-2.91c0-3.272 2.237-4.363 4.295-4.363 1.879.09 4.027 1.09 4.206 3.909zM222.655 14.636v7h-1.61v-7.09c0-1.819-1.253-2.728-2.685-2.728-1.432 0-2.684.91-2.684 2.727v7.091h-1.611v-15h1.611v5c.537-.909 1.7-1.363 2.684-1.363 2.058 0 4.295 1.09 4.295 4.363zM235.989 17.546c0 3.272-2.237 4.363-4.295 4.363-2.059 0-4.296-1.09-4.296-4.363v-2.91c0-3.272 2.237-4.363 4.296-4.363 2.058 0 4.295 1.09 4.295 4.363v2.91zm-1.611-2.91c0-1.818-1.253-2.727-2.684-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.431 0 2.684-.91 2.684-2.728v-3zM249.322 17.546c0 3.272-2.237 4.363-4.295 4.363s-4.295-1.09-4.295-4.363v-2.91c0-3.272 2.237-4.363 4.295-4.363s4.295 1.09 4.295 4.363v2.91zm-1.611-2.91c0-1.818-1.252-2.727-2.684-2.727-1.432 0-2.685.91-2.685 2.727v3c0 1.819 1.253 2.728 2.685 2.728 1.432 0 2.684-.91 2.684-2.728v-3zM254.87 6.636h4.385v13.455h3.848v1.545h-9.217v-1.545h3.848V8.18h-2.774V6.637h-.09zM281 1h-13.512v25H281V1z"
+                    stroke="#fff" stroke-width="0.734" stroke-miterlimit="10"></path>
+            </svg>
+        </a>
     </footer>
 </body>
