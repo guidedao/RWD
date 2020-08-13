@@ -100,8 +100,8 @@
 
 @font-face {
     font-family: 'FuturaMediumC';
-    src: url('../fonts/futura/FuturaMediumC.eot');
-    src: url("../fonts/futura/FuturaMediumC.woff") format("woff"), url("../fonts/futura/FuturaMediumC.ttf") format("truetype");
+    src: url('../fonts/FuturaMediumC.eot');
+    src: url("../fonts/FuturaMediumC.woff") format("woff"), url("../fonts/FuturaMediumC.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
 }
