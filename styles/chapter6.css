@@ -2,6 +2,7 @@
 @import url(normalize.css);
 @import url(content.css);
 @import url(footer.css);
+
 html {
     width: 100vw;
     height: 100vh;
@@ -12,62 +13,14 @@ body {
     line-height: 1.65;
 }
 
-xmp {
-    white-space: pre-line;
-    margin: 0 1em;
-    font-family: monospace;
-    color: rgba(0, 0, 0, 0.75);
-    font-size: 0.8em;
+.num-list {
+    list-style: decimal;
+    list-style-position: inside;
 }
 
-.chapter-two__num {
-    display: block;
-    text-transform: uppercase;
-    font-variant: small-caps;
-    letter-spacing: 0.3em;
-    font-size: 0.5em;
-    line-height: 1.5em;
-    margin-bottom: 1em;
-    font-size: calc(0.5em + (5 - 0.5) * ((100vw - 20em) / (100 - 20)));
-}
-
-.chapter-two__name {
-    font-family: "MinionPro_medium";
-    font-size: 2.2em;
-    font-size: calc(2.25em + (11.25 - 2.25) * ((100vw - 20em) / (100 - 20)));
-    letter-spacing: 0.025em;
-    line-height: 1em;
-    font-weight: 100;
-}
-
-.chapter-two__name::after {
-    content: "";
-    width: 100%;
-    height: 0.25em;
-    background: rgba(95, 121, 149, 0.5);
-    display: block;
-    margin-top: 30px;
-}
-
-.chapter-two__block p {
-    margin: 2em 0;
-}
-
-.chapter-two__first::first-line {
-    text-align: justify;
-    font-variant: small-caps;
-    font-size: 1.5em;
-    font-size: calc(1.5 + (4.5 - 1.5) * ((100vw - 20em) / (100 - 20)));
-    line-height: 1.25;
-    letter-spacing: 0.1em;
-}
-
-.chapter-two__title {
-    font-family: "MinionPro_medium";
-    font-weight: normal;
-    font-size: 1.8em;
-    font-size: calc(1.5em + (4.5 - 1.5) * ((100vw - 20em) / (100 - 20)));
-    margin: 2.5em 0 0;
+.num-list li {
+    margin: 1em 0;
+    padding: 0;
 }
 
 .picture-block {
@@ -82,13 +35,64 @@ xmp {
 }
 
 .picture-block__text {
-    font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320)));
+    font-size: 15px;
     margin: 1em;
     align-self: flex-start;
     line-height: 1;
-    font-family: 'FuturaMediumC', sans-serif;
+    font-family: 'FuturaDemiC', sans-serif;
     font-weight: 400;
 }
+
+.chapter-six__title {
+    font-family: "MinionPro_medium";
+    font-weight: normal;
+    font-size: 1.8em;
+    font-size: calc(1.5em + (4.5 - 1.5) * ((100vw - 20em) / (100 - 20)));
+    margin: 2.5em 0 0;
+}
+
+.chapter-six__block p {
+    margin: 2em 0;
+}
+
+.chapter-six__num {
+    display: block;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+    font-size: 0.5em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    font-size: calc(0.5em + (5 - 0.5) * ((100vw - 20em) / (100 - 20)));
+}
+
+.chapter-six__name {
+    font-family: "MinionPro_medium";
+    font-size: 2.2em;
+    font-size: calc(2.25em + (11.25 - 2.25) * ((100vw - 20em) / (100 - 20)));
+    letter-spacing: 0.025em;
+    line-height: 1em;
+    font-weight: 100;
+}
+
+.chapter-six__name::after {
+    content: "";
+    width: 100%;
+    height: 0.25em;
+    background: rgba(95, 121, 149, 0.5);
+    display: block;
+    margin-top: 30px;
+}
+
+.chapter-six__first::first-line {
+    text-align: justify;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    font-size: calc(1.5 + (4.5 - 1.5) * ((100vw - 20em) / (100 - 20)));
+    line-height: 1.25;
+    letter-spacing: 0.1em;
+}
+
 
 .chapter-references {
     margin: 2em 0;
@@ -115,15 +119,4 @@ xmp {
     .picture-block {
         flex-direction: row;
     }
-}
-
-img {
-    max-width: 100%;
-    object-fit: cover;
-    border: none;
-}
-
-.text,
-p {
-    font-variant: small-caps;
 }
