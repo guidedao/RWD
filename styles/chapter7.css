@@ -41,27 +41,10 @@ abbr {
     line-height: 1.125;
 }
 
-.section {
-    line-height: 1.65;
-}
-
-#section-9 {
-    margin: 2rem 0;
-}
-
-ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-.text {
-    margin: 2em 0;
-}
-
 .drop-cap {
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.22rem;
     line-height: 1.65;
     font-size: calc( 0.7em + (1.7 - 0.7) * ( (100vw - 20em) / ( 100 - 20)));
 }
@@ -71,9 +54,28 @@ ul {
     font-weight: normal;
 }
 
+.text {
+    margin: 2em 0;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
 .text>ol>li {
     list-style-type: decimal;
     margin: 1em;
+
+}
+
+.text>ul>li {
+    list-style-type: disc;
+    margin: 1em;
+}
+
+.text>ul, .text>ol {
+    margin-top: 2rem;
 }
 
 img {
@@ -94,14 +96,12 @@ img {
     text-align: right;
 }
 
-.text>ul>li {
-    list-style-type: disc;
-    margin: 1em;
+.last-part>h2 {
+    margin-bottom: 2rem;
 }
 
 .references {
     margin: 1em;
-    line-height: 1.65;
 }
 
 .links {
