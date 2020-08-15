@@ -10,6 +10,12 @@
     transition: color 0.25s, background-color 0.25s;
 }
 
+.next-chapter.inactive,
+.next-chapter.inactive:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(204, 0, 0, 0.9);
+}
+
 .next-chapter:hover {
     color: white;
     background-color: rgba(204, 0, 0, 0.9);
