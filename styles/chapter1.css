@@ -143,8 +143,3 @@ small {
         text-align: right;
     }
 }
-
-.text,
-p {
-    font-variant: small-caps;
-}
