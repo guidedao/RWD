@@ -359,10 +359,13 @@ img {
         flex-direction: row;
         align-items: flex-start;
     }
-    <<<<<<< HEAD=======.reversed {
+    figure:nth-of-type(even) {
         flex-direction: row-reverse;
     }
-    >>>>>>>origin/master figcaption {
+    .reversed {
+        flex-direction: row-reverse;
+    }
+    figcaption {
         flex-basis: 50%;
     }
 }
@@ -542,7 +545,28 @@ pre {
 }
 
 figcaption {
+    margin: 1em;
+    font-family: 'FuturaMediumC', sans-serif;
+    font-weight: 400;
     font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320)));
+    line-height: normal;
+}
+
+
+/* @media screen and (min-width: 610px) {
+    figcaption {
+        flex-basis: 50%;
+        text-align: left;
+        align-self: flex-start;
+        margin: 1em;
+        padding: 0;
+    }
+} */
+
+@media all and (min-width: 100em) {
+    figcaption {
+        font-size: 0.8125em;
+    }
 }
 
 .chapter-references__author {
