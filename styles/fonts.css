@@ -45,8 +45,9 @@
 
 @font-face {
     font-family: 'FuturaDemiC';
-    src: url('../fonts/futura/');
-    src: local('Futura Demi Cyrillic'), local('FuturaDemiC'), url('../fonts/futura/?#iefix') format('embedded-opentype'), url('../fonts/futura/FuturaDemiC.woff') format('woff'), url('../fonts/futura/FuturaDemiC.ttf') format('truetype');
+    src: url('../fonts/futura/FuturaDemiC.eot');
+    src: url('../fonts/futura/?#iefix') format('embedded-opentype');
+    src: url('../fonts/futura/FuturaDemiC.woff') format('woff'), url('../fonts/futura/FuturaDemiC.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -54,7 +55,8 @@
 @font-face {
     font-family: 'FuturaMediumC';
     src: url('../fonts/futura/FuturaMediumC.eot');
-    src: local('Futura Medium Cyrillic'), local('FuturaMediumC'), url('../fonts/futura/FuturaMediumC.eot?#iefix') format('embedded-opentype'), url('../fonts/futura/FuturaMediumC.woff') format('woff'), url('../fonts/futura/FuturaMediumC.ttf') format('truetype');
+    src: url('../fonts/futura/FuturaMediumC.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/futura/FuturaMediumC.woff') format('woff'), url('../fonts/futura/FuturaMediumC.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
