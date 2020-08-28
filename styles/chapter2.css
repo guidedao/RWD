@@ -70,26 +70,6 @@ xmp {
     margin: 2.5em 0 0;
 }
 
-.picture-block {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-}
-
-.picture-block__img {
-    border: none;
-}
-
-.picture-block__text {
-    font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320)));
-    margin: 1em;
-    align-self: flex-start;
-    line-height: 1;
-    font-family: 'FuturaMediumC', sans-serif;
-    font-weight: 400;
-}
-
 .chapter-references {
     margin: 2em 0;
 }
@@ -109,12 +89,6 @@ xmp {
 .chapter-references__link:hover {
     background-color: rgba(204, 0, 0, 0.9);
     color: white;
-}
-
-@media screen and (min-width: 900px) {
-    .picture-block {
-        flex-direction: row;
-    }
 }
 
 img {
