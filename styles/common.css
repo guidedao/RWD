@@ -380,9 +380,6 @@ img {
     line-height: 1.65;
 }
 
-.chapter-name {
-    font-weight: 100;
-}
 
 .italic {
     font-style: italic;
@@ -462,6 +459,8 @@ blockquote {
     min-height: 2em;
     border-bottom: 0.25em solid rgba(95, 121, 149, 0.5);
     font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20)));
+    line-height: 1;
+    font-weight: 100;
 }
 
 .chapter-number {
