@@ -209,7 +209,7 @@ body {
     }
 }
 
-<<<<<<< HEAD @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     body {
         background-color: black;
         color: rgba(255, 255, 255, 0.9);
@@ -253,7 +253,7 @@ body {
     }
 }
 
-=======>>>>>>>origin/master @media (min-width: 30em) {
+@media (min-width: 30em) {
     body {
         line-height: 1.55;
     }
