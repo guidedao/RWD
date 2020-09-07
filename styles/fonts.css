@@ -45,18 +45,18 @@
 
 @font-face {
     font-family: 'FuturaDemiC';
-    src: url('../fonts/futura/FuturaDemiC.eot');
-    src: url('../fonts/futura/?#iefix') format('embedded-opentype');
-    src: url('../fonts/futura/FuturaDemiC.woff') format('woff'), url('../fonts/futura/FuturaDemiC.ttf') format('truetype');
+    src: url('../fonts/FuturaDemiC.eot');
+    src: url('../fonts/?#iefix') format('embedded-opentype');
+    src: url('../fonts/FuturaDemiC.woff') format('woff'), url('../fonts/FuturaDemiC.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FuturaMediumC';
-    src: url('../fonts/futura/FuturaMediumC.eot');
-    src: url('../fonts/futura/FuturaMediumC.eot?#iefix') format('embedded-opentype');
-    src: url('../fonts/futura/FuturaMediumC.woff') format('woff'), url('../fonts/futura/FuturaMediumC.ttf') format('truetype');
+    src: url('../fonts/FuturaMediumC.eot');
+    src: url('../fonts/FuturaMediumC.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/FuturaMediumC.woff') format('woff'), url('../fonts/FuturaMediumC.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
