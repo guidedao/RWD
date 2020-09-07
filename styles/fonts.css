@@ -1,8 +1,8 @@
 @font-face {
     font-family: "MinionPro_medium";
     font-display: swap;
-    src: url("../fonts/MinionPro-Medium.eot");
-    src: url("../fonts/MinionPro-Medium.woff") format("woff"), url("../fonts/MinionPro-Medium.ttf") format("truetype");
+    src: url("../font-minio/MinionPro-Medium.eot");
+    src: url("../font-minio/MinionPro-Medium.woff") format("woff"), url("../font-minio/MinionPro-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
 }
@@ -10,8 +10,8 @@
 @font-face {
     font-family: "MinionPro_medium_it";
     font-display: swap;
-    src: url("../fonts/MinionPro-MediumIt.eot");
-    src: url("../fonts/MinionPro-MediumIt.woff") format("woff"), url("../fonts/MinionPro-MediumIt.ttf") format("truetype");
+    src: url("../font-minio/MinionPro-MediumIt.eot");
+    src: url("../font-minio/MinionPro-MediumIt.woff") format("woff"), url("../font-minio/MinionPro-MediumIt.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
 }
@@ -19,8 +19,8 @@
 @font-face {
     font-family: "MinionPro_regular";
     font-display: swap;
-    src: url("../fonts/MinionPro-MediumIt.eot");
-    src: url("../fonts/MinionPro-MediumIt.woff") format("woff"), url("../fonts/MinionPro-MediumIt.ttf") format("truetype");
+    src: url("../font-minio/MinionPro-MediumIt.eot");
+    src: url("../font-minio/MinionPro-MediumIt.woff") format("woff"), url("../font-minio/MinionPro-MediumIt.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -28,8 +28,8 @@
 @font-face {
     font-family: "MinionPro_semibold";
     font-display: swap;
-    src: url("../fonts/MinionPro-Semibold.eot");
-    src: url("../fonts/MinionPro-Semibold.woff") format("woff"), url("../fonts/MinionPro-Semibold.ttf") format("truetype");
+    src: url("../font-minio/MinionPro-Semibold.eot");
+    src: url("../font-minio/MinionPro-Semibold.woff") format("woff"), url("../font-minio/MinionPro-Semibold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
 }
@@ -37,26 +37,26 @@
 @font-face {
     font-family: "MinionPro_semibold_it";
     font-display: swap;
-    src: url("../fonts/MinionPro-SemiboldIt.eot");
-    src: url("../fonts/MinionPro-SemiboldIt.woff") format("woff"), url("../fonts/MinionPro-SemiboldIt.ttf") format("truetype");
+    src: url("../font-minio/MinionPro-SemiboldIt.eot");
+    src: url("../font-minio/MinionPro-SemiboldIt.woff") format("woff"), url("../font-minio/MinionPro-SemiboldIt.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FuturaDemiC';
-    src: url('../fonts/FuturaDemiC.eot');
-    src: url('../fonts/?#iefix') format('embedded-opentype');
-    src: url('../fonts/FuturaDemiC.woff') format('woff'), url('../fonts/FuturaDemiC.ttf') format('truetype');
+    src: url('../font-futura/FuturaDemiC.eot');
+    src: url('../font-futura/?#iefix') format('embedded-opentype');
+    src: url('../font-futura/FuturaDemiC.woff') format('woff'), url('../font-futura/FuturaDemiC.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FuturaMediumC';
-    src: url('../fonts/FuturaMediumC.eot');
-    src: url('../fonts/FuturaMediumC.eot?#iefix') format('embedded-opentype');
-    src: url('../fonts/FuturaMediumC.woff') format('woff'), url('../fonts/FuturaMediumC.ttf') format('truetype');
+    src: url('../font-futura/FuturaMediumC.eot');
+    src: url('../font-futura/FuturaMediumC.eot?#iefix') format('embedded-opentype');
+    src: url('../font-futura/FuturaMediumC.woff') format('woff'), url('../font-futura/FuturaMediumC.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
