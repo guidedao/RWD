@@ -70,6 +70,9 @@ img {
     border: none;
 }
 
+
+/* удалить после удаление класса */
+
 .after-img1,
 .after-img2,
 .after-img3,
@@ -123,10 +126,12 @@ small {
         display: flex;
         justify-content: space-around;
     }
+    /* удалить после удаление класса */
     .img-container.three,
     .img-container.six {
         flex-direction: row-reverse;
     }
+    /* удалить после удаление класса */
     .after-img1,
     .after-img2,
     .after-img3,
