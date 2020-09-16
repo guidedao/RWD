@@ -1,0 +1,43 @@
+@import url(normalize.css);
+@import url(common.css);
+@import url(footer.css);
+
+.index-container h1 {
+	font-weight: normal;
+	line-height: 1;
+}
+
+.abc-links a {
+	display: inline;
+	padding: 0;
+	transition: color 0.25s, background-color 0.25s;
+}
+
+.abc-container h2 {
+	font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
+    font-weight: normal;
+    line-height: 1.125;
+    margin: 6rem 0 0;
+}
+
+.abc-container ol {
+	margin: 2em 0;
+	list-style: decimal;
+    font-variant: small-caps;
+}
+
+.abc-container li {
+    margin: 1em;	
+}
+
+.abc-container a {
+	padding: 0;
+	font-variant: normal;
+	display: inline;
+}
+
+.small-caps {
+    text-decoration: none;
+    font-family: inherit;
+    font-variant: all-small-caps;
+}
